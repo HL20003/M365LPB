@@ -39,11 +39,11 @@ Khung chat thử nghiệm bên phải màn hình luôn hiển thị để anh/ch
 
 ## Tình huống
 
-> Là Exclusive Manager, anh/chị nhận ra các RM liên tục hỏi mình và Phòng Sản phẩm cùng những câu hỏi về biểu phí, hạn mức, thẩm quyền phê duyệt. Anh/chị tạo **Exclusive Assistant** - một trợ lý nội bộ giúp đội RM tự tra cứu nhanh sản phẩm (tiền gửi, tín dụng, bancassurance, wealth management), biểu phí, điều kiện KYC, thẩm quyền phê duyệt và các đặc quyền cho khách hàng Exclusive. Agent chỉ trả lời dựa trên Sổ tay Sản phẩm và Chính sách nội bộ để đảm bảo chính xác và tuân thủ.
+> Ở công ty nào cũng vậy, nhân viên liên tục hỏi Phòng Hành chính - Nhân sự, Kế toán và quản lý trực tiếp cùng những câu hỏi: được bao nhiêu ngày phép, công tác phí tối đa bao nhiêu, mua sắm cần mấy báo giá và ai duyệt. Anh/chị tạo **Policy Assistant** - một trợ lý nội bộ giúp mọi nhân viên tự tra cứu nhanh chính sách nghỉ phép, làm việc từ xa, công tác phí, mua sắm và thẩm quyền phê duyệt, đào tạo, bảo mật và phúc lợi. Agent chỉ trả lời dựa trên Sổ tay Chính sách Nội bộ để đảm bảo chính xác.
 
-**Knowledge source:** [Sổ tay Sản phẩm và Chính sách Exclusive.docx](#file-handbook) - tải file và lưu vào **OneDrive** của anh/chị trước khi bắt đầu (xem [cách tải file Word/Excel về máy](#module-1/cach-tai-file-word-excel-ve-may)).
+**Knowledge source:** [Sổ tay Chính sách Nội bộ.docx](#file-handbook) - tải file và lưu vào **OneDrive** của anh/chị trước khi bắt đầu (xem [cách tải file Word/Excel về máy](#module-1/cach-tai-file-word-excel-ve-may)).
 
-**Kết quả cuối lab:** một agent tên **Exclusive Assistant**, trả lời từ Sổ tay, có dẫn mục, từ chối câu hỏi ngoài phạm vi và có link chia sẻ cho đồng nghiệp.
+**Kết quả cuối lab:** một agent tên **Policy Assistant**, trả lời từ Sổ tay, có dẫn mục, từ chối câu hỏi ngoài phạm vi và có link chia sẻ cho đồng nghiệp.
 
 ---
 
@@ -51,8 +51,8 @@ Khung chat thử nghiệm bên phải màn hình luôn hiển thị để anh/ch
 
 ### Bước 1: Mở Agent Builder
 
-1. Trong ứng dụng **Microsoft Copilot** (đã mở ở các lab trước), ở thanh điều hướng bên trái, tìm mục **Agents**
-2. Chọn **New Agent**
+1. Vào [https://m365.cloud.microsoft/](https://m365.cloud.microsoft/) bằng **tài khoản công ty** (không dùng tài khoản Microsoft cá nhân như Outlook.com, Hotmail) và mở **Copilot**
+2. Ở thanh điều hướng bên trái, tìm mục **Agents**, chọn **New Agent**
 3. Màn hình Agent Builder mở ra: ô mô tả agent ở giữa, nút **Configure** để chỉnh chi tiết, khung chat thử nghiệm ở bên phải
 
 > [!TIP]
@@ -71,19 +71,19 @@ Nhập lần lượt **cả 3 prompt** dưới đây vào ô mô tả, mỗi pro
 
 > **PROMPT:**
 >
-> Tôi muốn xây dựng một trợ lý nội bộ tên "Exclusive Assistant" cho các RM phục vụ khách hàng Exclusive. Agent giúp RM tra cứu nhanh: hạng thành viên và tiêu chí xét hạng, sản phẩm tiền gửi, tín dụng, bancassurance và wealth management, biểu phí dịch vụ, hồ sơ KYC, thẩm quyền phê duyệt hạn mức và các đặc quyền phi tài chính.
+> Tôi muốn xây dựng một trợ lý nội bộ tên "Policy Assistant" cho toàn bộ nhân viên công ty. Agent giúp nhân viên tra cứu nhanh chính sách nội bộ: thời gian làm việc, nghỉ phép, làm việc từ xa, công tác phí, mua sắm và thẩm quyền phê duyệt, tạm ứng và thanh toán cho nhà cung cấp, đào tạo, bảo mật thông tin và phúc lợi.
 
 ### Bước 3: Quy định giọng điệu và cách trình bày
 
 > **PROMPT:**
 >
-> Giọng điệu chuyên nghiệp, rõ ràng, đi thẳng vào vấn đề, phù hợp với RM cần câu trả lời nhanh khi đang tư vấn khách hàng. Trả lời ngắn gọn, trình bày điều kiện và biểu phí dưới dạng bảng khi có thể. Cuối mỗi câu trả lời ghi rõ mục tương ứng trong Sổ tay, ví dụ "(Nguồn: Sổ tay, Mục 7)".
+> Giọng điệu thân thiện, rõ ràng, đi thẳng vào vấn đề, dễ hiểu với cả nhân viên mới. Trả lời ngắn gọn, có ví dụ tính cụ thể khi người hỏi nêu thâm niên, chức danh hoặc giá trị mua sắm. Trình bày định mức và cấp phê duyệt dưới dạng bảng khi có thể. Cuối mỗi câu trả lời ghi rõ mục tương ứng trong Sổ tay, ví dụ "(Nguồn: Sổ tay, Mục 4)".
 
 ### Bước 4: Định nghĩa giới hạn của agent
 
 > **PROMPT:**
 >
-> Agent chỉ trả lời dựa trên Sổ tay Sản phẩm và Chính sách Exclusive. Nếu Sổ tay không có thông tin, nói rõ là chưa có thông tin và đề nghị RM liên hệ đơn vị đầu mối theo Mục 10 của Sổ tay. Không trả lời câu hỏi ngoài phạm vi sản phẩm và chính sách Exclusive. Không đưa ra khuyến nghị đầu tư cho một khách hàng cụ thể, không cam kết lãi suất hay hạn mức thay cho cấp phê duyệt. Khi câu hỏi cần phê duyệt ngoại lệ, chỉ ra đúng cấp phê duyệt. Nếu người dùng nhập số CIF, số CCCD, số tài khoản hoặc thông tin định danh khách hàng, nhắc họ không chia sẻ dữ liệu này trong cuộc trò chuyện.
+> Agent chỉ trả lời dựa trên Sổ tay Chính sách Nội bộ. Nếu Sổ tay không có thông tin, nói rõ là chưa có thông tin và đề nghị người dùng liên hệ đúng đầu mối theo Mục 10 của Sổ tay. Không trả lời câu hỏi ngoài phạm vi chính sách và quy trình nội bộ. Không tự phê duyệt hay cam kết thay cho cấp có thẩm quyền, không tư vấn về trường hợp kỷ luật hay lương thưởng của cá nhân cụ thể. Khi câu hỏi cần phê duyệt ngoại lệ, chỉ ra đúng cấp phê duyệt. Nếu người dùng nhập số CCCD, số tài khoản, mật khẩu hoặc thông tin lương cá nhân, nhắc họ không chia sẻ dữ liệu này trong cuộc trò chuyện.
 
 > [!NOTE]
 > Sau 3 prompt, Agent Builder đã tự điền **tên**, **mô tả**, **instructions** và **starter prompts**. Nội dung tự sinh có thể hơi khác nhau giữa các học viên, điều này là bình thường. Phần C sẽ kiểm tra và chỉnh lại.
@@ -99,9 +99,9 @@ Nhập lần lượt **cả 3 prompt** dưới đây vào ô mô tả, mỗi pro
 
 | Trường | Cần thấy | Nếu chưa đúng |
 |--------|----------|---------------|
-| **Name** | Exclusive Assistant | Sửa trực tiếp trong ô Name |
-| **Description** | Một câu mô tả agent hỗ trợ RM tra cứu sản phẩm và chính sách Exclusive | Sửa trực tiếp |
-| **Instructions** | Có đủ: phạm vi, giọng điệu, dẫn mục Sổ tay, không cam kết thay cấp phê duyệt, nhắc không nhập dữ liệu khách hàng | Bổ sung câu còn thiếu vào cuối ô Instructions |
+| **Name** | Policy Assistant | Sửa trực tiếp trong ô Name |
+| **Description** | Một câu mô tả agent giúp nhân viên tra cứu chính sách và quy trình nội bộ | Sửa trực tiếp |
+| **Instructions** | Có đủ: phạm vi, giọng điệu, dẫn mục Sổ tay, không cam kết thay cấp phê duyệt, không tư vấn về cá nhân cụ thể, nhắc không nhập dữ liệu cá nhân | Bổ sung câu còn thiếu vào cuối ô Instructions |
 
 > [!TIP]
 > Từ đây trở đi, nên chỉnh trực tiếp trong **Configure** thay vì quay lại gõ prompt mô tả. Prompt mô tả mới có thể khiến Agent Builder viết lại toàn bộ Instructions và làm mất phần anh/chị đã sửa tay.
@@ -109,22 +109,22 @@ Nhập lần lượt **cả 3 prompt** dưới đây vào ô mô tả, mỗi pro
 ### Bước 6: Thêm Sổ tay làm knowledge source
 
 1. Kéo xuống phần **Knowledge**
-2. Thêm file [Sổ tay Sản phẩm và Chính sách Exclusive.docx](#file-handbook): chọn file đã lưu trên **OneDrive**, hoặc tải file lên trực tiếp
+2. Thêm file [Sổ tay Chính sách Nội bộ.docx](#file-handbook): chọn file đã lưu trên **OneDrive**, hoặc tải file lên trực tiếp
 3. Bật toggle **Only use specified sources** để agent chỉ dùng Sổ tay, không dùng kiến thức chung của mô hình hay nội dung web
 
 > [!NOTE]
-> Với nghiệp vụ ngân hàng, nên luôn bật **Only use specified sources**: câu trả lời kiểm chứng được và agent không tự "bịa" biểu phí hay điều kiện sản phẩm. Đổi lại, agent sẽ không trả lời được câu hỏi nằm ngoài Sổ tay, và đó chính là hành vi mong muốn.
+> Với agent trả lời về chính sách, nên luôn bật **Only use specified sources**: câu trả lời kiểm chứng được và agent không tự "bịa" định mức hay quy trình. Đổi lại, agent sẽ không trả lời được câu hỏi nằm ngoài Sổ tay, và đó chính là hành vi mong muốn.
 
 ### Bước 7: Chỉnh starter prompts
 
-Kéo xuống phần **Starter prompts**. Giữ hoặc thay để có các câu hỏi RM hay hỏi nhất, ví dụ:
+Kéo xuống phần **Starter prompts**. Giữ hoặc thay để có các câu hỏi nhân viên hay hỏi nhất, ví dụ:
 
 | Title | Message |
 |-------|---------|
-| Xét hạng thành viên | Khách hàng có tổng tài sản bao nhiêu thì đạt từng hạng Exclusive? |
-| Biểu phí | Biểu phí chuyển tiền quốc tế theo từng hạng là bao nhiêu? |
-| Thẩm quyền phê duyệt | Hạn mức thấu chi không tài sản bảo đảm do cấp nào phê duyệt? |
-| Quy định bancassurance | RM cần lưu ý gì khi tư vấn bảo hiểm liên kết đầu tư? |
+| Ngày phép | Tôi làm 6 năm thì được bao nhiêu ngày phép năm? |
+| Công tác phí | Đi công tác trong nước thì khách sạn và phụ cấp ăn tối đa bao nhiêu? |
+| Thẩm quyền phê duyệt | Mua sắm trị giá bao nhiêu thì cần cấp nào phê duyệt và mấy báo giá? |
+| Sử dụng AI | Những thông tin nào không được nhập vào Copilot? |
 
 ---
 
@@ -136,31 +136,31 @@ Nhập lần lượt các câu hỏi dưới đây vào khung chat thử nghiệ
 
 > **PROMPT:**
 >
-> Khách hàng có tổng tài sản bình quân 3 tháng tại ngân hàng là 3,5 tỷ đồng thì đạt hạng thành viên nào và được những đặc quyền gì?
+> Tôi đã làm việc tại công ty 6 năm thì có bao nhiêu ngày phép năm? Phép chưa dùng hết có được chuyển sang năm sau không?
 
 > **PROMPT:**
 >
-> Phí chuyển tiền quốc tế cho khách hàng hạng Exclusive Platinum là bao nhiêu và có được miễn phí không?
+> Tôi là chuyên viên, đi công tác Đà Nẵng 3 đêm. Khách sạn và phụ cấp ăn tối đa bao nhiêu, và tôi phải quyết toán trong bao lâu?
 
 > **PROMPT:**
 >
-> Tôi cần đề xuất hạn mức thấu chi 1,5 tỷ đồng không tài sản bảo đảm cho khách hàng hạng Diamond. Cần hồ sơ gì và ai có thẩm quyền phê duyệt?
+> Phòng tôi cần mua phần mềm trị giá 650 triệu đồng. Cần mấy báo giá và ai có thẩm quyền phê duyệt?
 
 > **PROMPT:**
 >
-> Khi tư vấn bảo hiểm liên kết đầu tư cho khách hàng đang có khoản vay, RM cần lưu ý những quy định gì?
+> Nhà cung cấp đề nghị tạm ứng 40% giá trị hợp đồng. Có được không, và nếu được thì cần điều kiện gì?
 
 > **PROMPT:**
 >
-> Giá vàng tuần tới có tăng không? Tôi có nên khuyên khách hàng mua vàng không?
+> Giá vàng tuần tới có tăng không? Tôi có nên mua vàng không?
 
 | Câu hỏi | Câu trả lời đúng (theo Sổ tay) |
 |---------|--------------------------------|
-| 3,5 tỷ đồng | Hạng **Exclusive Gold** (2 tỷ đến dưới 5 tỷ). Kèm đặc quyền Gold ở Mục 3, 7, 9, ví dụ phòng chờ sân bay 4 lượt/năm. Nguồn: Mục 2 |
-| Chuyển tiền quốc tế, Platinum | **Miễn 5 giao dịch/tháng**, sau đó 0,03% (tối thiểu 5 USD, tối đa 100 USD). Nguồn: Mục 7 |
-| Thấu chi 1,5 tỷ, Diamond | Nằm trong hạn mức tối đa Diamond (2 tỷ). Phê duyệt: **Hội đồng Tín dụng Khối Khách hàng Ưu tiên** sau thẩm định độc lập của Khối Tín dụng. Hồ sơ theo Mục 4.3, bổ sung báo cáo tài sản và tờ trình thẩm định vì trên 1 tỷ. Nguồn: Mục 4 |
-| Bảo hiểm khi có khoản vay | Không giới thiệu bảo hiểm liên kết đầu tư trong **60 ngày trước và sau ngày giải ngân**; không gắn bảo hiểm với điều kiện vay; buổi tư vấn phải ghi âm/ghi hình. Nguồn: Mục 5 |
-| Giá vàng | Agent **từ chối** vì ngoài phạm vi Sổ tay và không đưa khuyến nghị đầu tư |
+| Phép năm, 6 năm thâm niên | **15 ngày** (từ 5 đến dưới 10 năm). Phép chưa dùng được chuyển **tối đa 5 ngày**, phải dùng trước **31/03**. Nguồn: Mục 2.2 |
+| Công tác Đà Nẵng, chuyên viên | Khách sạn tối đa **1,2 triệu đồng/đêm**, phụ cấp ăn **250.000 đồng/ngày**; quyết toán trong **10 ngày làm việc** sau chuyến đi, kèm hóa đơn hợp lệ. Nguồn: Mục 4 |
+| Mua phần mềm 650 triệu | Thuộc mức trên 500 triệu đến 2 tỷ: cần **3 báo giá**, **Giám đốc Tài chính** phê duyệt. Nguồn: Mục 5.1 |
+| Tạm ứng 40% | Vượt mức tối đa 30% nên là **ngoại lệ**: cần **Giám đốc Tài chính** phê duyệt và nhà cung cấp có **bảo lãnh tạm ứng của ngân hàng**. Nguồn: Mục 5.2 |
+| Giá vàng | Agent **từ chối** vì ngoài phạm vi Sổ tay |
 
 Nếu câu trả lời chưa đạt (không dẫn mục, sai số liệu, vẫn trả lời câu hỏi giá vàng), quay lại **Configure**: kiểm tra toggle **Only use specified sources** đã bật chưa, và bổ sung vào ô **Instructions** quy tắc còn thiếu. Sau đó test lại.
 
@@ -179,19 +179,19 @@ Nếu câu trả lời chưa đạt (không dẫn mục, sai số liệu, vẫn 
 
 > [!NOTE]
 > - Người nhận chỉ dùng được agent, **không sửa được**; chỉ chủ sở hữu agent mới chỉnh sửa được.
-> - Agent tôn trọng phân quyền: người không có **quyền đọc** file Sổ tay thì agent không trả lời từ file đó cho người ấy. Trong môi trường thật, nên đặt Sổ tay trong một **thư mục hoặc site SharePoint** do Phòng Sản phẩm quản lý và cấp quyền đọc cho đúng nhóm RM; khi tài liệu được cập nhật, agent tự dùng phiên bản mới.
+> - Agent tôn trọng phân quyền: người không có **quyền đọc** file Sổ tay thì agent không trả lời từ file đó cho người ấy. Trong môi trường thật, nên đặt Sổ tay trong một **thư mục hoặc site SharePoint** do phòng ban phụ trách quản lý và cấp quyền đọc cho đúng nhóm nhân viên; khi tài liệu được cập nhật, agent tự dùng phiên bản mới.
 
 > [!TIP]
-> Để chia sẻ lại sau này: chọn **Exclusive Assistant** ở thanh điều hướng bên trái → **... (More)** → **Share**. Menu **...** này cũng là nơi mở lại agent để chỉnh sửa.
+> Để chia sẻ lại sau này: chọn **Policy Assistant** ở thanh điều hướng bên trái → **... (More)** → **Share**. Menu **...** này cũng là nơi mở lại agent để chỉnh sửa.
 
 ---
 
 ## Lưu ý tuân thủ
 
 > [!NOTE]
-> - Agent tự tạo chỉ được chia sẻ trong phạm vi đơn vị; knowledge source phải là thư mục SharePoint có phân quyền.
-> - Agent phục vụ khách hàng bên ngoài phải được Khối Công nghệ và Pháp chế phê duyệt.
-> - Bật **Only use specified sources** với mọi agent trả lời về sản phẩm và biểu phí.
+> - Agent tự tạo chỉ chia sẻ trong nội bộ công ty; knowledge source phải là thư mục SharePoint có phân quyền.
+> - Agent phục vụ khách hàng bên ngoài phải được Phòng Công nghệ Thông tin và Pháp chế phê duyệt.
+> - Bật **Only use specified sources** với mọi agent trả lời về chính sách, quy trình và định mức.
 
 ---
 
@@ -199,7 +199,7 @@ Nếu câu trả lời chưa đạt (không dẫn mục, sai số liệu, vẫn 
 
 Lặp lại quy trình trên với một chủ đề của riêng anh/chị:
 
-1. **Chủ đề** - Agent hỗ trợ việc gì? (onboarding RM mới, FAQ quy trình KYC, tra cứu chỉ tiêu và cơ chế thưởng, hỏi đáp chính sách tín dụng...)
+1. **Chủ đề** - Agent hỗ trợ việc gì? (hướng dẫn nhân viên mới, FAQ quy trình của phòng, tra cứu sản phẩm và dịch vụ, hỏi đáp quy trình IT, mẫu văn bản thường dùng...)
 2. **Người dùng và giọng điệu** - Dành cho ai? Trang trọng hay thân thiện?
 3. **Knowledge sources** - Thư mục hoặc site SharePoint nào làm nguồn? Ai đang có quyền đọc?
 4. **Giới hạn** - Agent không được trả lời hoặc cam kết điều gì?
