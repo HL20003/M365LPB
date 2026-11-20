@@ -1,21 +1,19 @@
 # Lab 8 - Agent Builder in Copilot Chat
 
-**Ứng dụng:** Microsoft 365 Copilot Chat, Agent Builder
+## Sau lab này
 
-> [!NOTE]
-> **Toàn bộ tài liệu, số liệu và tình huống trong workshop là bản nháp (draft) dùng cho mục đích đào tạo.** Tên nhân vật, khách hàng và đối tác là giả định.
-
----
-
-## Mục tiêu
-
-Sau khi hoàn thành lab này, anh/chị sẽ có thể:
-
-- Tạo một trợ lý AI cho đội ngũ chỉ bằng ngôn ngữ tự nhiên, không cần code
-- Cấu hình instructions, knowledge sources và starter prompts cho agent
-- Kiểm tra câu trả lời của agent trước khi chia sẻ với đồng nghiệp
-
----
+> [!OUTCOME]
+> **Làm được**
+>
+> - Tự tạo agent **Policy Assistant** cho cả công ty chỉ bằng tiếng Việt, không cần lập trình
+> - Kiểm tra agent bằng bộ câu hỏi có đáp án, kể cả câu ngoài phạm vi, trước khi chia sẻ
+> - Tạo agent và chia sẻ link cho đồng nghiệp
+>
+> **Biết được**
+>
+> - Agent giúp chuẩn hóa cách trả lời từ tài liệu nội bộ có kiểm soát, thay vì mỗi người tự viết prompt
+> - Agent tôn trọng phân quyền: người dùng chỉ nhận được nội dung từ tài liệu họ có quyền xem
+> - Sau khi tạo, đưa agent vào Teams để đồng nghiệp dùng ngay nơi làm việc (Lab 9)
 
 ## Khái niệm cần biết
 
@@ -35,8 +33,6 @@ Agent Builder có hai cách làm việc, lab này dùng lần lượt từng cá
 
 Khung chat thử nghiệm bên phải màn hình luôn hiển thị để anh/chị thử agent bất cứ lúc nào (Phần D).
 
----
-
 ## Tình huống
 
 > Ở công ty nào cũng vậy, nhân viên liên tục hỏi Phòng Hành chính - Nhân sự, Kế toán và quản lý trực tiếp cùng những câu hỏi: được bao nhiêu ngày phép, công tác phí tối đa bao nhiêu, mua sắm cần mấy báo giá và ai duyệt. Anh/chị tạo **Policy Assistant** - một trợ lý nội bộ giúp mọi nhân viên tự tra cứu nhanh chính sách nghỉ phép, làm việc từ xa, công tác phí, mua sắm và thẩm quyền phê duyệt, đào tạo, bảo mật và phúc lợi. Agent chỉ trả lời dựa trên Sổ tay Chính sách Nội bộ để đảm bảo chính xác.
@@ -44,8 +40,6 @@ Khung chat thử nghiệm bên phải màn hình luôn hiển thị để anh/ch
 **Knowledge source:** [Sổ tay Chính sách Nội bộ.docx](#file-handbook) - tải file và lưu vào **OneDrive** của anh/chị trước khi bắt đầu (xem [cách tải file Word/Excel về máy](#module-1/cach-tai-file-word-excel-ve-may)).
 
 **Kết quả cuối lab:** một agent tên **Policy Assistant**, trả lời từ Sổ tay, có dẫn mục, từ chối câu hỏi ngoài phạm vi và có link chia sẻ cho đồng nghiệp.
-
----
 
 ## Phần A: Mở Agent Builder
 
@@ -60,8 +54,6 @@ Khung chat thử nghiệm bên phải màn hình luôn hiển thị để anh/ch
 
 > [!NOTE]
 > Microsoft đang triển khai giao diện **Home** mới cho Copilot, nên vị trí nút và tên gọi trên máy anh/chị có thể hơi khác hướng dẫn. Nếu không thấy **New Agent**, nhấn `Ctrl + F5` để tải lại trang.
-
----
 
 ## Phần B: Mô tả agent bằng prompt
 
@@ -87,8 +79,6 @@ Nhập lần lượt **cả 3 prompt** dưới đây vào ô mô tả, mỗi pro
 
 > [!NOTE]
 > Sau 3 prompt, Agent Builder đã tự điền **tên**, **mô tả**, **instructions** và **starter prompts**. Nội dung tự sinh có thể hơi khác nhau giữa các học viên, điều này là bình thường. Phần C sẽ kiểm tra và chỉnh lại.
-
----
 
 ## Phần C: Kiểm tra và hoàn thiện trong Configure
 
@@ -126,8 +116,6 @@ Kéo xuống phần **Starter prompts**. Giữ hoặc thay để có các câu h
 | Thẩm quyền phê duyệt | Mua sắm trị giá bao nhiêu thì cần cấp nào phê duyệt và mấy báo giá? |
 | Sử dụng AI | Những thông tin nào không được nhập vào Copilot? |
 
----
-
 ## Phần D: Test agent trước khi tạo
 
 ### Bước 8: Thử agent trong khung chat thử nghiệm
@@ -164,8 +152,6 @@ Nhập lần lượt các câu hỏi dưới đây vào khung chat thử nghiệ
 
 Nếu câu trả lời chưa đạt (không dẫn mục, sai số liệu, vẫn trả lời câu hỏi giá vàng), quay lại **Configure**: kiểm tra toggle **Only use specified sources** đã bật chưa, và bổ sung vào ô **Instructions** quy tắc còn thiếu. Sau đó test lại.
 
----
-
 ## Phần E: Tạo và chia sẻ agent
 
 ### Bước 9: Tạo agent và lấy link chia sẻ
@@ -184,18 +170,61 @@ Nếu câu trả lời chưa đạt (không dẫn mục, sai số liệu, vẫn 
 > [!TIP]
 > Để chia sẻ lại sau này: chọn **Policy Assistant** ở thanh điều hướng bên trái → **... (More)** → **Share**. Menu **...** này cũng là nơi mở lại agent để chỉnh sửa.
 
----
-
 ## Lưu ý tuân thủ
 
 > [!NOTE]
 > - Agent tự tạo chỉ chia sẻ trong nội bộ công ty; knowledge source phải là thư mục SharePoint có phân quyền.
 > - Agent phục vụ khách hàng bên ngoài phải được Phòng Công nghệ Thông tin và Pháp chế phê duyệt.
 > - Bật **Only use specified sources** với mọi agent trả lời về chính sách, quy trình và định mức.
+> - Không ghi mật khẩu, dữ liệu khách hàng hay dữ liệu cá nhân vào nội dung skill.
 
----
+## Tự thực hành thêm
 
-## Tự thực hành: Tạo agent cho công việc của anh/chị
+### Tạo skill trong Copilot Chat [MỚI]
+
+Agent ở Phần A-E giúp **nhiều người hỏi đáp** từ một bộ tài liệu. **Skill** giải quyết một nhu cầu khác: dạy Copilot **một quy trình làm việc** của anh/chị (các bước, mẫu trình bày, quy tắc), để lần sau chỉ cần gọi tên là Copilot làm đúng như vậy. Ở bài này, anh/chị biến việc viết báo cáo tuần thành skill.
+
+> [!NOTE]
+> Skills trong Copilot Chat cần licence **Microsoft 365 Copilot**. Nếu không thấy mục **Agents**, hãy tìm trong nút **Plugins**.
+
+**Mô tả skill bằng lời:**
+
+1. Trong [Copilot Chat](https://m365.cloud.microsoft/chat), mở cuộc trò chuyện mới (Work IQ **bật**)
+2. Nhập prompt:
+
+> **PROMPT:**
+>
+> Tạo cho tôi một skill cá nhân tên "bao-cao-tuan". Mục đích: soạn báo cáo tuần gửi quản lý trực tiếp từ email, cuộc họp, chat Teams và tài liệu của tôi trong 7 ngày qua. Các bước: (1) nếu tôi chưa nói, hỏi lại báo cáo gửi ai và cần tập trung dự án nào; (2) tìm thông tin 7 ngày gần nhất; (3) trình bày đúng 4 phần: Kết quả đã hoàn thành (tối đa 5 ý), Đang thực hiện (bảng Việc | Tiến độ | Hạn chót | Rủi ro), Cần hỗ trợ hoặc cần quyết định (cần ai, việc gì, trước ngày nào), Kế hoạch tuần tới; (4) mỗi ý ghi nguồn; (5) cuối báo cáo liệt kê các ý chưa có nguồn rõ ràng. Quy tắc: tối đa một trang, không tự thêm số liệu hay thời hạn, thiếu thông tin thì ghi [CẦN XÁC NHẬN], không đưa dữ liệu cá nhân vào báo cáo.
+
+3. Copilot mở trình tạo skill với các phần **Name**, **Description**, **Instructions**, **Workflow**, **Included files**. Kiểm tra:
+
+| Phần | Cần thấy |
+|------|----------|
+| **Name** | bao-cao-tuan (chỉ chữ thường, số và dấu gạch ngang) |
+| **Description** | Nói rõ skill làm gì và **khi nào dùng**, ví dụ "dùng khi người dùng nhờ viết báo cáo tuần". Copilot dựa vào mô tả này để tự chọn skill |
+| **Workflow** | Đủ 5 bước như prompt |
+
+4. Lưu skill
+
+> [!TIP]
+> **Không tạo được skill bằng lời?** Tải [Skill Copilot Chat - bao-cao-tuan.zip](#file-skill-chat). Trong Copilot Chat chọn **Agents** > **More agents**, bấm mũi tên cạnh **Add** > **Upload skill**, chọn file zip và bấm **Upload**. Mở file zip để xem: một skill thực chất là một file **SKILL.md** gồm tên, mô tả và các bước viết bằng lời thường.
+
+**Gọi skill:**
+
+1. Mở cuộc trò chuyện mới, bấm **+** và chọn skill **bao-cao-tuan** trong mục **Agents and Skills** (hoặc gõ "/" rồi chọn skill)
+2. Nhập:
+
+> **PROMPT:**
+>
+> Viết báo cáo tuần này gửi trưởng phòng của tôi, tập trung vào việc chuẩn bị báo cáo quản lý quý 3.
+
+3. Bật tùy chọn **Let Copilot use this skill automatically** trong phần cài đặt của skill, rồi thử gõ *"Tổng kết tuần giúp tôi"* mà không chọn skill. Copilot tự nhận ra và dùng **bao-cao-tuan**
+
+**Kết quả mong đợi:** Báo cáo luôn có đúng 4 phần theo mẫu, mỗi ý có nguồn, cuối báo cáo có danh sách ý cần tự xác nhận. Tuần sau gọi lại skill, cấu trúc vẫn y như vậy, không cần viết lại prompt dài.
+
+**Skill hay agent?** Skill là quy trình làm việc nhiều bước Copilot làm theo, chủ yếu cho cá nhân và việc lặp lại (báo cáo tuần, làm sạch dữ liệu, soạn tờ trình theo mẫu). Agent là trợ lý có lời dặn và tài liệu nguồn riêng, để nhiều người cùng hỏi đáp.
+
+### Tạo agent cho công việc của anh/chị
 
 Lặp lại quy trình trên với một chủ đề của riêng anh/chị:
 
@@ -205,16 +234,3 @@ Lặp lại quy trình trên với một chủ đề của riêng anh/chị:
 4. **Giới hạn** - Agent không được trả lời hoặc cam kết điều gì?
 5. **Starter prompts** - 3-4 câu hỏi người dùng hay hỏi nhất
 6. **Bộ câu test** - 3 câu có đáp án rõ trong tài liệu và 1 câu ngoài phạm vi để kiểm tra agent có từ chối không
-
----
-
-## Tổng kết
-
-| Anh/chị đã làm được | Ở bước |
-|---------------------|--------|
-| Mô tả agent bằng ngôn ngữ tự nhiên, không cần code | Mô tả bằng prompt (Bước 2-4) |
-| Kiểm tra và chỉnh Name, Description, Instructions | Configure (Bước 5) |
-| Gắn Sổ tay làm knowledge source, giới hạn agent chỉ dùng nguồn này | Configure (Bước 6) |
-| Thiết kế starter prompts | Configure (Bước 7) |
-| Test bằng bộ câu hỏi có đáp án, kể cả câu ngoài phạm vi | Khung chat thử nghiệm (Bước 8) |
-| Tạo agent và chia sẻ link cho đồng nghiệp | Create (Bước 9) |

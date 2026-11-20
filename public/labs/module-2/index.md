@@ -171,7 +171,7 @@ Cùng công thức 4 thành phần, mỗi phòng ban chỉ cần thay mục tiê
 
 ## Thực hành nhanh
 
-Mở [Copilot Chat](https://m365.cloud.microsoft/) ở chế độ **Work** và thử hai prompt dưới đây với dữ liệu của chính anh/chị:
+Mở [Copilot Chat](https://m365.cloud.microsoft/), kiểm tra nút **Work IQ** đang bật, và thử hai prompt dưới đây với dữ liệu của chính anh/chị:
 
 > **PROMPT:**
 >

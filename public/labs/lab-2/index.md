@@ -1,125 +1,133 @@
 # Lab 2 - Copilot trong Word
 
-**Ứng dụng:** Word
+## Sau lab này
 
-> [!NOTE]
-> **Toàn bộ tài liệu, số liệu và tình huống trong workshop là bản nháp (draft) dùng cho mục đích đào tạo.** Tên nhân vật, khách hàng và đối tác là giả định.
-
----
-
-## Mục tiêu
-
-Sau khi hoàn thành lab này, anh/chị sẽ có thể:
-
-- Rà soát một văn bản dài: nắm điều khoản chính, rủi ro và câu hỏi cần làm rõ
-- Đối chiếu văn bản với chính sách nội bộ để phát hiện điểm vượt quy định
-- Soạn tờ trình xin phê duyệt gửi cấp có thẩm quyền
-
-### Tính năng chính
-
-| Tính năng | Mô tả |
-|-----------|--------|
-| **Document Q&A / Summarizing** | Hỏi đáp và tóm tắt trên tài liệu đang mở |
-| **Đối chiếu tài liệu** | Tham chiếu file khác bằng "/" để so sánh với chính sách |
-| **Content Generating** | Soạn văn bản mới dựa trên tài liệu nguồn |
-
----
+> [!OUTCOME]
+> **Làm được**
+>
+> - Nhờ Copilot sửa một báo cáo **có sẵn** ở chế độ **Track Changes**, đối chiếu với tài liệu nội bộ, mỗi chỗ sửa có comment ghi nguồn
+> - Duyệt từng thay đổi của Copilot trong tab **Review**: chấp nhận, từ chối, trả lời comment
+> - Nhờ Copilot viết tóm tắt điều hành từ chính báo cáo đã sửa
+>
+> **Biết được**
+>
+> - Copilot làm việc được trên file đang dùng, không chỉ tạo văn bản mới
+> - Mọi chỗ Copilot sửa đều **hiện rõ** và có lý do; người phụ trách vẫn là người quyết định giữ hay bỏ
+> - Gõ "/" để nối nhiều tài liệu nội bộ trong cùng một yêu cầu
 
 ## Tình huống
 
-> **Anh/chị** - *người được giao rà soát hợp đồng trước khi trình ký*
+> **Anh/chị** - *chuyên viên Phòng Kế hoạch*
 >
-> Công ty chuẩn bị ký hợp đồng với Công ty TNHH Sự kiện Lam Kiều để tổ chức Tiệc tất niên cho 650 nhân viên và Hội nghị Khách hàng 2027, tổng giá trị 2,35 tỷ đồng. Dự thảo đã được đàm phán xong. Anh/chị được giao kiểm tra dự thảo, đối chiếu với Sổ tay Chính sách Nội bộ và chuẩn bị tờ trình xin phê duyệt. Việc này có thể đến với bất kỳ ai: nhân viên hành chính, chuyên viên mua sắm, người phụ trách sự kiện hay trưởng phòng.
+> Đồng nghiệp đã soạn bản nháp **Báo cáo quản lý quý 3** và nhờ anh/chị hoàn thiện trước khi gửi Ban Giám đốc. Bản nháp có vài chỗ ghi sai mục tiêu của Kế hoạch 2027, và mục đề xuất chưa được đối chiếu với Sổ tay Chính sách Nội bộ. Ban Giám đốc cũng cần một đoạn tóm tắt ngắn ở đầu báo cáo.
 
-**Tài liệu demo:** [Hợp đồng Dịch vụ Tổ chức Sự kiện (dự thảo).docx](#file-contract) (cuối tài liệu có phần *Ghi chú của người soạn thảo* về các điểm đã thống nhất) và [Sổ tay Chính sách Nội bộ.docx](#file-handbook).
+**Tài liệu demo:** [Báo cáo quản lý Q3 2026 (bản nháp).docx](#file-report), [Kế hoạch Hoạt động 2027 (dự thảo).docx](#file-plan) và [Sổ tay Chính sách Nội bộ.docx](#file-handbook).
 
-*Xem toàn bộ file demo tại trang [Module 1](#module-1) và [cách tải file Word/Excel về máy](#module-1/cach-tai-file-word-excel-ve-may).*
+## Thực hành trong buổi học
 
----
+### Bài tập 1: Copilot sửa báo cáo bằng Track Changes [MỚI]
 
-### Bài tập 1: Rà soát dự thảo hợp đồng
-
-**Cách thực hiện:**
-
-1. Mở file [Hợp đồng Dịch vụ Tổ chức Sự kiện (dự thảo).docx](#file-contract)
-2. Nhấn **Copilot** trên ribbon, nhập prompt:
+1. Mở [Báo cáo quản lý Q3 2026 (bản nháp).docx](#file-report) **từ OneDrive** bằng **Word trên máy tính**
+2. Nhấn **Copilot** trên ribbon, tab **Home**
+3. Trong khung Copilot, gõ "/" chọn [Kế hoạch Hoạt động 2027 (dự thảo).docx](#file-plan), gõ "/" lần nữa chọn [Sổ tay Chính sách Nội bộ.docx](#file-handbook)
+4. Nhập prompt:
 
 > **PROMPT:**
 >
-> Tôi cần rà soát hợp đồng này trước khi trình ký. Hãy tóm tắt trong một bảng: các cam kết chính của bên cung cấp dịch vụ, các nghĩa vụ chính của công ty chúng tôi, giá trị và điều kiện thanh toán, và 5 rủi ro lớn nhất cho công ty. Cuối cùng liệt kê những điểm còn chưa chốt cần làm rõ với nhà cung cấp hoặc Pháp chế.
+> Bật Track Changes. Đối chiếu báo cáo này với Kế hoạch Hoạt động 2027 và Sổ tay Chính sách Nội bộ đính kèm. Ở mục 2, sửa mọi mục tiêu, thời điểm và ngân sách ghi chưa đúng với Kế hoạch 2027. Ở mục 3, sửa các đề xuất chưa đúng Sổ tay cho đúng quy định. Mỗi chỗ sửa thêm một comment ngắn ghi mục tài liệu làm căn cứ. Không sửa số liệu quý 3 ở mục 1.
 
-**Kết quả mong đợi:** Bảng tóm tắt hai chiều cam kết, giá trị 2,35 tỷ đồng, rủi ro (tạm ứng 50%, phí hủy đến 100%, nhà cung cấp tự quyết chi phí phát sinh, mức bồi thường chưa thống nhất, chia sẻ dữ liệu cá nhân của nhân viên) và danh sách điểm cần làm rõ (bảo hiểm trách nhiệm, phương án thời tiết).
+**Kết quả mong đợi:** Báo cáo có **vết sửa** (chữ gạch chân màu) và comment bên phải cho từng chỗ:
 
-### Bài tập 2: Đối chiếu với chính sách nội bộ
-
-1. Vẫn trong khung Copilot, gõ "/" để tham chiếu file [Sổ tay Chính sách Nội bộ.docx](#file-handbook)
-2. Nhập prompt:
-
-> **PROMPT:**
->
-> Đối chiếu các điều khoản trong phần Ghi chú của người soạn thảo với Sổ tay Chính sách Nội bộ. Lập bảng: điều khoản trong hợp đồng, quy định trong Sổ tay, có vượt quy định không, và cấp nào cần phê duyệt hoặc rà soát. Ghi rõ mục tham chiếu trong Sổ tay.
-
-**Kết quả mong đợi:** Copilot chỉ ra các điểm vượt quy định: tạm ứng 50% (tối đa 30%, vượt cần Giám đốc Tài chính phê duyệt và bảo lãnh tạm ứng), thanh toán 5 ngày sau sự kiện (chuẩn 30 ngày sau nghiệm thu), nhà cung cấp tự quyết phát sinh 10% (phải được chấp thuận bằng văn bản), phí hủy 100% (trên 30% cần Pháp chế rà soát), mới có 2 báo giá (cần 3), chia sẻ ngày sinh, email cá nhân của nhân viên và dùng hình ảnh để quảng bá (Mục 7.3). Hợp đồng trên 2 tỷ đồng do Tổng Giám đốc phê duyệt sau khi Pháp chế rà soát (Mục 5.1).
+| Bản nháp ghi | Copilot sửa thành | Căn cứ |
+|--------------|-------------------|--------|
+| Nghỉ việc dưới 15% | Dưới **13%** | Kế hoạch, mục 2 |
+| NPS +42 | **+45** | Kế hoạch, mục 2 |
+| Đào tạo 24 giờ/người/năm | **32** giờ | Kế hoạch, mục 2 |
+| Mở văn phòng Huế quý 2/2027 | **Quý 3/2027** | Kế hoạch, mục 3 và 6 |
+| Ngân sách 60 tỷ đồng | **64 tỷ** đồng | Kế hoạch, mục 8 |
+| Hợp đồng thầu phụ 3,2 tỷ, Giám đốc Tài chính duyệt, không lấy thêm báo giá | Trên 2 tỷ: **3 báo giá**, **Tổng Giám đốc** duyệt sau khi **Pháp chế** rà soát | Sổ tay, Mục 5.1 |
+| Tạm ứng 45% | Tối đa **30%**; vượt mức cần Giám đốc Tài chính duyệt và bảo lãnh ngân hàng | Sổ tay, Mục 5.2 |
+| Gửi số điện thoại cá nhân, ngày sinh nhân viên cho đơn vị khảo sát | Chỉ chia sẻ dữ liệu tối thiểu (họ tên, email công việc), cần nhân viên đồng ý | Sổ tay, Mục 7.3 |
 
 > [!TIP]
-> Yêu cầu **ghi rõ mục tham chiếu** giúp anh/chị kiểm tra nhanh từng kết luận, thay vì phải tin hoàn toàn vào Copilot.
+> Nếu Copilot báo chưa bật được Track Changes, anh/chị tự bật: tab **Review** > **Track Changes**, rồi gửi lại prompt.
 
-### Bài tập 3: Soạn tờ trình xin phê duyệt
+### Bài tập 2: Duyệt thay đổi và viết tóm tắt điều hành
 
-1. Mở một file Word mới, nhấn **Copilot**, gõ "/" để tham chiếu cả hai file
-2. Nhập prompt:
+**Duyệt thay đổi của Copilot:**
+
+1. Chọn tab **Review**, bấm **Next** để đi lần lượt từng chỗ sửa, đọc comment, mở tài liệu gốc để kiểm tra
+2. Bấm **Accept** nếu đồng ý, **Reject** nếu không
+3. Hỏi Copilot những gì còn mở:
 
 > **PROMPT:**
 >
-> Dựa trên hợp đồng với Lam Kiều và các điểm vượt quy định so với Sổ tay, soạn tờ trình một trang gửi Tổng Giám đốc xin phê duyệt ký hợp đồng. Gồm: bối cảnh, các điểm cần phê duyệt ngoại lệ (dạng bảng), các điểm đề xuất đàm phán lại để đúng quy định, lợi ích, rủi ro và biện pháp kiểm soát, đề xuất của người trình. Giọng văn hành chính, ngắn gọn. Chỗ nào cần số liệu tôi bổ sung thì ghi [CẦN XÁC NHẬN].
+> Liệt kê các tracked changes và comment còn chưa xử lý trong tài liệu này thành bảng: Mục | Nội dung thay đổi | Căn cứ | Cần ai quyết định.
 
-**Kết quả mong đợi:** Bản nháp tờ trình đủ cấu trúc, bảng các điểm cần phê duyệt khớp với kết quả Bài tập 2, sẵn sàng để anh/chị chỉnh và trình ký.
+**Viết tóm tắt điều hành:**
 
----
+4. Đặt con trỏ ở đầu báo cáo, nhấn **Copilot** và nhập:
 
-## Mở rộng: từ chính sách thành hướng dẫn cho đồng nghiệp
+> **PROMPT:**
+>
+> Viết mục "Tóm tắt điều hành" khoảng 5 dòng ở đầu báo cáo cho Ban Giám đốc: kết quả chính của quý 3, hai vấn đề cần quyết định sớm và đề xuất. Chỉ dùng thông tin trong báo cáo này, giữ nguyên số liệu.
 
-File [SAMPLE Chính sách Bảo mật Thông tin.docx](#file-policy-sample) là bản chuyển từ PDF, định dạng còn lỗi. Copilot vẫn đọc được nội dung. Mở file và nhập:
+5. Lưu file
+
+**Kết quả mong đợi:** Bảng các thay đổi còn mở, trong đó hợp đồng thầu phụ 3,2 tỷ cần **Tổng Giám đốc** duyệt sau **Pháp chế** và tạm ứng trên 30% cần **Giám đốc Tài chính**. Tóm tắt điều hành nêu doanh thu **432 tỷ** (đạt 99,1% kế hoạch), lợi nhuận **84 tỷ** (giảm 16,8% so với quý 2) do chi phí thuê thầu phụ **vượt kế hoạch 39%**, tỷ lệ nghỉ việc **20%**, NPS **36**, kèm đề xuất xử lý.
+
+> [!TIP]
+> Copilot **đề xuất**, anh/chị **quyết định**: không bấm **Accept All** khi chưa đọc từng thay đổi. Comment có ghi nguồn giúp kiểm tra mỗi chỗ trong vài giây.
+
+## Tự thực hành thêm
+
+### Sửa hợp đồng theo chính sách bằng Track Changes
+
+Mở [Hợp đồng Dịch vụ Tổ chức Sự kiện (dự thảo).docx](#file-contract) (hợp đồng 2,35 tỷ đồng với Công ty Sự kiện Lam Kiều, cuối tài liệu có *Ghi chú của người soạn thảo*), gõ "/" chọn Sổ tay, rồi nhập:
+
+> **PROMPT:**
+>
+> Bật Track Changes. Phần Ghi chú của người soạn thảo ở cuối hợp đồng cần đưa vào Điều 8 (Thanh toán) và Điều 9 (Chi phí phát sinh, hủy và phạt vi phạm). Hãy soạn Điều 8 và Điều 9 ngay sau Điều 7, đồng thời sửa mọi điểm chưa đúng Sổ tay Chính sách Nội bộ, kể cả nội dung về dữ liệu khách mời. Với mỗi chỗ sửa, thêm một comment ghi mục Sổ tay làm căn cứ. Những điểm cần cấp có thẩm quyền quyết định thì không tự sửa, chỉ thêm comment nêu rõ cần ai quyết định.
+
+**Kết quả mong đợi:** Tạm ứng 50% → tối đa 30% (Mục 5.2); thanh toán 5 ngày → 30 ngày sau nghiệm thu (5.2); chi phí phát sinh phải được chấp thuận bằng văn bản (5.3); phạt 5% → 8% (5.3); dữ liệu khách mời chỉ họ tên và email công việc (7.3). Phí hủy 100% (cần Pháp chế rà soát) và mới có 2 báo giá (cần 3, Tổng Giám đốc duyệt) chỉ được ghi comment.
+
+### Soạn tờ trình từ hai tài liệu
+
+Mở file Word mới, trong khung **Draft with Copilot** gõ "/" chọn hợp đồng và Sổ tay:
+
+> **PROMPT:**
+>
+> Dựa trên hợp đồng với Lam Kiều và Sổ tay Chính sách Nội bộ, soạn tờ trình một trang gửi Tổng Giám đốc xin phê duyệt ký hợp đồng: bối cảnh, các điểm đã sửa cho đúng chính sách, các điểm cần phê duyệt ngoại lệ (dạng bảng), rủi ro và biện pháp kiểm soát, đề xuất. Chỗ nào cần số liệu tôi bổ sung thì ghi [CẦN XÁC NHẬN].
+
+### Từ chính sách thành hướng dẫn cho đồng nghiệp
+
+Mở [SAMPLE Chính sách Bảo mật Thông tin.docx](#file-policy-sample) (bản chuyển từ PDF, định dạng còn lỗi) và nhập:
 
 > **PROMPT:**
 >
 > Từ chính sách này, soạn bản hướng dẫn một trang gửi toàn bộ nhân viên với tiêu đề "Dùng AI trong công việc: được làm và không được làm". Dạng bảng hai cột, tối đa 8 dòng, ngôn ngữ dễ hiểu, cuối trang nêu đầu mối liên hệ khi có sự cố.
 
----
-
 ## Lưu ý tuân thủ
 
 > [!NOTE]
-> Tờ trình và bảng đối chiếu do Copilot tạo chỉ là bản nháp: mọi con số, điều khoản và cấp phê duyệt phải được đối chiếu lại với văn bản gốc trước khi trình ký. Hợp đồng và báo giá là tài liệu Mật, chỉ lưu trên OneDrive/SharePoint của công ty.
-
----
+> Bản sửa và comment do Copilot tạo chỉ là bản nháp: mọi con số, mục tiêu và cấp phê duyệt phải được đối chiếu với văn bản gốc trước khi gửi. Báo cáo quản lý và hợp đồng là tài liệu Mật, chỉ lưu trên OneDrive/SharePoint của công ty. Trước khi gửi file ra ngoài, xử lý hết tracked changes và xóa comment nội bộ.
 
 ## Prompt đề xuất - Word
 
-### Summarizing
+### Sửa có vết
 
 > **PROMPT:**
 >
-> Tóm tắt văn bản này thành một trang: thay đổi chính so với trước, ảnh hưởng tới phòng ban của tôi, và những việc tôi cần làm khác đi từ tháng tới.
+> Bật Track Changes và rút gọn phần Tóm tắt điều hành còn một nửa, giữ nguyên các con số. Thêm comment ở những chỗ cần Phòng Tài chính xác nhận số liệu.
 
-### Review
+### Tổng hợp góp ý
+
+> **PROMPT:**
+>
+> Đọc tất cả comment và tracked changes chưa xử lý, tạo mục "Tóm tắt góp ý" ở đầu tài liệu: ai góp ý gì, góp ý nào mâu thuẫn nhau, việc gì cần chốt.
+
+### So sánh phiên bản
 
 > **PROMPT:**
 >
 > So sánh tài liệu này với phiên bản trước /[tên file]: liệt kê các thay đổi về điều khoản, số liệu và cam kết, đánh dấu thay đổi nào bất lợi cho công ty.
-
-### Content Generating
-
-> **PROMPT:**
->
-> Soạn thông báo gửi toàn công ty về [chính sách mới]: giọng thân thiện, nêu rõ điều gì thay đổi, áp dụng từ khi nào, ai cần làm gì và đầu mối giải đáp.
-
----
-
-## Tổng kết
-
-| Anh/chị đã học được | Tính năng |
-|---------------------|-----------|
-| Rà soát dự thảo hợp đồng | Document Q&A / Summarizing |
-| Đối chiếu với chính sách, xác định cấp phê duyệt | Đối chiếu tài liệu |
-| Soạn tờ trình xin phê duyệt | Content Generating |

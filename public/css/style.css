@@ -302,6 +302,32 @@ a:hover {
     background: var(--surface-alt);
 }
 
+.agenda-row.phase {
+    background: var(--surface-alt);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.agenda-row.phase:hover {
+    background: var(--surface-alt);
+}
+
+.agenda-row .phase-name {
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--ink);
+}
+
+.agenda-row .phase-time {
+    justify-self: end;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--blue-strong);
+}
+
 .agenda-row .time {
     font-weight: 700;
     color: var(--ink);
@@ -716,6 +742,66 @@ a:hover {
     font-family: var(--font-mono);
 }
 
+/* === Khung "Sau lab này" (Làm được / Biết được) === */
+.module-content .outcome-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--sp-4);
+    margin: var(--sp-6) 0;
+}
+
+.module-content .outcome-col {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--success);
+    border-radius: var(--radius);
+    padding: var(--sp-4) var(--sp-6);
+    box-shadow: var(--shadow-sm);
+}
+
+.module-content .outcome-col + .outcome-col {
+    border-top-color: var(--blue);
+}
+
+.module-content .outcome-head {
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--success);
+    margin-bottom: var(--sp-2);
+}
+
+.module-content .outcome-col + .outcome-col .outcome-head {
+    color: var(--blue-strong);
+}
+
+.module-content .outcome-col ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.module-content .outcome-col li {
+    margin-bottom: var(--sp-1);
+}
+
+/* === Nhãn "Tính năng mới" === */
+.badge-new {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: var(--sp-2);
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: var(--warning-tint);
+    border: 1px solid #ecd9a8;
+    color: var(--warning);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+
 /* === Download Block === */
 .download-block {
     border: 1px solid var(--border);
@@ -993,6 +1079,10 @@ a:hover {
         display: none;
     }
 
+    .agenda-row .phase-time {
+        justify-self: start;
+    }
+
     .module-container {
         grid-template-columns: 1fr;
     }
@@ -1077,4 +1167,167 @@ a:hover {
 /* Ảnh minh họa không có lightbox */
 .module-content .content-img {
     cursor: default;
+}
+
+/* =====================================================================
+   Bố cục dễ đọc: thẻ bài tập, khối gập kết quả và phần phụ, prompt sáng
+   ===================================================================== */
+.module-content h2 {
+    margin-top: var(--sp-10, 40px);
+}
+
+/* Prompt: nền sáng, chữ thường thay cho khối đen chữ máy đánh chữ */
+.module-content .prompt-card {
+    border: 1px solid var(--blue-border);
+    border-left: 3px solid var(--blue);
+    background: var(--blue-tint);
+    box-shadow: none;
+    margin: var(--sp-4) 0;
+}
+
+.module-content .prompt-card-header {
+    background: transparent;
+    border-bottom: none;
+    padding: 8px 14px 0;
+}
+
+.module-content .prompt-label {
+    color: var(--blue-strong);
+    font-family: var(--font);
+    letter-spacing: 0.6px;
+}
+
+.module-content .prompt-body {
+    font-family: var(--font);
+    font-size: 14.5px;
+    line-height: 1.65;
+    padding: 6px 16px 14px;
+    color: var(--ink);
+}
+
+.module-content .prompt-card .copy-btn {
+    color: var(--blue-strong);
+    background: var(--surface);
+    border-color: var(--blue-border);
+}
+
+.module-content .prompt-card .copy-btn:hover {
+    color: #fff;
+    background: var(--blue);
+    border-color: var(--blue);
+}
+
+.module-content .prompt-card .copy-btn.copied {
+    color: #fff;
+    background: var(--success);
+    border-color: var(--success);
+}
+
+/* Mỗi bài tập là một thẻ riêng */
+.module-content .exercise-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2px 24px 18px;
+    margin: var(--sp-6) 0;
+    box-shadow: var(--shadow-sm);
+}
+
+.module-content .exercise-card > h3:first-child {
+    margin-top: var(--sp-4);
+    padding-bottom: var(--sp-3);
+    border-bottom: 1px solid var(--border);
+}
+
+.module-content .exercise-card > *:last-child {
+    margin-bottom: 0;
+}
+
+/* Kết quả mong đợi: gập lại, bấm để xem */
+.module-content details.answer {
+    background: var(--success-tint);
+    border: 1px solid #cfe6da;
+    border-radius: var(--radius);
+    margin: var(--sp-4) 0;
+}
+
+.module-content details.answer > summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 9px 16px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--success);
+}
+
+.module-content details > summary::-webkit-details-marker {
+    display: none;
+}
+
+.module-content details.answer > summary::before,
+.module-content details.extra > summary::before {
+    content: "▸";
+    display: inline-block;
+    width: 16px;
+    transition: transform 0.15s ease;
+}
+
+.module-content details[open] > summary::before {
+    transform: rotate(90deg);
+}
+
+.module-content .answer-body {
+    padding: 0 16px 12px;
+    font-size: 14.5px;
+}
+
+.module-content .answer-body p,
+.module-content .answer-body li {
+    line-height: 1.65;
+}
+
+.module-content .answer-body table {
+    margin: var(--sp-3) 0;
+    font-size: 13.5px;
+    background: var(--surface);
+}
+
+.module-content .answer-body table th {
+    background: var(--surface-alt);
+    color: var(--ink);
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 13px;
+}
+
+.module-content .answer-body table td {
+    padding: 8px 12px;
+}
+
+/* Phần phụ (Tự thực hành thêm, Prompt đề xuất): gập, chỉ hiện tiêu đề */
+.module-content details.extra {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    margin: var(--sp-3) 0;
+    padding: 0 18px;
+}
+
+.module-content details.extra > summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    color: var(--navy);
+}
+
+.module-content details.extra > summary h3 {
+    margin: 0;
+    font-size: 1rem;
+    display: inline;
+}
+
+.module-content details.extra[open] {
+    padding-bottom: 14px;
 }

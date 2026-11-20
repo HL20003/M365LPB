@@ -1,4 +1,6 @@
-# Copilot Overview Workshop - bản general
+# Copilot Overview Workshop - bản general v2
+
+Bản v2 (tách từ `m365copilot-overview-lab-general` ngày 20/11/2026): agenda 8 phần theo hướng dẫn speaker, tính năng mới 2026, bố cục bài tập dạng thẻ, mỗi lab một use case riêng. Bản gốc giữ làm dự phòng.
 
 Site lab Microsoft 365 Copilot dùng chung cho mọi phòng ban và mọi vai trò, dựng theo mẫu `m365copilot-overview-lab-mkg`
 (cùng cấu trúc module/lab, giao diện và cách host), nhưng nội dung và file demo dùng một công ty dịch vụ giả định thay vì một phòng ban cố định.
@@ -15,7 +17,7 @@ Site lab Microsoft 365 Copilot dùng chung cho mọi phòng ban và mọi vai tr
 
 ```bash
 npx wrangler dev        # chạy thử tại http://localhost:8787
-npx wrangler deploy     # deploy, Worker tên m365copilot-general-lab
+npx wrangler deploy     # deploy, Worker tên m365copilot-general-lab-v2
 ```
 
 Lần đầu deploy, wrangler sẽ yêu cầu đăng nhập Cloudflare (`npx wrangler login`).

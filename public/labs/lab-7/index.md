@@ -1,23 +1,19 @@
 # Lab 7 - Researcher Agent
 
-**Ứng dụng:** Microsoft 365 Copilot app - Researcher
+## Sau lab này
 
-> [!NOTE]
-> **Toàn bộ tài liệu, số liệu và tình huống trong workshop là bản nháp (draft) dùng cho mục đích đào tạo.** Tên nhân vật, khách hàng và đối tác là giả định.
-
----
-
-## Mục tiêu
-
-Sau khi hoàn thành lab này, anh/chị sẽ có thể:
-
-- Giao cho Researcher một đề bài dạng câu hỏi cụ thể, không chỉ "nghiên cứu về..."
-- Định hình báo cáo theo người đọc thông qua câu hỏi làm rõ
-- Kết nối nghiên cứu bên ngoài với số liệu nội bộ để ra đề xuất hành động
+> [!OUTCOME]
+> **Làm được**
+>
+> - Giao cho Researcher một đề bài dạng câu hỏi cụ thể, kèm file số liệu nội bộ
+> - Định hình báo cáo theo người đọc qua các câu hỏi làm rõ
+>
+> **Biết được**
+>
+> - Researcher tự lập kế hoạch nghiên cứu nhiều bước, kết hợp web và tài liệu nội bộ, trả về memo có trích dẫn
+> - Khác với Copilot Chat: Researcher mất vài phút nhưng đào sâu hơn, phù hợp cho đề xuất, chiến lược
 
 **Researcher Agent** là một tác nhân AI của Microsoft 365 Copilot, chuyên nghiên cứu sâu, tổng hợp thông tin từ nhiều nguồn (web và tài liệu nội bộ) và đối chiếu với dữ liệu doanh nghiệp để đưa ra báo cáo phân tích chuyên sâu.
-
----
 
 ## Tình huống
 
@@ -27,9 +23,7 @@ Sau khi hoàn thành lab này, anh/chị sẽ có thể:
 
 **Tệp đính kèm:** [Báo cáo Kết quả Kinh doanh Q3 2026.xlsx](#file-business)
 
-*Xem toàn bộ file demo tại trang [Module 1](#module-1) và [cách tải file Word/Excel về máy](#module-1/cach-tai-file-word-excel-ve-may).*
-
----
+## Thực hành trong buổi học
 
 ### Bài tập 1: Giao đề bài nghiên cứu
 
@@ -65,19 +59,7 @@ Researcher sẽ hỏi lại để làm rõ phạm vi nghiên cứu. Đây là l�
 > [!NOTE]
 > Luôn kiểm tra nguồn trích dẫn trong báo cáo của Researcher, đặc biệt với thông tin pháp lý và số liệu ngành, trước khi dùng cho quyết định quan trọng.
 
----
-
 ## Lưu ý tuân thủ
 
 > [!NOTE]
 > Researcher kết hợp dữ liệu web và tài liệu nội bộ. Không đưa dữ liệu cá nhân hay tên khách hàng vào đề bài. Báo cáo là tài liệu tham khảo, không thay thế ý kiến của Pháp chế; luôn mở nguồn trích dẫn để kiểm tra văn bản pháp luật gốc.
-
----
-
-## Tổng kết
-
-| Anh/chị đã học được | Ứng dụng |
-|---------------------|----------|
-| Giao đề bài dạng câu hỏi cụ thể | Researcher |
-| Định hình báo cáo theo người đọc | Researcher |
-| Kết nối nghiên cứu với số liệu nội bộ để ra đề xuất | Researcher + Excel |

@@ -1,3 +1,7 @@
+// Đánh dấu tính năng mới: viết [MỚI] trong markdown
+const NEW_TAG = '[MỚI]';
+const NEW_BADGE = '<span class="badge-new">Tính năng mới</span>';
+
 // Gói zip chứa toàn bộ file demo (tạo bằng demo-files/_gen/sync_site_files.py)
 const DEMO_ZIP_URL = 'files/copilot-workshop-demo-files.zip';
 
@@ -5,11 +9,18 @@ const DEMO_ZIP_URL = 'files/copilot-workshop-demo-files.zip';
 // hoặc link ngoài (SharePoint) mở ở tab mới.
 // Trong Markdown, viết [tên file](#file-<id>) để link tới file tương ứng.
 const demoFiles = [
-    { id: 'contract', name: 'Hợp đồng Dịch vụ Tổ chức Sự kiện (dự thảo).docx', desc: 'Lab 2 - Word', icon: 'word', url: 'files/hop-dong-dich-vu-to-chuc-su-kien.docx' },
-    { id: 'handbook', name: 'Sổ tay Chính sách Nội bộ.docx', desc: 'Lab 2 - Word, Lab 8 - Agent Builder (knowledge source)', icon: 'word', url: 'files/so-tay-chinh-sach-noi-bo.docx' },
-    { id: 'policy-sample', name: 'SAMPLE Chính sách Bảo mật Thông tin.docx', desc: 'Lab 2 - Word (phần mở rộng)', icon: 'word', url: 'files/sample-chinh-sach-bao-mat-thong-tin.docx' },
+    { id: 'report', name: 'Báo cáo quản lý Q3 2026 (bản nháp).docx', desc: 'Lab 2 - Word, Lab 4 - PowerPoint (kịch bản báo cáo quý 3)', icon: 'word', url: 'files/bao-cao-quan-ly-q3-2026-ban-nhap.docx' },
+    { id: 'contract', name: 'Hợp đồng Dịch vụ Tổ chức Sự kiện (dự thảo).docx', desc: 'Lab 2 - Word (tự thực hành thêm)', icon: 'word', url: 'files/hop-dong-dich-vu-to-chuc-su-kien.docx' },
+    { id: 'handbook', name: 'Sổ tay Chính sách Nội bộ.docx', desc: 'Lab 2 - Word, Lab 8 - Agent Builder, Lab 9 - SharePoint agent', icon: 'word', url: 'files/so-tay-chinh-sach-noi-bo.docx' },
+    { id: 'policy-sample', name: 'SAMPLE Chính sách Bảo mật Thông tin.docx', desc: 'Lab 2 - Word (tự thực hành thêm)', icon: 'word', url: 'files/sample-chinh-sach-bao-mat-thong-tin.docx' },
     { id: 'business', name: 'Báo cáo Kết quả Kinh doanh Q3 2026.xlsx', desc: 'Lab 1 - Copilot Chat, Lab 3 - Excel, Lab 7 - Researcher', icon: 'excel', url: 'files/bao-cao-ket-qua-kinh-doanh-q3-2026.xlsx' },
-    { id: 'plan', name: 'Kế hoạch Hoạt động 2027 (dự thảo).docx', desc: 'Lab 1 - Copilot Chat, Lab 4 - PowerPoint', icon: 'word', url: 'files/ke-hoach-hoat-dong-2027.docx' },
+    { id: 'feedback', name: 'Phản hồi khách hàng T9-T10 2026 (xuất từ hệ thống).xlsx', desc: 'Lab 3 - Excel (tự thực hành thêm: skill)', icon: 'excel', url: 'files/phan-hoi-khach-hang-t9-t10-2026.xlsx' },
+    { id: 'plan', name: 'Kế hoạch Hoạt động 2027 (dự thảo).docx', desc: 'Lab 1 - Copilot Chat, Lab 2 - Word, Lab 4 - PowerPoint', icon: 'word', url: 'files/ke-hoach-hoat-dong-2027.docx' },
+    { id: 'transcript', name: 'Transcript họp giao ban quý 3 (mẫu).docx', desc: 'Lab 6 - Teams', icon: 'word', url: 'files/transcript-hop-giao-ban-q3-mau.docx' },
+    { id: 'townhall', name: 'Town hall Q3 2026 (bản nháp).pptx', desc: 'Lab 4 - PowerPoint (bộ slide có sẵn)', icon: 'powerpoint', url: 'files/town-hall-q3-2026-ban-nhap.pptx' },
+    { id: 'brand', name: 'Mẫu thương hiệu (giả định).pptx', desc: 'Lab 4 - PowerPoint (mẫu thương hiệu)', icon: 'powerpoint', url: 'files/mau-thuong-hieu-gia-dinh.pptx' },
+    { id: 'skill-excel', name: 'Skill Excel - bao-cao-phan-hoi-khach-hang.zip', desc: 'Lab 3 - Excel (skill mẫu cho phần tự thực hành)', icon: 'zip', url: 'files/skill-excel-bao-cao-phan-hoi-khach-hang.zip' },
+    { id: 'skill-chat', name: 'Skill Copilot Chat - bao-cao-tuan.zip', desc: 'Lab 8 - Skills in Copilot Chat (skill mẫu cho phần tự thực hành)', icon: 'zip', url: 'files/skill-chat-bao-cao-tuan.zip' },
 ];
 
 // Danh sách module và file markdown tương ứng
@@ -25,6 +36,7 @@ const modules = {
     'lab-6':    { title: 'Lab 6 - Copilot trong Teams', file: 'labs/lab-6/index.md' },
     'lab-7':    { title: 'Lab 7 - Researcher Agent', file: 'labs/lab-7/index.md' },
     'lab-8':    { title: 'Lab 8 - Agent Builder in Copilot Chat', file: 'labs/lab-8/index.md' },
+    'lab-9':    { title: 'Lab 9 - Đưa agent vào Teams', file: 'labs/lab-9/index.md' },
     'wrap':     { title: 'Tổng kết', file: 'labs/wrap/index.md' }
 };
 
@@ -54,13 +66,19 @@ async function loadModule(key, section) {
 
 // Chuyển blockquote đặc biệt thành thẻ TIP / NOTE / PROMPT
 function processCustomBlocks(content) {
-    content.querySelectorAll('h2, h3').forEach(h => { h.id = slugify(h.textContent); });
+    // "[MỚI]" trong tiêu đề hoặc bảng -> nhãn "Tính năng mới" (id của tiêu đề không chứa nhãn)
+    content.querySelectorAll('h2, h3').forEach(h => { h.id = slugify(h.textContent.replace(NEW_TAG, '')); });
+    content.querySelectorAll('h2, h3, td, li, p').forEach(el => {
+        if (el.innerHTML.includes(NEW_TAG)) el.innerHTML = el.innerHTML.split(NEW_TAG).join(NEW_BADGE);
+    });
 
     content.querySelectorAll('blockquote').forEach(bq => {
         const html = bq.innerHTML;
         if (html.includes('[!TIP]')) {
             bq.className = 'tip';
             bq.innerHTML = html.replace(/\[!TIP\]/g, '').trim();
+        } else if (html.includes('[!OUTCOME]')) {
+            bq.replaceWith(buildOutcomeCard(html.replace(/\[!OUTCOME\]/g, '')));
         } else if (html.includes('[!NOTE]')) {
             bq.className = 'note';
             bq.innerHTML = html.replace(/\[!NOTE\]/g, '').trim();
@@ -74,6 +92,8 @@ function processCustomBlocks(content) {
     content.querySelectorAll('p').forEach(p => {
         if (p.textContent.trim() === '[download-files]') p.outerHTML = buildDownloadBlock();
     });
+
+    structureSections(content);
 
     // Ảnh: bọc trong <figure>, chú thích lấy từ alt
     content.querySelectorAll('img').forEach(img => {
@@ -112,6 +132,88 @@ function processCustomBlocks(content) {
     });
 }
 
+// Sắp xếp trang cho dễ đọc:
+// - "Kết quả mong đợi" -> khối gập (bấm để xem), tránh lộ đáp án và giảm độ dài trang
+// - mỗi bài tập (### dưới "Thực hành trong buổi học" hoặc "Phần X") -> một thẻ riêng
+// - mỗi mục dưới "Tự thực hành thêm", "Prompt đề xuất" -> khối gập, chỉ hiện tiêu đề
+function structureSections(content) {
+    const STOP = 'h1, h2, h3, hr, ol, blockquote, .prompt-card, details, .outcome-card';
+    Array.from(content.children).forEach(p => {
+        const label = p.firstElementChild;
+        if (p.tagName !== 'P' || !label || label.tagName !== 'STRONG' || p.firstChild !== label
+            || !/^Kết quả mong đợi/.test(label.textContent)) return;
+        const det = document.createElement('details');
+        det.className = 'answer';
+        det.innerHTML = '<summary>Xem kết quả mong đợi</summary>';
+        const body = document.createElement('div');
+        body.className = 'answer-body';
+        p.before(det);
+        label.remove();
+        p.innerHTML = p.innerHTML.trim();
+        let next = p.nextElementSibling;
+        if (p.textContent.trim()) body.appendChild(p); else p.remove();
+        while (next && !next.matches(STOP)) {
+            const after = next.nextElementSibling;
+            body.appendChild(next);
+            next = after;
+        }
+        det.appendChild(body);
+    });
+
+    let mode = null;
+    const groups = [];
+    Array.from(content.children).forEach(el => {
+        if (el.tagName === 'H2') {
+            const t = el.textContent.trim();
+            mode = /^(Thực hành trong buổi học|Phần [A-Z]\b)/.test(t) ? 'card'
+                : /^(Tự thực hành|Prompt đề xuất)/.test(t) ? 'fold' : null;
+        } else if (el.tagName === 'H3' && mode) {
+            groups.push([el, mode]);
+        }
+    });
+    groups.forEach(([h3, kind]) => {
+        const wrap = document.createElement(kind === 'card' ? 'div' : 'details');
+        wrap.className = kind === 'card' ? 'exercise-card' : 'extra';
+        h3.before(wrap);
+        let next = h3.nextElementSibling;
+        if (kind === 'card') {
+            wrap.appendChild(h3);
+        } else {
+            const summary = document.createElement('summary');
+            summary.appendChild(h3);
+            wrap.appendChild(summary);
+        }
+        while (next && !next.matches('h1, h2, h3, hr')) {
+            const after = next.nextElementSibling;
+            wrap.appendChild(next);
+            next = after;
+        }
+    });
+}
+
+// Khung "Sau lab này": mỗi đoạn in đậm (Làm được / Biết được) cùng danh sách ngay sau nó thành một cột
+function buildOutcomeCard(innerHtml) {
+    const tmp = document.createElement('div');
+    tmp.innerHTML = innerHtml;
+    const card = document.createElement('div');
+    card.className = 'outcome-card';
+    let col = null;
+    Array.from(tmp.children).forEach(el => {
+        if (el.tagName === 'P' && el.querySelector('strong')) {
+            col = document.createElement('div');
+            col.className = 'outcome-col';
+            const head = document.createElement('div');
+            head.className = 'outcome-head';
+            head.textContent = el.textContent.trim();
+            col.appendChild(head);
+            card.appendChild(col);
+        } else if (col) {
+            col.appendChild(el);
+        }
+    });
+    return card;
+}
+
 // Thẻ prompt có nút sao chép
 function buildPromptCard(innerHtml) {
     const tmp = document.createElement('div');
@@ -135,8 +237,8 @@ function buildPromptCard(innerHtml) {
 
 // Khối tải file demo
 function buildDownloadBlock() {
-    const colors = { excel: '#107c10', word: '#2b579a', powerpoint: '#d24726', pdf: '#b30b00', image: '#5c2d91' };
-    const letters = { excel: 'X', word: 'W', powerpoint: 'P', pdf: 'PDF', image: 'IMG' };
+    const colors = { excel: '#107c10', word: '#2b579a', powerpoint: '#c43e1c', pdf: '#b30b00', image: '#5c2d91', zip: '#55606e' };
+    const letters = { excel: 'X', word: 'W', powerpoint: 'P', pdf: 'PDF', image: 'IMG', zip: 'ZIP' };
     const items = demoFiles.map(f => {
         const placeholder = f.url === '#';
         const linkAttrs = placeholder ? ''

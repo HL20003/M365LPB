@@ -2,19 +2,40 @@
 
 ---
 
-## Những gì anh/chị đã thực hành
+## Sau buổi workshop, anh/chị làm được
 
-| Phần | Ứng dụng | Năng lực |
-|------|----------|----------|
-| Module 1-3 | Nền tảng | Copilot hoạt động thế nào, bảo mật, viết prompt hiệu quả, Customize Copilot |
-| Lab 1 | Copilot Chat | Báo cáo tuần từ nhiều nguồn, đối chiếu kế hoạch với số liệu, chế độ Work / Web |
-| Lab 2 | Word | Rà soát dự thảo hợp đồng, đối chiếu chính sách, soạn tờ trình xin phê duyệt |
-| Lab 3 | Excel | Bức tranh kết quả quý, phân loại dự án theo tình trạng, so sánh với chuẩn ngành |
-| Lab 4 | PowerPoint | Slide truyền thông cho toàn công ty, slide riêng cho đội, diễn tập câu hỏi khó |
-| Lab 5 | Outlook | Hộp thư thành danh sách việc cần làm, xử lý chuỗi email dài, chuẩn bị cuộc họp |
-| Lab 6 | Teams | Bắt kịp cuộc họp, biên bản có người phụ trách và thời hạn, tóm tắt nhóm chat |
-| Lab 7 | Researcher | Nghiên cứu nhiều bước, kết nối với số liệu nội bộ |
-| Lab 8 | Agent Builder | Tạo trợ lý Policy Assistant cho toàn bộ nhân viên |
+| Phần | Ứng dụng | Anh/chị đã làm được |
+|------|----------|---------------------|
+| Lab 1 | Copilot Chat | Hỏi Copilot về công việc của mình; gọi người, cuộc họp, file bằng "/"; tìm vấn đề trong số liệu mà kế hoạch còn thiếu |
+| Lab 2 | Word | Copilot sửa báo cáo có sẵn bằng **Track Changes**, comment ghi nguồn; viết tóm tắt điều hành |
+| Lab 3 | Excel | Tìm xu hướng và điểm bất thường; dashboard **Interactive canvas** |
+| Lab 4 | PowerPoint | Cập nhật bộ slide có sẵn theo **mẫu thương hiệu**, thêm slide từ báo cáo Word; **Visualize this slide**, **interactive slide**, speaker notes |
+| Lab 5 | Outlook | Hộp thư thành danh sách việc, tóm tắt chuỗi email, soạn thư trả lời |
+| Lab 6 | Teams | Biết mình bỏ lỡ gì trong cuộc họp, việc của mình, điểm chưa thống nhất; **@Copilot** trong nhóm chat |
+| Lab 7 | Researcher | Nghiên cứu nhiều bước, kết hợp web với số liệu nội bộ |
+| Lab 8 | Agent Builder | Tạo agent Policy Assistant, kiểm tra và chia sẻ cho đồng nghiệp |
+| Lab 9 | Teams, SharePoint | **Đưa agent vào Teams** và thêm **SharePoint agent** vào nhóm chat |
+
+## 5 điều cần nhớ
+
+1. **Copilot hiểu ngữ cảnh công việc.** Copilot làm việc với email, cuộc họp, con người và tài liệu mà anh/chị có quyền truy cập, ngay từ ngày đầu, không cần tải dữ liệu lên hay khai báo lại vai trò
+2. **Dấu "/" là thao tác dùng hằng ngày.** Gõ "/" để gọi đúng người, file, email, cuộc họp, trong mọi ứng dụng
+3. **Microsoft 365 là một luồng công việc liên tục.** Từ Copilot Chat sang Word, Excel, PowerPoint, Teams, trên file có sẵn, không phải chép nội dung qua lại giữa các công cụ
+4. **Teams là trung tâm cộng tác.** Cuộc họp thành hành động, cả nhóm cùng làm việc với Copilot, và agent đến được với đồng nghiệp
+5. **Anh/chị tự tạo được tài sản AI.** Agent và skill chuẩn hóa một quy trình nhiều bước, thay vì viết lại nhiều prompt mỗi lần
+
+---
+
+## Trao đổi và bước tiếp theo
+
+| Câu hỏi | Gợi ý suy nghĩ |
+|---------|----------------|
+| **Tình huống nào trong buổi hôm nay có giá trị nhất với anh/chị?** | Cuộc họp và nhóm chat trong Teams, sửa báo cáo có sẵn, phân tích số liệu, agent tra cứu chính sách |
+| **Phòng ban nào nên thử trước?** | Phòng có nhiều cuộc họp, nhiều báo cáo định kỳ, hoặc nhận nhiều câu hỏi lặp lại |
+| **Dữ liệu hoặc quy trình nào phù hợp để xây agent?** | Bộ tài liệu được hỏi nhiều (chính sách, quy trình, hướng dẫn sản phẩm), đã có trên SharePoint và phân quyền đúng |
+
+> [!TIP]
+> Các phần **Tự thực hành thêm** trong mỗi lab là bài luyện tiếp sau buổi học, gồm cả cách tạo **skill** trong Excel và Copilot Chat.
 
 ---
 
@@ -22,21 +43,21 @@
 
 | Thành phần | Ví dụ trong lab |
 |------------|-----------------|
-| **Mục tiêu** - cần làm gì | "Đối chiếu các điều khoản trong hợp đồng với Sổ tay Chính sách Nội bộ" |
-| **Ngữ cảnh** - cho ai, để làm gì | "Tôi cần rà soát hợp đồng này trước khi trình ký" |
-| **Nguồn** - dựa trên tài liệu nào | "dựa trên email, cuộc họp và tài liệu của tôi trong 7 ngày qua" |
-| **Kỳ vọng** - định dạng, độ dài, giọng điệu | "trả lời trong đúng 5 gạch đầu dòng, mỗi ý có con số", "chỗ chưa chắc ghi [CẦN XÁC NHẬN]" |
+| **Mục tiêu** - cần làm gì | "Sửa mọi mục tiêu, thời điểm và ngân sách ghi chưa đúng với Kế hoạch 2027" |
+| **Ngữ cảnh** - cho ai, để làm gì | "Tôi đang chuẩn bị báo cáo quản lý quý 3 cho Ban Giám đốc" |
+| **Nguồn** - dựa trên tài liệu nào | Gõ "/" để chọn file, người, cuộc họp |
+| **Kỳ vọng** - định dạng, độ dài, giọng điệu | "mỗi chỗ sửa thêm một comment ghi mục tài liệu làm căn cứ", "chỗ chưa chắc ghi [CẦN XÁC NHẬN]" |
 
 > [!TIP]
-> Nếu kết quả chưa như ý, đừng viết lại từ đầu. Hãy hỏi tiếp trong cùng cuộc trò chuyện để Copilot chỉnh dần: "ngắn hơn", "thêm số liệu", "nêu rõ việc cần làm tiếp".
+> Nếu kết quả chưa như ý, đừng viết lại từ đầu. Hãy hỏi tiếp trong cùng cuộc trò chuyện để Copilot chỉnh dần: "ngắn hơn", "thêm số liệu", "nêu rõ việc cần làm tiếp". Prompt nào dùng đi dùng lại, hãy lưu thành skill.
 
 ---
 
 ## Ba thói quen dùng Copilot mỗi ngày
 
-1. **Đầu ngày:** dùng Copilot trong Outlook biến hộp thư thành danh sách việc cần làm ngay và việc có thể để sau
-2. **Sau mỗi cuộc họp:** dùng Copilot trong Teams tạo biên bản có người phụ trách và thời hạn, gửi ngay cho cả nhóm
-3. **Trước khi gửi một tài liệu quan trọng:** dùng Copilot Chat tổng hợp từ nhiều nguồn và nhờ Copilot đóng vai người phản biện để tìm điểm yếu
+1. **Đầu ngày:** hỏi Copilot Chat hôm nay có việc gì quan trọng, dùng "/" để gọi đúng người và cuộc họp cần chuẩn bị
+2. **Sau mỗi cuộc họp và trong nhóm chat:** dùng Recap hoặc @Copilot để có bảng việc, người phụ trách và thời hạn cho cả nhóm
+3. **Trước khi gửi một tài liệu quan trọng:** nhờ Copilot đối chiếu với kế hoạch, chính sách hoặc số liệu gốc, sửa có vết để anh/chị duyệt từng chỗ
 
 > [!NOTE]
-> Copilot là trợ lý, không thay thế người kiểm tra. Luôn xem lại số liệu và các điều khoản quan trọng trước khi gửi đi. Không đưa dữ liệu cá nhân (CCCD, số tài khoản, lương, mật khẩu) vào prompt, và chỉ lưu tài liệu ở nơi được phân quyền đúng: Copilot tôn trọng quyền truy cập, nên phân quyền sai đồng nghĩa với việc Copilot cũng "nhìn thấy" sai người.
+> Copilot là trợ lý, không thay thế người kiểm tra. Luôn xem lại số liệu và các điều khoản quan trọng trước khi gửi đi. Không đưa dữ liệu cá nhân (CCCD, số tài khoản, lương, mật khẩu) vào prompt, agent, skill hay nhóm chat có Copilot, và chỉ lưu tài liệu ở nơi được phân quyền đúng: Copilot tôn trọng quyền truy cập, nên phân quyền sai đồng nghĩa với việc Copilot cũng "nhìn thấy" sai người.

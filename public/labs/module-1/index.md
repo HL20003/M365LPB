@@ -25,17 +25,48 @@ Các lab không gắn với một phòng ban cố định. Bảng dưới đây 
 
 | Lab | Ứng dụng | Nhân viên, chuyên viên | Trưởng nhóm, quản lý |
 |-----|----------|------------------------|----------------------|
-| 1 | Copilot Chat | Báo cáo tuần gửi quản lý, đối chiếu tài liệu | Báo cáo gửi cấp trên, cho ý kiến về kế hoạch |
-| 2 | Word | Rà soát hợp đồng, văn bản trước khi trình | Kiểm tra điểm vượt chính sách trước khi duyệt |
-| 3 | Excel | Phân tích số liệu, tạo cột tính toán, biểu đồ | Nắm nhanh kết quả, biết chỗ cần hỗ trợ |
-| 4 | PowerPoint | Slide báo cáo, thuyết trình | Truyền thông kế hoạch cho đội |
+| 1 | Copilot Chat | Hỏi về công việc của mình, gọi người, cuộc họp, file bằng "/" | Tìm vấn đề trong số liệu mà kế hoạch còn thiếu |
+| 2 | Word | Sửa báo cáo có sẵn theo kế hoạch và chính sách, có vết sửa | Duyệt từng thay đổi trước khi gửi cấp trên |
+| 3 | Excel | Tìm xu hướng và điểm bất thường trong số liệu | Dashboard tương tác cho cuộc họp |
+| 4 | PowerPoint | Làm mới slide có sẵn theo mẫu thương hiệu, speaker notes | Slide tương tác cho buổi họp toàn công ty |
 | 5 | Outlook | Xử lý hộp thư, soạn thư khó | Phân loại việc cần quyết và việc giao lại |
-| 6 | Teams | Bắt kịp cuộc họp, ghi việc của mình | Biên bản có người phụ trách và thời hạn |
+| 6 | Teams | Biết mình bỏ lỡ gì trong cuộc họp, @Copilot trong nhóm chat | Biên bản có người phụ trách và thời hạn, chia việc cho nhóm |
 | 7 | Researcher | Nghiên cứu chủ đề chuyên môn | Chuẩn bị đề xuất, chiến lược |
-| 8 | Agent Builder | Trợ lý tra cứu cho cả nhóm | Trợ lý hướng dẫn nhân viên mới |
+| 8 | Agent Builder | Tạo trợ lý tra cứu chính sách | Agent cho phòng ban |
+| 9 | Teams, SharePoint | Dùng agent trong Teams, thêm agent vào nhóm chat | Đưa agent đến đồng nghiệp qua Teams |
 
 > [!TIP]
 > Trong các prompt, phần đặt trong ngoặc vuông như **[tên dự án]**, **[phòng ban của tôi]** là chỗ anh/chị thay bằng thông tin của mình.
+
+---
+
+## Qua buổi workshop này
+
+Workshop không đi qua mọi nút bấm, mà tập trung vào các tình huống có giá trị cao nhất. Anh/chị sẽ mang về **5 điều**:
+
+| # | Điều cần nhớ | Ở đâu |
+|---|--------------|-------|
+| 1 | **Copilot hiểu ngữ cảnh công việc.** Không chỉ trả lời câu hỏi, Copilot làm việc với email, cuộc họp, con người và tài liệu mà anh/chị có quyền truy cập, ngay từ ngày đầu | Lab 1 |
+| 2 | **Dấu "/" là thao tác dùng hằng ngày.** Gõ "/" để gọi đúng người, file, email, cuộc họp làm nguồn, trong Copilot Chat, Word, Excel, PowerPoint | Lab 1-4 |
+| 3 | **Microsoft 365 là một luồng công việc liên tục.** Copilot làm việc ngay trong Word, Excel, PowerPoint, Teams, trên file có sẵn, không cần chép nội dung sang công cụ AI bên ngoài rồi chép kết quả trở lại | Lab 2-4 |
+| 4 | **Teams là trung tâm cộng tác.** Cuộc họp thành hành động, @Copilot trong nhóm chat, và là nơi đưa agent đến với đồng nghiệp | Lab 6, Lab 9 |
+| 5 | **Anh/chị tự tạo được tài sản AI.** Agent và skill giúp chuẩn hóa một quy trình nhiều bước, thay vì viết lại nhiều prompt mỗi lần | Lab 8, Lab 9 |
+
+Mỗi lab mở đầu bằng khung **Sau lab này** (làm được gì, biết được gì), phần **Thực hành trong buổi học**, và phần **Tự thực hành thêm** để luyện tiếp sau buổi học. Mỗi lab có tình huống và file demo riêng, làm lab nào trước cũng được.
+
+### Tính năng mới trong workshop
+
+Các bài có nhãn [MỚI] dùng tính năng Microsoft mới phát hành.
+
+| Tính năng | Ứng dụng | Lab |
+|-----------|----------|-----|
+| Nút **Work IQ** bật/tắt (thay nút Work / Web) | Copilot Chat | Lab 1 |
+| Copilot bật **Track Changes**, sửa và thêm **comment** | Word | Lab 2 |
+| **Interactive canvas**: dashboard tương tác | Excel | Lab 3 |
+| **Visualize this slide**, **interactive slide**, **Generate speaker notes** | PowerPoint | Lab 4 |
+| **@Copilot** trong nhóm chat | Teams | Lab 6 |
+| **SharePoint agent** trong nhóm chat Teams | Teams, SharePoint | Lab 9 |
+| **Skills** trong Excel và Copilot Chat | Excel, Copilot Chat | Lab 3, Lab 8 (tự thực hành thêm) |
 
 ---
 
@@ -68,7 +99,7 @@ Nhờ Microsoft Graph, Copilot hiểu **ngữ cảnh công việc** của riêng
 | Đọc email, lịch, chat của chính anh/chị | Đọc email của đồng nghiệp |
 | Đọc file trên OneDrive/SharePoint anh/chị có quyền | Mở file anh/chị không được chia sẻ |
 | Dùng transcript cuộc họp anh/chị tham dự (đã bật transcript) | Truy cập cuộc họp anh/chị không tham dự |
-| Tìm thông tin công khai trên web (chế độ **Web**) | Đọc hệ thống ERP, CRM, phần mềm nhân sự... nếu công ty chưa kết nối |
+| Tìm thông tin công khai trên web | Đọc hệ thống ERP, CRM, phần mềm nhân sự... nếu công ty chưa kết nối |
 
 > [!NOTE]
 > Copilot tuân theo đúng mô hình phân quyền Microsoft 365 hiện có. Copilot không cấp thêm quyền cho ai, nó chỉ giúp anh/chị **tìm nhanh hơn** những gì anh/chị vốn đã có quyền xem.
@@ -109,11 +140,18 @@ Vì Copilot tìm kiếm rất giỏi, những tài liệu **đang bị chia sẻ
 |---------|----------------|-----|
 | **Copilot Chat** | Hỏi đáp xuyên ứng dụng, tổng hợp từ nhiều nguồn | Lab 1 |
 | **Copilot trong Word, Excel, PowerPoint** | Rà soát, phân tích, trình bày trên tài liệu đang mở | Lab 2, 3, 4 |
-| **Copilot trong Outlook, Teams** | Làm việc qua email, cuộc họp, chat | Lab 5, 6 |
+| **Copilot trong Outlook, Teams** | Làm việc qua email, cuộc họp, chat; @Copilot trong nhóm chat | Lab 5, 6 |
 | **Researcher** | Nghiên cứu chuyên sâu nhiều bước từ web và tài liệu nội bộ | Lab 7 |
-| **Agent Builder** | Tự tạo trợ lý AI riêng cho nhóm | Lab 8 |
+| **Agent Builder, SharePoint agent** | Tự tạo agent và đưa vào Teams | Lab 8, Lab 9 |
 
-Trong Copilot Chat có nút chuyển **Work / Web**: **Work** trả lời dựa trên email, file, cuộc họp anh/chị có quyền truy cập; **Web** trả lời dựa trên thông tin công khai trên internet.
+### Nút Work IQ trong Copilot Chat
+
+Trước đây Copilot Chat có nút chuyển **Work / Web**. Nay nút này được thay bằng **một nút Work IQ bật/tắt** ở góc trên bên trái màn hình Chat:
+
+| | Work IQ bật (mặc định) | Work IQ tắt (chữ bị gạch ngang) |
+|---|------------------------|----------------------------------|
+| **Copilot dùng** | Email, lịch, cuộc họp, chat, file trên OneDrive/SharePoint anh/chị có quyền xem, file đính kèm, và web khi cần | Chỉ file anh/chị đính kèm và thông tin công khai trên web |
+| **Dùng khi** | Hỏi về công việc của mình, tổng hợp email và cuộc họp, đối chiếu tài liệu nội bộ | Muốn chắc chắn câu trả lời chỉ dựa trên thông tin công khai |
 
 ---
 
@@ -145,7 +183,8 @@ Các bài thực hành tuân theo bộ quy định giả định dưới đây, 
 | **Outlook** | Mở Outlook (web hoặc bản mới), thấy biểu tượng **Copilot** trên thanh công cụ |
 | **Word, Excel, PowerPoint** | Mở một file bất kỳ, thấy nút **Copilot** trên ribbon, tab **Home** |
 | **Teams** | Trong một cuộc họp hoặc khung chat, thấy biểu tượng **Copilot** |
-| **Copilot Chat** | Truy cập [m365.cloud.microsoft](https://m365.cloud.microsoft/), thấy nút chuyển **Work / Web** |
+| **Copilot Chat** | Truy cập [m365.cloud.microsoft](https://m365.cloud.microsoft/), chọn **Copilot**, thấy nút **Work IQ** ở góc trên bên trái |
+| **Ứng dụng trên máy tính** | Lab 2 (Track Changes) và Lab 4 (áp mẫu thương hiệu) nên dùng **Word, PowerPoint trên máy tính** bản Microsoft 365 mới nhất |
 
 > [!TIP]
 > Nếu không thấy biểu tượng Copilot, hãy báo ngay cho người hướng dẫn để kiểm tra licence trước khi vào lab.

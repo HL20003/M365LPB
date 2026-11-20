@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "m365copilot-general-lab",
+  "name": "m365copilot-general-lab-v2",
   "compatibility_date": "2026-09-01",
   // Site tĩnh: Worker chỉ phục vụ nội dung trong thư mục public/
   "assets": {

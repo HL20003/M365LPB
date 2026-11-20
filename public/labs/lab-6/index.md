@@ -1,99 +1,129 @@
 # Lab 6 - Copilot trong Teams
 
-**Ứng dụng:** Teams
+## Sau lab này
 
-> [!NOTE]
-> **Toàn bộ tài liệu, số liệu và tình huống trong workshop là bản nháp (draft) dùng cho mục đích đào tạo.** Tên nhân vật, khách hàng và đối tác là giả định.
-
----
-
-## Mục tiêu
-
-Sau khi hoàn thành lab này, anh/chị sẽ có thể:
-
-- Bắt kịp cuộc họp khi vào muộn và phát hiện những điểm còn bất đồng để chốt
-- Biến cuộc họp thành biên bản: quyết định, người phụ trách, thời hạn
-- Nắm nhanh những gì đang diễn ra trong các nhóm chat và kênh
-
-### Tính năng chính
-
-| Tính năng | Mô tả |
-|-----------|--------|
-| **Copilot trong cuộc họp** | Hỏi đáp về nội dung cuộc họp đang diễn ra |
-| **Recap** | Tóm tắt sau cuộc họp, ghi chú và việc cần làm |
-| **Chat & Channel Summarizing** | Tóm tắt các cuộc trò chuyện nhóm và kênh |
-
----
+> [!OUTCOME]
+> **Làm được**
+>
+> - Biến một cuộc họp thành hành động: biết mình đã bỏ lỡ gì, việc nào cần mình xử lý, điểm nào chưa thống nhất
+> - Lập biên bản có quyết định, người phụ trách và thời hạn
+> - Gọi **@Copilot** ngay trong nhóm chat để cả nhóm cùng thấy bản tóm tắt và bảng chia việc
+>
+> **Biết được**
+>
+> - Teams là nơi Copilot thể hiện giá trị rõ nhất: cuộc họp, chat và cộng tác của cả nhóm
+> - Copilot trong nhóm chat trả lời cho mọi thành viên, theo đúng quyền truy cập của người hỏi
+> - Teams cũng là nơi đưa agent đến với đồng nghiệp
 
 ## Tình huống
 
-> **Anh/chị** - *thành viên hoặc người chủ trì một cuộc họp nhóm*
+> **Anh/chị** - *chuyên viên Phòng Kế hoạch*
 >
-> Anh/chị vào muộn 15 phút một buổi họp nhóm về kế hoạch quý 4. Anh/chị cần nắm ngay những gì đã thống nhất, góp phần chốt các điểm còn tranh luận trước khi cuộc họp kết thúc, và sau đó có biên bản để theo dõi việc của từng người. Trong tuần, anh/chị cũng cần biết nhóm chat của dự án đang có vấn đề gì cần mình xử lý.
+> Sáng 25/11, Ban Giám đốc họp giao ban kết quả quý 3 để chốt hành động cho ba vấn đề: chi phí thuê thầu phụ, nghỉ việc ở văn phòng TP. Hồ Chí Minh, phụ thuộc khách hàng lớn. Anh/chị **vào họp muộn 5 phút**. Sau cuộc họp, các phòng tiếp tục trao đổi trong một nhóm chat Teams.
 
-> [!NOTE]
-> Copilot trong cuộc họp cần **bật transcript** (ghi lời thoại). Với cuộc họp có khách hàng hoặc đối tác bên ngoài, người chủ trì phải **thông báo và được các bên đồng ý** trước khi bật Recording & Transcription.
+**Tài liệu demo:** [Transcript họp giao ban quý 3 (mẫu).docx](#file-transcript), dùng khi không có cuộc họp thật đã bật transcript.
+
+## Thực hành trong buổi học
+
+### Bài tập 1: Từ cuộc họp đến hành động
+
+**Chọn một trong hai cách:**
+
+- **Cuộc họp thật** đã bật transcript: trong cuộc họp bấm **Copilot** trên thanh công cụ; sau cuộc họp mở cuộc họp trong **Calendar**, chọn tab **Recap** rồi mở **Copilot**
+- **Transcript mẫu:** vào Copilot Chat, gõ "/" chọn [Transcript họp giao ban quý 3 (mẫu).docx](#file-transcript)
+
+Lần lượt hỏi 3 câu:
+
+> **PROMPT:**
+>
+> Tôi là chuyên viên Phòng Kế hoạch, vào họp muộn lúc 9:05. Tôi đã bỏ lỡ nội dung gì?
+
+> **PROMPT:**
+>
+> Những việc nào cần Phòng Kế hoạch của tôi xử lý, hạn khi nào?
+
+> **PROMPT:**
+>
+> Điểm nào chưa được thống nhất? Mỗi bên đang giữ quan điểm gì, và vấn đề đó sẽ được quyết định thế nào?
+
+Sau đó lập biên bản:
+
+> **PROMPT:**
+>
+> Lập biên bản cuộc họp: các quyết định đã chốt, bảng việc cần làm gồm Việc | Người phụ trách | Thời hạn, và các vấn đề còn treo cần ai quyết định.
+
+**Kết quả mong đợi:**
+
+- **Đã bỏ lỡ:** doanh thu 432 tỷ, lợi nhuận 84 tỷ (giảm 16,8%), thầu phụ vượt 39%; Giám đốc Tài chính đề xuất cắt 20% chi phí thầu phụ trong quý 4 và kiểm soát hợp đồng mới; Giám đốc văn phòng TP. Hồ Chí Minh phản đối việc cắt ngay
+- **Việc của Phòng Kế hoạch:** gửi báo cáo quản lý quý 3 bản chốt cho Phòng Truyền thông **trước 08/12**; bổ sung mục rủi ro khách hàng lớn và kiểm soát thầu phụ vào Kế hoạch 2027 **trước 10/12**
+- **Chưa thống nhất:** mức cắt thầu phụ quý 4 (Tài chính muốn cắt 20% ngay, TP. Hồ Chí Minh muốn giữ cho 3 dự án chậm đến hết quý 1/2027), sẽ **trình Tổng Giám đốc**; mentor sớm từ tháng 12 cho TP. Hồ Chí Minh, Nhân sự tính chi phí rồi báo lại
+- **Bảng việc:** Tài chính gửi số liệu nghỉ việc và làm thêm giờ theo đội **trước 01/12**; Nhân sự gửi kế hoạch giữ chân nhân viên TP. Hồ Chí Minh **trước 05/12**; từ **01/12**, hợp đồng thầu phụ mới trên 500 triệu phải qua Giám đốc Tài chính
+
+### Bài tập 2: Gọi @Copilot trong nhóm chat [MỚI]
+
+**Tạo nhóm chat:**
+
+1. Ngồi theo nhóm 3-4 người. Một người tạo nhóm chat mới trong Teams, đặt tên **Hành động sau giao ban Q3 - Nhóm [số]** và thêm các thành viên
+2. Mỗi người dán **một** tin nhắn mẫu dưới đây vào nhóm chat (nhóm 3 người thì bỏ tin D):
+
+> **PROMPT:**
+>
+> (A - Nhân sự) Sau giao ban, Nhân sự đang làm kế hoạch giữ chân nhân viên văn phòng TP. Hồ Chí Minh, gửi bản nháp trước 05/12. Chuyện mentor sớm từ tháng 12 thì mình đang tính chi phí, chưa chốt.
+
+> **PROMPT:**
+>
+> (B - Tài chính) Từ 01/12, hợp đồng thầu phụ mới trên 500 triệu phải qua Giám đốc Tài chính. Mình gửi số liệu nghỉ việc và chi phí làm thêm theo đội cho Nhân sự trước 01/12.
+
+> **PROMPT:**
+>
+> (C - Văn phòng TP. HCM) Mức cắt thầu phụ trong quý 4 vẫn chưa chốt, 3 dự án của khách hàng lớn đang chậm. Ai trình Tổng Giám đốc và khi nào vậy?
+
+> **PROMPT:**
+>
+> (D - Truyền thông) Mình cập nhật slide town hall theo báo cáo quý 3, cần bản chốt trước 08/12. Câu hỏi về giờ làm thêm trong buổi town hall thì ai trả lời?
+
+**Thêm Copilot vào nhóm chat:**
+
+3. Bấm **Add agents and bots** ở đầu khung chat và chọn **Copilot**. Hoặc gõ **@Copilot** trong khung soạn tin, chọn Copilot và gửi
+4. Một người gõ:
+
+> **PROMPT:**
+>
+> @Copilot Tóm tắt nhóm đã thống nhất những gì, câu hỏi nào chưa ai trả lời, và lập bảng việc cần làm: Việc | Người phụ trách | Hạn chót. Việc nào chưa có người phụ trách thì ghi [CHƯA CÓ].
+
+5. Người khác trong nhóm hỏi tiếp:
+
+> **PROMPT:**
+>
+> @Copilot Soạn một tin nhắn nhắc việc gửi cả nhóm, dưới 80 chữ, theo thứ tự hạn chót gần nhất, và đề xuất ai nên nhận các việc đang chưa có người phụ trách.
+
+**Kết quả mong đợi:** Cả nhóm cùng thấy câu trả lời ngay trong nhóm chat. Bảng việc có: số liệu theo đội (Tài chính, **01/12**), kiểm soát hợp đồng thầu phụ mới (từ **01/12**), kế hoạch giữ chân TP. Hồ Chí Minh (Nhân sự, **05/12**), báo cáo quý 3 bản chốt cho Truyền thông (**08/12**, **[CHƯA CÓ]** người gửi). Hai câu hỏi chưa ai trả lời: **ai trình Tổng Giám đốc mức cắt thầu phụ**, và **ai trả lời câu hỏi giờ làm thêm** tại town hall.
 
 > [!TIP]
-> Lab này thực hành trên **một cuộc họp Teams có thật** của anh/chị (đã bật transcript), ví dụ buổi họp nhóm hằng tuần.
+> Nếu câu trả lời dùng thông tin mà không phải ai trong nhóm cũng xem được (ví dụ email riêng của anh/chị), Copilot hiện bản xem trước chỉ cho anh/chị và hỏi có đăng vào nhóm không.
 
----
+## Tự thực hành thêm
 
-### Bài tập 1: Vào họp muộn, bắt kịp trong 30 giây
+### @Copilot trong kênh của nhóm
 
-**Cách thực hiện:**
-
-1. Tham gia một cuộc họp Teams đã bật transcript
-2. Nhấn nút **Copilot** trên thanh công cụ cuộc họp
-3. Nhập prompt:
+@Copilot cũng dùng được trong **kênh (channel)** của Team: Copilot dùng bối cảnh và quyền chung của kênh, nên cả đội cùng làm việc với một Copilot. Trong một bài đăng của kênh, gõ:
 
 > **PROMPT:**
 >
-> Tôi vừa vào cuộc họp. Trong 3 câu, cho tôi biết đã quyết định những gì, ai đang phụ trách việc gì, và hiện mọi người đang thảo luận vấn đề nào.
+> @Copilot Tổng hợp các thông báo và quyết định trong kênh này tuần qua thành 5 gạch đầu dòng, đánh dấu việc nào có hạn trong tuần tới.
 
-### Bài tập 2: Tìm điểm còn bất đồng để chốt
+### Tóm tắt nhóm chat cho riêng mình
 
-> **PROMPT:**
->
-> Trong cuộc họp này, có vấn đề nào mọi người chưa thống nhất hoặc câu hỏi nào chưa được trả lời không? Ai đang giữ quan điểm nào? Gợi ý cho tôi một câu hỏi để chốt lại từng vấn đề trước khi kết thúc họp.
-
-**Kết quả mong đợi:** Danh sách vấn đề còn mở kèm quan điểm của từng người, giúp anh/chị chủ động chốt trước khi cuộc họp kết thúc.
-
-### Bài tập 3: Biên bản sau cuộc họp
-
-1. Sau cuộc họp, mở cuộc họp trong **Chat** hoặc **Calendar**, chọn tab **Recap**
-2. Mở **Copilot** và nhập:
-
-> **PROMPT:**
->
-> Tạo biên bản cuộc họp: các quyết định đã chốt, bảng việc cần làm gồm Việc | Người phụ trách | Kết quả cần đạt | Thời hạn, và các vấn đề còn treo cần ai quyết định. Đánh dấu những việc chưa có người phụ trách hoặc thời hạn rõ ràng.
-
-3. Hỏi tiếp để gửi cho cả nhóm:
-
-> **PROMPT:**
->
-> Soạn tin nhắn gửi nhóm họp: cảm ơn, tóm tắt 3 quyết định chính, nhắc từng người việc của mình và thời hạn.
-
-> [!TIP]
-> Nếu anh/chị chỉ là người tham dự, hỏi: *"Trong cuộc họp này, những việc nào được giao cho tôi và hạn khi nào?"*
-
-### Bài tập 4: Tóm tắt nhóm chat
-
-1. Mở một nhóm chat hoặc kênh (ví dụ nhóm chat của dự án hoặc của phòng)
-2. Bấm **Copilot** ở góc trên khung chat và nhập:
+Mở một nhóm chat hoặc kênh, bấm biểu tượng **Copilot** ở góc trên khung chat (chỉ anh/chị thấy câu trả lời) và nhập:
 
 > **PROMPT:**
 >
 > Tóm tắt các trao đổi trong 7 ngày qua: vấn đề nổi bật, câu hỏi chưa được trả lời, và những việc đang chờ tôi phản hồi.
 
----
-
 ## Lưu ý tuân thủ
 
 > [!NOTE]
-> Chỉ bật Recording và Transcription sau khi đã thông báo và được người tham dự bên ngoài đồng ý. Transcript cuộc họp có khách hàng là dữ liệu Mật, chỉ lưu trong Teams/SharePoint của công ty. Biên bản do Copilot tạo phải được người chủ trì rà soát trước khi gửi.
-
----
+> Câu trả lời của @Copilot trong nhóm chat **hiển thị cho mọi thành viên**: không hỏi về thông tin Mật hay dữ liệu cá nhân trong nhóm chat đông người. Copilot trong cuộc họp cần bật transcript; với cuộc họp có khách hàng hoặc đối tác bên ngoài, người chủ trì phải thông báo và được các bên đồng ý trước khi bật Recording và Transcription. Biên bản do Copilot tạo phải được người chủ trì rà soát trước khi gửi.
 
 ## Prompt đề xuất - Teams
 
@@ -101,27 +131,16 @@ Sau khi hoàn thành lab này, anh/chị sẽ có thể:
 
 > **PROMPT:**
 >
-> 1. Có nội dung nào trong cuộc họp yêu cầu tôi thực hiện hoặc phản hồi không?
-> 2. Những con số nào đã được đưa ra trong cuộc họp (chỉ tiêu, chi phí, thời hạn)? Liệt kê kèm người nói.
+> Có nội dung nào trong cuộc họp yêu cầu tôi thực hiện hoặc phản hồi không? Những con số nào đã được đưa ra (chỉ tiêu, chi phí, thời hạn), ai nói?
 
-### Sau cuộc họp
+### Theo dõi qua nhiều cuộc họp
 
 > **PROMPT:**
 >
 > So sánh cuộc họp này với cuộc họp tuần trước: những việc nào đã hoàn thành, những việc nào bị lùi thời hạn?
 
-### Chat & Channel
+### Trong nhóm chat dự án
 
 > **PROMPT:**
 >
-> Trong kênh của phòng tuần này, có thông báo hoặc quyết định nào tôi cần biết hoặc cần truyền đạt lại cho người khác không?
-
----
-
-## Tổng kết
-
-| Anh/chị đã học được | Tính năng |
-|---------------------|-----------|
-| Bắt kịp cuộc họp và chốt điểm còn bất đồng | Copilot trong cuộc họp |
-| Biên bản có người phụ trách, thời hạn | Recap |
-| Nắm nhanh tình hình trong nhóm chat | Chat & Channel Summarizing |
+> @Copilot Những quyết định nào đã được chốt trong nhóm chat này từ đầu tháng? Liệt kê kèm người chốt và ngày.
