@@ -1331,3 +1331,18 @@ a:hover {
 .module-content details.extra[open] {
     padding-bottom: 14px;
 }
+
+/* Nút xem video demo (chỉ hiện khi đã có link trong demoVideos) */
+.video-demo {
+    display: inline-flex; align-items: center; gap: 8px;
+    margin: 4px 0 12px; padding: 7px 14px 7px 8px;
+    border: 1px solid var(--blue-border); border-radius: 999px;
+    background: var(--blue-tint); color: var(--navy);
+    font-size: 0.9rem; font-weight: 600; text-decoration: none;
+}
+.video-demo:hover { border-color: var(--blue); color: var(--blue-strong); }
+.video-play {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 24px; height: 24px; border-radius: 50%;
+    background: var(--blue); color: var(--white); font-size: 0.7rem; padding-left: 2px;
+}

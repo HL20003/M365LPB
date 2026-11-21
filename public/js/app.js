@@ -9,19 +9,32 @@ const DEMO_ZIP_URL = 'files/copilot-workshop-demo-files.zip';
 // hoặc link ngoài (SharePoint) mở ở tab mới.
 // Trong Markdown, viết [tên file](#file-<id>) để link tới file tương ứng.
 const demoFiles = [
-    { id: 'report', name: 'Báo cáo quản lý Q3 2026 (bản nháp).docx', desc: 'Lab 2 - Word, Lab 4 - PowerPoint (kịch bản báo cáo quý 3)', icon: 'word', url: 'files/bao-cao-quan-ly-q3-2026-ban-nhap.docx' },
+    { id: 'report', name: 'Báo cáo quản lý Q3 2026 (bản nháp).docx', desc: 'Lab 2 - Word, Lab 4 - PowerPoint, Lab 5 - Outlook', icon: 'word', url: 'files/bao-cao-quan-ly-q3-2026-ban-nhap.docx' },
     { id: 'contract', name: 'Hợp đồng Dịch vụ Tổ chức Sự kiện (dự thảo).docx', desc: 'Lab 2 - Word (tự thực hành thêm)', icon: 'word', url: 'files/hop-dong-dich-vu-to-chuc-su-kien.docx' },
     { id: 'handbook', name: 'Sổ tay Chính sách Nội bộ.docx', desc: 'Lab 2 - Word, Lab 8 - Agent Builder, Lab 9 - SharePoint agent', icon: 'word', url: 'files/so-tay-chinh-sach-noi-bo.docx' },
     { id: 'policy-sample', name: 'SAMPLE Chính sách Bảo mật Thông tin.docx', desc: 'Lab 2 - Word (tự thực hành thêm)', icon: 'word', url: 'files/sample-chinh-sach-bao-mat-thong-tin.docx' },
     { id: 'business', name: 'Báo cáo Kết quả Kinh doanh Q3 2026.xlsx', desc: 'Lab 1 - Copilot Chat, Lab 3 - Excel, Lab 7 - Researcher', icon: 'excel', url: 'files/bao-cao-ket-qua-kinh-doanh-q3-2026.xlsx' },
-    { id: 'feedback', name: 'Phản hồi khách hàng T9-T10 2026 (xuất từ hệ thống).xlsx', desc: 'Lab 3 - Excel (tự thực hành thêm: skill)', icon: 'excel', url: 'files/phan-hoi-khach-hang-t9-t10-2026.xlsx' },
-    { id: 'plan', name: 'Kế hoạch Hoạt động 2027 (dự thảo).docx', desc: 'Lab 1 - Copilot Chat, Lab 2 - Word, Lab 4 - PowerPoint', icon: 'word', url: 'files/ke-hoach-hoat-dong-2027.docx' },
+    { id: 'feedback', name: 'Phản hồi khách hàng T9-T10 2026 (xuất từ hệ thống).xlsx', desc: 'Lab 3 - Excel (tạo skill)', icon: 'excel', url: 'files/phan-hoi-khach-hang-t9-t10-2026.xlsx' },
+    { id: 'memo-template', name: 'Mẫu tờ trình (giả định).docx', desc: 'Lab 2 - Word (soạn tờ trình trên mẫu có sẵn)', icon: 'word', url: 'files/mau-to-trinh-gia-dinh.docx' },
+    { id: 'plan', name: 'Kế hoạch Hoạt động 2027 (dự thảo).docx', desc: 'Lab 1 - Copilot Chat, Lab 2 - Word, Lab 4 - PowerPoint, Lab 7 - Researcher', icon: 'word', url: 'files/ke-hoach-hoat-dong-2027.docx' },
     { id: 'transcript', name: 'Transcript họp giao ban quý 3 (mẫu).docx', desc: 'Lab 6 - Teams', icon: 'word', url: 'files/transcript-hop-giao-ban-q3-mau.docx' },
     { id: 'townhall', name: 'Town hall Q3 2026 (bản nháp).pptx', desc: 'Lab 4 - PowerPoint (bộ slide có sẵn)', icon: 'powerpoint', url: 'files/town-hall-q3-2026-ban-nhap.pptx' },
     { id: 'brand', name: 'Mẫu thương hiệu (giả định).pptx', desc: 'Lab 4 - PowerPoint (mẫu thương hiệu)', icon: 'powerpoint', url: 'files/mau-thuong-hieu-gia-dinh.pptx' },
-    { id: 'skill-excel', name: 'Skill Excel - bao-cao-phan-hoi-khach-hang.zip', desc: 'Lab 3 - Excel (skill mẫu cho phần tự thực hành)', icon: 'zip', url: 'files/skill-excel-bao-cao-phan-hoi-khach-hang.zip' },
+    { id: 'skill-excel', name: 'Skill Excel - bao-cao-phan-hoi-khach-hang.zip', desc: 'Lab 3 - Excel (skill mẫu)', icon: 'zip', url: 'files/skill-excel-bao-cao-phan-hoi-khach-hang.zip' },
     { id: 'skill-chat', name: 'Skill Copilot Chat - bao-cao-tuan.zip', desc: 'Lab 8 - Skills in Copilot Chat (skill mẫu cho phần tự thực hành)', icon: 'zip', url: 'files/skill-chat-bao-cao-tuan.zip' },
 ];
+
+// Video demo cho các bài dài. Trong Markdown, viết [video:<id>] trên một dòng riêng.
+// url = '#' thì nút được ẩn (chưa có video); điền link Stream/SharePoint/YouTube khi có.
+const demoVideos = {
+    'word-track-changes': { title: 'Copilot sửa báo cáo bằng Track Changes', url: '#' },
+    'word-memo-template': { title: 'Điền tờ trình trên mẫu có sẵn', url: '#' },
+    'excel-canvas': { title: 'Dashboard tương tác với Interactive canvas', url: '#' },
+    'excel-skill': { title: 'Tạo và chạy skill trong Excel', url: '#' },
+    'ppt-update-deck': { title: 'Cập nhật bộ slide có sẵn và Visualize this slide', url: '#' },
+    'ppt-interactive': { title: 'Tạo interactive slide', url: '#' },
+    'ppt-from-word': { title: 'Tạo bộ slide từ tài liệu Word theo mẫu thương hiệu', url: '#' },
+};
 
 // Danh sách module và file markdown tương ứng
 const modules = {
@@ -90,7 +103,14 @@ function processCustomBlocks(content) {
     });
 
     content.querySelectorAll('p').forEach(p => {
-        if (p.textContent.trim() === '[download-files]') p.outerHTML = buildDownloadBlock();
+        const text = p.textContent.trim();
+        if (text === '[download-files]') { p.outerHTML = buildDownloadBlock(); return; }
+        const m = text.match(/^\[video:([\w-]+)\]$/);
+        if (!m) return;
+        const v = demoVideos[m[1]];
+        if (!v || !v.url || v.url === '#') { p.remove(); return; }
+        p.outerHTML = `<a class="video-demo" href="${v.url}" target="_blank" rel="noopener noreferrer">`
+            + `<span class="video-play" aria-hidden="true">▶</span><span>Xem video demo: ${escapeHtml(v.title)}</span></a>`;
     });
 
     structureSections(content);
@@ -137,7 +157,10 @@ function processCustomBlocks(content) {
 // - mỗi bài tập (### dưới "Thực hành trong buổi học" hoặc "Phần X") -> một thẻ riêng
 // - mỗi mục dưới "Tự thực hành thêm", "Prompt đề xuất" -> khối gập, chỉ hiện tiêu đề
 function structureSections(content) {
-    const STOP = 'h1, h2, h3, hr, ol, blockquote, .prompt-card, details, .outcome-card';
+    const STOP = 'h1, h2, h3, hr, ol, blockquote, .prompt-card, details, .outcome-card, .video-demo';
+    // Đoạn chỉ gồm một nhãn in đậm kết thúc bằng ":" (ví dụ "Duyệt thay đổi:") mở một nhóm bước mới
+    const isLabel = el => el.tagName === 'P' && el.firstElementChild && el.firstElementChild.tagName === 'STRONG'
+        && el.textContent.trim() === el.firstElementChild.textContent.trim() && /:$/.test(el.textContent.trim());
     Array.from(content.children).forEach(p => {
         const label = p.firstElementChild;
         if (p.tagName !== 'P' || !label || label.tagName !== 'STRONG' || p.firstChild !== label
@@ -152,7 +175,7 @@ function structureSections(content) {
         p.innerHTML = p.innerHTML.trim();
         let next = p.nextElementSibling;
         if (p.textContent.trim()) body.appendChild(p); else p.remove();
-        while (next && !next.matches(STOP)) {
+        while (next && !next.matches(STOP) && !isLabel(next)) {
             const after = next.nextElementSibling;
             body.appendChild(next);
             next = after;

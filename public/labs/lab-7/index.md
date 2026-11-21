@@ -19,9 +19,9 @@
 
 > **Anh/chị** - *người được giao chuẩn bị một đề xuất*
 >
-> Ban Giám đốc chuẩn bị chốt Kế hoạch Hoạt động 2027 và mời các phòng ban góp ý: những thay đổi về quy định và thị trường lao động gần đây ảnh hưởng thế nào tới công ty? Thay vì tự đọc hàng chục văn bản và bài phân tích, anh/chị giao cho Researcher ba câu hỏi cụ thể, yêu cầu đối chiếu với số liệu quý 3 và trả về một memo có đề xuất.
+> Ban Giám đốc chuẩn bị chốt Kế hoạch Hoạt động 2027 và mời các phòng ban góp ý: những thay đổi về quy định và thị trường lao động gần đây ảnh hưởng thế nào tới công ty? Thay vì tự đọc hàng chục văn bản và bài phân tích, anh/chị giao cho Researcher ba câu hỏi cụ thể, yêu cầu đối chiếu thông tin bên ngoài với **số liệu quý 3** và **dự thảo Kế hoạch 2027** của công ty, rồi trả về một memo có đề xuất.
 
-**Tệp đính kèm:** [Báo cáo Kết quả Kinh doanh Q3 2026.xlsx](#file-business)
+**Tệp đính kèm:** [Báo cáo Kết quả Kinh doanh Q3 2026.xlsx](#file-business) và [Kế hoạch Hoạt động 2027 (dự thảo).docx](#file-plan)
 
 ## Thực hành trong buổi học
 
@@ -31,7 +31,7 @@
 
 1. Truy cập [https://m365.cloud.microsoft/](https://m365.cloud.microsoft/) và đăng nhập bằng **tài khoản công ty** (tài khoản Microsoft 365 do công ty cấp) - **không dùng** tài khoản Microsoft cá nhân như Outlook.com, Hotmail
 2. Chọn **Researcher** trong mục Agents
-3. Đính kèm file [Báo cáo Kết quả Kinh doanh Q3 2026.xlsx](#file-business) (xem [cách tải file Word/Excel về máy](#module-1/cach-tai-file-word-excel-ve-may))
+3. Gõ "/" để đính kèm [Báo cáo Kết quả Kinh doanh Q3 2026.xlsx](#file-business) và [Kế hoạch Hoạt động 2027 (dự thảo).docx](#file-plan) (xem [cách tải file Word/Excel về máy](#module-1/cach-tai-file-word-excel-ve-may))
 4. Nhập prompt:
 
 > **PROMPT:**
@@ -39,7 +39,7 @@
 > Tôi cần chuẩn bị góp ý cho Kế hoạch Hoạt động 2027 của một công ty dịch vụ khoảng 1.200 nhân viên tại Việt Nam. Hãy trả lời 3 câu hỏi:
 > 1. Trong 12 tháng qua, những quy định nào mới ban hành hoặc có hiệu lực về bảo vệ dữ liệu cá nhân, lao động và việc sử dụng trí tuệ nhân tạo ảnh hưởng tới doanh nghiệp tại Việt Nam?
 > 2. Đặt cạnh số liệu trong file Báo cáo Kết quả Kinh doanh Q3 2026.xlsx (sheet PL_Budget_Actual và Benchmark), công ty đang chịu rủi ro lớn nhất ở đâu so với các doanh nghiệp cùng ngành?
-> 3. Đề xuất 3 điều chỉnh cho kế hoạch 2027, mỗi điều chỉnh nêu tác động dự kiến và mức độ ưu tiên.
+> 3. Đối chiếu với file Kế hoạch Hoạt động 2027 (dự thảo): kế hoạch đã xử lý những rủi ro nào, còn thiếu gì? Đề xuất 3 điều chỉnh, mỗi điều chỉnh nêu tác động dự kiến và mức độ ưu tiên.
 >
 > Mỗi kết luận về quy định phải có trích dẫn nguồn.
 
@@ -51,7 +51,7 @@ Researcher sẽ hỏi lại để làm rõ phạm vi nghiên cứu. Đây là l�
 >
 > 12 tháng tính đến hiện tại, so sánh với các doanh nghiệp dịch vụ có quy mô tương đương. Người đọc là Ban Giám đốc nên viết dạng memo khoảng 3-4 trang: mở đầu bằng bảng tóm tắt rủi ro (vấn đề, mức độ, đề xuất), phần phân tích chi tiết để sau.
 
-**Kết quả mong đợi:** Agent lập **Research Plan** nhiều bước, tự thu thập dữ liệu, đối chiếu với `Báo cáo Kết quả Kinh doanh Q3 2026.xlsx` và xuất memo Word có bảng tóm tắt rủi ro ở đầu. Các rủi ro nổi bật nên được chỉ ra: tỷ lệ nghỉ việc năm hóa 20% (trung vị ngành 13,5%) đi kèm giờ đào tạo thấp, 36% doanh thu phụ thuộc một khách hàng (trung vị ngành 20%), và biên lợi nhuận giảm còn 19,4% (trung vị 22%) do chi phí thuê thầu phụ.
+**Kết quả mong đợi:** Agent lập **Research Plan** nhiều bước, tự thu thập dữ liệu, đối chiếu với hai file nội bộ và xuất memo Word có bảng tóm tắt rủi ro ở đầu. Các rủi ro nổi bật nên được chỉ ra: tỷ lệ nghỉ việc năm hóa 20% (trung vị ngành 13,5%) đi kèm giờ đào tạo thấp, 36% doanh thu phụ thuộc một khách hàng (trung vị ngành 20%), và biên lợi nhuận giảm còn 19,4% (trung vị 22%) do chi phí thuê thầu phụ. Phần đối chiếu nên chỉ ra dự thảo Kế hoạch 2027 **đã có** giải pháp cho nghỉ việc và đào tạo, nhưng **chưa có** mục về rủi ro phụ thuộc khách hàng lớn và kiểm soát chi phí thầu phụ.
 
 > [!TIP]
 > Researcher thường mất vài phút để hoàn thành. Anh/chị có thể chuyển sang việc khác và quay lại khi báo cáo xong. Với công việc của mình, hãy thay 3 câu hỏi bằng chủ đề của phòng ban, ví dụ *"xu hướng tuyển dụng ngành công nghệ"* hay *"thay đổi về thuế và hóa đơn điện tử"*.

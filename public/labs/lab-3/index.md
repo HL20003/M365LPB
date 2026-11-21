@@ -7,11 +7,12 @@
 >
 > - Hỏi Copilot về một workbook nhiều sheet để tìm **xu hướng** và **điểm bất thường**, có số liệu và tên sheet
 > - Biến báo cáo nhiều sheet thành **dashboard tương tác** bằng Interactive canvas
+> - Tạo **skill** để Copilot tự làm sạch file dữ liệu thô và lập sheet báo cáo mới mỗi tháng
 >
 > **Biết được**
 >
 > - Copilot không chỉ vẽ một biểu đồ: nó đọc nhiều sheet cùng lúc và giải thích **vì sao** số liệu thay đổi
-> - **Skill** giúp đóng gói một việc nhiều bước lặp lại hằng tháng (xem phần Tự thực hành thêm)
+> - Dạy một lần, dùng lại mỗi tháng: skill lưu trên OneDrive và được gọi bằng **@tên-skill**, không phải viết lại prompt dài
 
 ## Tình huống
 
@@ -19,7 +20,7 @@
 >
 > Doanh thu quý 3 gần đạt kế hoạch nhưng lợi nhuận lại giảm. Trước cuộc họp, anh/chị cần biết vấn đề **bắt đầu từ khi nào** và **tập trung ở đâu**, rồi có một dashboard để Ban Giám đốc tự xem theo từng văn phòng.
 
-**Tệp demo:** [Báo cáo Kết quả Kinh doanh Q3 2026.xlsx](#file-business), gồm các sheet *Tổng quan Q3*, *PL_Budget_Actual*, *Doanh thu tháng*, *Danh sách dự án*, *Theo văn phòng*, *Benchmark*.
+**Tệp demo:** [Báo cáo Kết quả Kinh doanh Q3 2026.xlsx](#file-business), gồm các sheet *Tổng quan Q3*, *PL_Budget_Actual*, *Doanh thu tháng*, *Danh sách dự án*, *Theo văn phòng*, *Benchmark*. Bài tập 3 dùng thêm [Phản hồi khách hàng T9-T10 2026 (xuất từ hệ thống).xlsx](#file-feedback).
 
 ## Thực hành trong buổi học
 
@@ -49,6 +50,8 @@
 
 ### Bài tập 2: Dashboard tương tác với Interactive canvas [MỚI]
 
+[video:excel-canvas]
+
 1. Vẫn trong file trên, nhấn **Copilot** và nhập:
 
 > **PROMPT:**
@@ -63,9 +66,9 @@
 
 **Kết quả mong đợi:** Dashboard có thẻ **doanh thu 432 tỷ đồng** (đạt 99,1% kế hoạch), **lợi nhuận trước thuế 84 tỷ đồng** (79% kế hoạch), **tỷ lệ nghỉ việc 20%** (kế hoạch 11,5%). Biểu đồ nghỉ việc có đường trung vị ngành **13,5%**, **TP. Hồ Chí Minh 26,3%** được làm nổi bật; chỉ Đà Nẵng thấp hơn trung vị. Khi sửa số liệu trong sheet, dashboard cập nhật theo.
 
-## Tự thực hành thêm
+### Bài tập 3: Tạo skill biến file dữ liệu thô thành báo cáo hằng tháng [MỚI]
 
-### Dạy Copilot một việc nhiều bước bằng skill [MỚI]
+[video:excel-skill]
 
 Mỗi tháng anh/chị nhận file phản hồi khách hàng xuất từ hệ thống CRM: dòng tiêu đề thừa, dòng trống, dòng trùng, tên văn phòng chỗ ghi "HCM" chỗ ghi "TP. Hồ Chí Minh". Thay vì làm sạch và lập báo cáo tay mỗi tháng, anh/chị dạy Copilot làm **một lần**.
 
@@ -94,6 +97,8 @@ Mỗi tháng anh/chị nhận file phản hồi khách hàng xuất từ hệ th
 
 > [!TIP]
 > Không tạo được skill bằng @skill-builder? Tải [Skill Excel - bao-cao-phan-hoi-khach-hang.zip](#file-skill-excel) và giải nén. Trong khung Copilot, bấm **...** > **Manage plugins & skills** > **Custom skills** > **Create OneDrive folder** > **Open skills folder**, chép thư mục **bao-cao-phan-hoi-khach-hang** vào đó và bấm **Refresh**. Một cách khác: chọn **Add** > **Record a skill**, tự làm một lần các bước rồi bấm **Stop** và **Save skill**.
+
+## Tự thực hành thêm
 
 ### Phân loại dự án theo tình trạng
 

@@ -9,10 +9,11 @@
 > - Thêm slide từ báo cáo Word bằng "/" và biến slide nhiều chữ thành hình minh họa với **Visualize this slide**
 > - Tạo **interactive slide** (dòng thời gian bấm được khi trình chiếu)
 > - Tạo **speaker notes** cho cả bài và diễn tập trước câu hỏi khó
+> - Tạo bộ slide **mới** từ tài liệu Word, dựng trên **mẫu thương hiệu** của công ty
 >
 > **Biết được**
 >
-> - Không cần làm lại từ đầu: Copilot sửa trên file đang có và theo mẫu thương hiệu của công ty
+> - Không bắt đầu từ trang trắng: Copilot sửa trên bộ slide đang có, hoặc dựng slide mới trên mẫu thương hiệu từ tài liệu Word
 > - **Skill** trong PowerPoint là các việc Copilot làm sẵn được, chọn tại **+** > **Choose skills**
 > - Interactive slide chỉ bấm được khi trình chiếu trong PowerPoint; in hoặc xuất PDF sẽ thành ảnh tĩnh
 
@@ -27,11 +28,13 @@
 - [Town hall Q3 2026 (bản nháp).pptx](#file-townhall): 8 slide, nhiều chữ, theme mặc định
 - [Mẫu thương hiệu (giả định).pptx](#file-brand): mẫu thương hiệu của công ty giả định (màu, font, chân trang "Phân loại: Nội bộ")
 - [Báo cáo quản lý Q3 2026 (bản nháp).docx](#file-report): nguồn cho slide mới
-- [Kế hoạch Hoạt động 2027 (dự thảo).docx](#file-plan): tài liệu gốc để kiểm tra số liệu
+- [Kế hoạch Hoạt động 2027 (dự thảo).docx](#file-plan): tài liệu gốc để kiểm tra số liệu và nguồn cho bộ slide mới ở Bài tập 4
 
 ## Thực hành trong buổi học
 
-### Bài tập 1: Áp mẫu thương hiệu và làm gọn bộ slide có sẵn
+### Bài tập 1: Cập nhật bộ slide có sẵn từ báo cáo Word [MỚI]
+
+[video:ppt-update-deck]
 
 **Áp mẫu thương hiệu:**
 
@@ -52,24 +55,26 @@
 
 **Kết quả mong đợi:** Tiêu đề thành thông điệp, ví dụ *"Doanh thu đạt 99,1% kế hoạch nhưng lợi nhuận giảm 16,8%"*, *"Nghỉ việc 20%, cao gần gấp đôi kế hoạch"*. Mỗi slide còn 3-4 ý, số liệu (432 tỷ, 84 tỷ, 1.162 nhân viên, 58 người nghỉ việc, 8/12/25 triệu ngân sách đào tạo) giữ nguyên.
 
-### Bài tập 2: Thêm slide từ báo cáo và biến thành hình minh họa [MỚI]
+**Thêm slide từ báo cáo Word và biến thành hình minh họa:**
 
-1. Chọn slide **Kết quả kinh doanh quý 3**
-2. Trong khung Copilot, gõ "/" chọn [Báo cáo quản lý Q3 2026 (bản nháp).docx](#file-report), rồi nhập:
+5. Chọn slide **Kết quả kinh doanh quý 3**
+6. Trong khung Copilot, gõ "/" chọn [Báo cáo quản lý Q3 2026 (bản nháp).docx](#file-report), rồi nhập:
 
 > **PROMPT:**
 >
 > Thêm một slide ngay sau slide này với tiêu đề là thông điệp chính về những vấn đề cần hành động, lấy từ mục 1 "Kết quả quý 3" của báo cáo đính kèm: lợi nhuận giảm, chi phí thuê thầu phụ vượt kế hoạch, tỷ lệ nghỉ việc cao. Mỗi vấn đề một dòng, có con số so với kế hoạch. Giữ đúng số liệu trong báo cáo.
 
-3. Với slide vừa thêm, bấm **+** > **Choose skills** > **Visualize this slide** (hoặc gõ *"Visualize this slide"*)
-4. Lặp lại **Visualize this slide** với slide **Chương trình Phát triển và Phúc lợi 2027** (slide nhiều chữ nhất)
+7. Với slide vừa thêm, bấm **+** > **Choose skills** > **Visualize this slide** (hoặc gõ *"Visualize this slide"*)
+8. Lặp lại **Visualize this slide** với slide **Chương trình Phát triển và Phúc lợi 2027** (slide nhiều chữ nhất)
 
 **Kết quả mong đợi:** Slide mới có tiêu đề kiểu *"Ba vấn đề cần xử lý trước khi chốt Kế hoạch 2027"*, gồm lợi nhuận **84 tỷ, giảm 16,8%**; chi phí thuê thầu phụ **50 tỷ, vượt kế hoạch 39%**; tỷ lệ nghỉ việc **20%** (kế hoạch 11,5%). Sau **Visualize this slide**, mỗi vấn đề thành một khối có biểu tượng; slide phúc lợi thành bố cục 3 cột theo cấp bậc (ngân sách đào tạo 8 / 12 / 25 triệu đồng).
 
 > [!TIP]
 > Kiểm tra lại từng con số trên hình sau khi Copilot vẽ. Nếu chưa ưng, hỏi tiếp: *"Dùng bố cục 3 cột, làm nổi bật con số bằng màu nhấn của mẫu thương hiệu"*.
 
-### Bài tập 3: Tạo interactive slide cho lộ trình triển khai [MỚI]
+### Bài tập 2: Tạo interactive slide cho lộ trình triển khai [MỚI]
+
+[video:ppt-interactive]
 
 1. Chọn slide **Lộ trình triển khai**
 2. Chọn tab **Insert** (hoặc **Home**) > **Interactive Slide**. Khung Copilot hiện các dạng: **Summary**, **Timeline**, **Dashboard**, **Comparison**, **Custom**. Chọn **Timeline**
@@ -87,7 +92,7 @@
 > [!NOTE]
 > Interactive slide **chỉ chỉnh được bằng câu lệnh cho Copilot**. Người xem không cần licence Copilot vẫn bấm được khi trình chiếu trong PowerPoint (Windows, Mac, web). Khi in, xuất PDF hoặc mở trên điện thoại, slide hiện thành ảnh tĩnh.
 
-### Bài tập 4: Speaker notes và diễn tập câu hỏi khó
+### Bài tập 3: Speaker notes và diễn tập câu hỏi khó [MỚI]
 
 1. Chọn tab **View** > **Notes** (mũi tên) > **Generate speaker notes for all slides**
 2. Đọc lời trình bày Copilot đề xuất, bấm **Keep it** để lưu vào phần ghi chú của từng slide (hoặc **Discard**)
@@ -102,16 +107,28 @@
 > [!TIP]
 > Chỉ cần notes cho một slide: chọn **Generate speaker notes for current slide**. Speaker notes hoạt động tốt nhất với bài dưới 50 slide.
 
-## Tự thực hành thêm
+### Bài tập 4: Tạo bộ slide mới từ tài liệu Word theo mẫu thương hiệu
 
-### Tạo bộ slide mới từ tài liệu Word
+[video:ppt-from-word]
 
-1. Tạo bản trình bày mới, nhấn **Copilot**, gõ "/" để đính kèm [Kế hoạch Hoạt động 2027 (dự thảo).docx](#file-plan)
-2. Nhập prompt:
+Khi chưa có bộ slide nào, anh/chị vẫn không bắt đầu từ trang trắng: mở **mẫu thương hiệu** của công ty và để Copilot dựng nội dung từ tài liệu Word.
+
+1. Mở [Mẫu thương hiệu (giả định).pptx](#file-brand) **từ OneDrive** bằng **PowerPoint trên máy tính**
+2. Chọn **File** > **Save a Copy**, đặt tên *Kế hoạch 2027 - họp toàn công ty.pptx* và mở bản sao
+3. Nhấn **Copilot**, gõ "/" chọn [Kế hoạch Hoạt động 2027 (dự thảo).docx](#file-plan), rồi nhập:
 
 > **PROMPT:**
 >
-> Dựa trên file đính kèm, tạo bộ slide 6 trang để trình bày kế hoạch 2027 tại buổi họp toàn công ty. Viết bằng ngôn ngữ của nhân viên: thay đổi gì, mỗi người được gì và cần làm gì. Có một slide về bốn sáng kiến trọng tâm, một slide so sánh quyền lợi của 3 cấp bậc dạng bảng, một slide lộ trình triển khai, slide cuối là 3 việc mỗi người làm trong tháng 1. Bỏ phần ngân sách chi tiết và chỉ tiêu theo từng văn phòng.
+> Dùng các bố cục của mẫu này, tạo bộ slide 6 trang từ file đính kèm để trình bày Kế hoạch 2027 tại buổi họp toàn công ty, thay cho 2 slide mẫu. Viết bằng ngôn ngữ của nhân viên: thay đổi gì, mỗi người được gì và cần làm gì. Có một slide về bốn sáng kiến trọng tâm, một slide so sánh quyền lợi của 3 cấp bậc dạng bảng, một slide lộ trình triển khai, slide cuối là 3 việc mỗi người làm trong tháng 1. Tiêu đề mỗi slide là một thông điệp. Bỏ phần ngân sách chi tiết và chỉ tiêu theo từng văn phòng.
+
+4. Kiểm tra từng slide, chỉnh bằng câu lệnh nếu cần, ví dụ: *"Slide quyền lợi: đổi thành bảng 3 cột, làm nổi bật ngân sách đào tạo bằng màu nhấn của mẫu"*
+
+**Kết quả mong đợi:** Bộ slide 6 trang mang màu, font và chân trang "Phân loại: Nội bộ" của mẫu thương hiệu; slide bìa dùng bố cục nền tối của mẫu. Nội dung gồm bốn sáng kiến trọng tâm, bảng quyền lợi 3 cấp bậc (ngân sách đào tạo **8 / 12 / 25 triệu đồng**), lộ trình từ **11/2026** đến **Quý 3/2027**, và 3 việc cho tháng 1 (trong đó có trao đổi 1:1 với quản lý). Không có số liệu ngân sách chi tiết.
+
+> [!TIP]
+> Nếu slide Copilot tạo chưa theo mẫu, chọn **Design** > **Browse for Themes...** và chọn lại file mẫu thương hiệu như ở Bài tập 1. Công ty đã có mẫu dùng chung trong thư viện của tổ chức thì dùng mẫu đó: mẫu càng chuẩn, slide Copilot tạo càng đúng thương hiệu.
+
+## Tự thực hành thêm
 
 ### Bộ slide riêng cho đội của anh/chị
 

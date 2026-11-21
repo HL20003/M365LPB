@@ -1,13 +1,14 @@
 # Hướng dẫn speaker - Copilot Overview Workshop
 
-Bản general v2, cập nhật 20/11/2026. Tài liệu nội bộ cho người trình bày và trợ giảng, không gửi cho học viên.
+Bản general v2, cập nhật 21/11/2026. Tài liệu nội bộ cho người trình bày và trợ giảng, không gửi cho học viên.
 
 ## 1. Buổi workshop này là gì
 
 Đây là buổi **giới thiệu 120 phút**, không phải khóa đào tạo đủ tính năng. Mục tiêu là để khách hàng thấy giá trị của Microsoft 365 Copilot trong công việc của họ, tự tay tạo được một agent, và muốn đi tiếp (thử nghiệm, mở rộng licence, xây agent, workshop kỹ thuật).
 
 - Site lab có 9 lab. **Không cố làm hết**: trong buổi chỉ làm phần "Thực hành trong buổi học"; phần "Tự thực hành thêm" để học viên tự làm sau.
-- Mỗi lab có tình huống và file demo riêng, làm lab nào trước cũng được.
+- Lab 1-4 cùng **một câu chuyện** (chuẩn bị báo cáo quý 3 và Kế hoạch 2027) để speaker kể liền mạch Chat → Word → Excel → PowerPoint. Nhưng mỗi lab bắt đầu từ file demo có sẵn, nên học viên làm lab nào trước cũng được.
+- Mỗi lab Office có ít nhất một bước **tạo file mới từ file nguồn**: báo cáo Word → tờ trình Word, file Excel thô → sheet báo cáo, tài liệu Word → slide, báo cáo Word → email. Đây là cách minh họa điểm 3 "luồng công việc liên tục".
 - Bài có nhãn "Tính năng mới" dùng tính năng Microsoft mới phát hành hoặc đang triển khai dần: phải chạy thử trên tenant trước (mục 3.3 và 3.4).
 
 ### 5 điểm khách hàng phải nhớ
@@ -21,8 +22,8 @@ Bản general v2, cập nhật 20/11/2026. Tài liệu nội bộ cho người t
 ### Nên tránh
 
 - Đi lần lượt toàn bộ tính năng Word, Excel, PowerPoint, Outlook; giảng kỹ thuật viết prompt cơ bản quá lâu.
-- Tạo PowerPoint từ trang trắng. Chỉ chỉnh deck có sẵn theo template.
-- Demo việc AI nào cũng làm được (viết một đoạn văn, vẽ biểu đồ đơn giản).
+- Tạo PowerPoint từ trang trắng. Demo trực tiếp là **chỉnh deck có sẵn**; tạo deck mới chỉ làm **trên mẫu thương hiệu từ tài liệu Word** và chiếu bằng video (Lab 4 Bài 4).
+- Demo việc AI nào cũng làm được (viết một đoạn văn, vẽ biểu đồ đơn giản). Vì vậy "viết tóm tắt điều hành" chỉ còn trong Prompt đề xuất của Lab 2.
 - Cam kết về mô hình, giá, quyền sử dụng hay ngày phát hành khi chưa có thông tin chính thức.
 - Dừng agent ở chỗ "đã tạo xong". Luôn kết thúc bằng chia sẻ và đưa agent vào Teams (Lab 9).
 - Giới thiệu Analyst.
@@ -33,12 +34,28 @@ Bản general v2, cập nhật 20/11/2026. Tài liệu nội bộ cho người t
 |---|---|---|---|---|
 | 00-10 | Khởi động và định hướng | Module 1 | Hỏi nhanh: "Anh/chị mất nhiều thời gian nhất ở email, cuộc họp, báo cáo hay tìm tài liệu?". Nêu 5 điểm cần nhớ, nhấn mạnh Copilot tôn trọng quyền truy cập | Mở site, tải file demo lên OneDrive |
 | 10-20 | Copilot, Work IQ, bảo mật dữ liệu | Lab 1 Bài 1-2 | Demo "Bạn biết gì về tôi và công việc của tôi?" và dấu "/" gọi người, cuộc họp | Làm Bài 1 trên tài khoản của mình |
-| 20-50 | Từ dữ liệu công việc đến kết quả hoàn chỉnh | Lab 1 Bài 3, Lab 2, 3, 4 (Lab 5 nếu còn giờ) | Mỗi lab khoảng 7 phút: demo bài chính rồi cho học viên làm. Nhấn mạnh làm trên file có sẵn và dấu "/". Skills chỉ demo, hẹn buổi 2 hướng dẫn build | Bài chính của mỗi lab |
+| 20-50 | Từ dữ liệu công việc đến kết quả hoàn chỉnh | Lab 1 Bài 3, Lab 2, 3, 4 (Lab 5 nếu còn giờ) | Kể một câu chuyện qua 4 ứng dụng, xem mục 2.1. Demo trực tiếp bài ngắn, chiếu video bài dài. Skills chỉ demo, hẹn buổi 2 hướng dẫn build | Làm theo bài demo trực tiếp; bài có video để tự làm sau |
 | 50-70 | Teams: từ cuộc họp đến hành động | Lab 6 | Demo 3 câu hỏi trên transcript mẫu; chia nhóm 3-4 người cho bài @Copilot | Bài 1 (transcript), Bài 2 (nhóm chat) |
 | 70-80 | Researcher | Lab 7 | **Chỉ show báo cáo chạy sẵn**, nhấn mạnh việc đưa dữ liệu công ty vào phân tích | Xem, có thể gửi đề bài rồi chuyển lab |
 | 80-105 | Hands-on: Policy Assistant | Lab 8 | Dẫn từng phần A-E, đi vòng hỗ trợ | Tự tạo, test và chia sẻ agent |
 | 105-112 | Đưa agent vào Teams, 3 cấp độ | Lab 9 | Demo agent trong Teams và SharePoint agent trong nhóm chat; giải thích 3 cấp độ | Bài 1: mở agent trong Teams |
 | 112-120 | Tổng kết, chốt bước tiếp theo | Tổng kết | Hỏi 3 câu, chốt 1-2 tình huống ưu tiên, giới thiệu buổi tiếp theo | Trả lời, góp ý |
+
+### 2.1 Phút 20-50: một câu chuyện qua 4 ứng dụng
+
+Câu chuyện: *"Quý 3 vừa xong, doanh thu gần đạt nhưng lợi nhuận giảm. Anh/chị phải chuẩn bị báo cáo và tờ trình cho Ban Giám đốc, rồi cập nhật slide họp toàn công ty."* Mỗi bước đều chỉ ra: file nào đi vào, file nào được tạo ra, và dấu "/" ở đâu.
+
+| Phút | Ứng dụng | Demo trực tiếp | Chiếu video | File vào → file ra | Câu chuyển sang bước sau |
+|---|---|---|---|---|---|
+| 20-25 | Copilot Chat | Lab 1 Bài 3 | | Excel + Kế hoạch Word → bảng vấn đề | "Copilot đã chỉ ra vấn đề. Giờ đưa vào bản báo cáo đồng nghiệp đã soạn sẵn." |
+| 25-32 | Word | Lab 2 Bài 1: Track Changes, mở 2-3 comment, Accept/Reject | Lab 2 Bài 2: tờ trình trên mẫu (demo trực tiếp nếu chạy thử ổn và còn giờ) | Báo cáo nháp → báo cáo có vết sửa; báo cáo + Sổ tay → **tờ trình mới** | "Ban Giám đốc sẽ hỏi: lợi nhuận giảm từ khi nào, ở đâu?" |
+| 32-40 | Excel | Lab 3 Bài 1 (xu hướng, bất thường); Bài 2 Interactive canvas nếu tenant có | Lab 3 Bài 3: tạo và chạy skill (hẹn buổi 2 build chi tiết) | Excel → dashboard; Excel thô → **sheet báo cáo mới** | "Có kết luận rồi, giờ cập nhật slide họp toàn công ty, không làm lại từ đầu." |
+| 40-48 | PowerPoint | Lab 4 Bài 1 (áp mẫu, thêm slide từ báo cáo Word, Visualize); Bài 2 interactive slide 1 phút; Bài 3 speaker notes 1 phút | Lab 4 Bài 4: deck mới từ Word trên mẫu thương hiệu | Báo cáo Word → slide; Kế hoạch Word + mẫu → **deck mới** | "Cuối cùng gửi cho Ban Giám đốc, cũng từ chính báo cáo đó." |
+| 48-50 | Outlook | Lab 5 bước 5: email từ báo cáo Word (nếu còn giờ) | | Báo cáo Word → **email** | Sang Teams: "Báo cáo đã xong, giờ đến cuộc họp giao ban." |
+
+- Video do team tự quay. Khi có link (Stream, SharePoint hoặc YouTube), điền vào `demoVideos` trong `public/js/app.js`; nút **Xem video demo** chỉ hiện ở bài có link.
+- Trong lúc chiếu video, nói rõ học viên **có đủ bước trên site** để tự làm sau buổi học.
+- Nếu một bài demo trực tiếp lỗi, chuyển ngay sang video của bài đó, không sửa lỗi trước mặt khách hàng.
 
 ## 3. Chuẩn bị trước buổi học (checklist)
 
@@ -61,12 +78,14 @@ Bản general v2, cập nhật 20/11/2026. Tài liệu nội bộ cho người t
 | File | Dùng ở |
 |---|---|
 | Báo cáo Kết quả Kinh doanh Q3 2026.xlsx | Lab 1, Lab 3, Lab 7 |
-| Kế hoạch Hoạt động 2027 (dự thảo).docx | Lab 1, Lab 2, Lab 4 |
-| Báo cáo quản lý Q3 2026 (bản nháp).docx | Lab 2, Lab 4 |
+| Kế hoạch Hoạt động 2027 (dự thảo).docx | Lab 1, Lab 2, Lab 4, Lab 7 |
+| Báo cáo quản lý Q3 2026 (bản nháp).docx | Lab 2, Lab 4, Lab 5 |
+| Mẫu tờ trình (giả định).docx | Lab 2 Bài 2 |
 | Sổ tay Chính sách Nội bộ.docx | Lab 2, Lab 8, Lab 9 |
 | Town hall Q3 2026 (bản nháp).pptx, Mẫu thương hiệu (giả định).pptx | Lab 4 |
 | Transcript họp giao ban quý 3 (mẫu).docx | Lab 6 |
-| Phản hồi khách hàng T9-T10 2026.xlsx, 2 file skill mẫu .zip | Tự thực hành (Lab 3, Lab 8) |
+| Phản hồi khách hàng T9-T10 2026.xlsx, Skill Excel .zip | Lab 3 Bài 3 |
+| Skill Copilot Chat .zip | Lab 8 (tự thực hành) |
 
 ### 3.3 Chạy thử phần Office (1-2 ngày trước)
 
@@ -83,10 +102,10 @@ Chạy lại **toàn bộ bài chính** của Lab 1-6 bằng một tài khoản 
 | Ứng dụng | Chạy thử | Đạt khi | Nếu không đạt |
 |---|---|---|---|
 | Copilot Chat (Lab 1) | Bài 1 "Bạn biết gì về tôi?"; Bài 2 gõ "/" chọn một người và một cuộc họp; Bài 3 đính kèm file Excel và Word | Bài 1-2 trả lời có trích dẫn tới email, cuộc họp thật; Bài 3 chỉ ra kế hoạch chưa đề cập lợi nhuận giảm 16,8% và 36% doanh thu từ một khách hàng | Tài khoản trống dữ liệu: gửi email, tạo cuộc họp giữa các tài khoản trước 1-2 ngày; Bài 3 thiếu ý: hỏi tiếp trong cùng cuộc trò chuyện |
-| Word (Lab 2) | Bài 1 và Bài 2 trên Báo cáo quản lý Q3 (bản nháp), gõ "/" chọn Kế hoạch 2027 và Sổ tay | Đủ 8 chỗ sửa có vết sửa và comment ghi nguồn; Accept, Reject được trong tab Review; tóm tắt điều hành giữ đúng số liệu | Không có vết sửa: bật tay Review > Track Changes rồi chạy lại prompt; "/" không thấy file: kiểm tra file đã nằm trên OneDrive. Sau khi chạy thử, **tải lại bản nháp gốc** cho buổi học |
-| Excel (Lab 3) | Bài 1 trên Báo cáo Kết quả Kinh doanh Q3 và câu hỏi tiếp về danh sách dự án | Nêu đúng lợi nhuận lệch kế hoạch 5, 9, 8 tỷ từ tháng 7 và văn phòng TP. Hồ Chí Minh bất thường, có tên sheet | Nút Copilot mờ: mở file từ OneDrive, bấm vào một ô trong bảng; số liệu sai: hỏi lại, chỉ rõ tên sheet |
-| PowerPoint (Lab 4) | Áp mẫu thương hiệu bằng Design > Browse for Themes; prompt làm gọn deck; gõ "/" chọn báo cáo Word để thêm slide | Cả deck đổi màu, font, chân trang; tiêu đề thành thông điệp; số liệu giữ nguyên; slide mới đúng 3 vấn đề | Copilot không sửa được cả deck một lần: sửa từng slide; "/" không thấy file Word: mở file Word trên OneDrive trước. Giữ lại **bản deck gốc** cho buổi học |
-| Outlook (Lab 5) | Phân 3 nhóm email; Summary by Copilot một chuỗi email dài; Draft with Copilot; Coaching by Copilot | Có ít nhất 10 email trong 3 ngày gần nhất và 1 chuỗi email nhiều người; thư nháp bám đúng chuỗi email | Hộp thư trống: gửi trước vài email và một chuỗi trả lời qua lại giữa các tài khoản |
+| Word (Lab 2) | Bài 1 trên Báo cáo quản lý Q3 (bản nháp), gõ "/" chọn Kế hoạch 2027 và Sổ tay; Bài 2 trên bản sao Mẫu tờ trình, gõ "/" chọn báo cáo và Sổ tay | Bài 1: đủ 8 chỗ sửa có vết sửa và comment ghi nguồn, Accept/Reject được. Bài 2: giữ bố cục 5 mục của mẫu, Kính gửi Tổng Giám đốc, 03 báo giá, tạm ứng tối đa 30%, chỗ thiếu ghi [CẦN XÁC NHẬN] | Không có vết sửa: bật tay Review > Track Changes rồi chạy lại prompt. Bài 2 Copilot chỉ trả lời trong khung chat: nhập "Cập nhật trực tiếp vào tài liệu"; vẫn không được thì chiếu video. Sau khi chạy thử, **tải lại bản nháp và mẫu gốc** |
+| Excel (Lab 3) | Bài 1 trên Báo cáo Kết quả Kinh doanh Q3 và câu hỏi tiếp; Bài 2 @interactive-canvas; Bài 3 @skill-builder trên file Phản hồi khách hàng, chạy skill cho T9 rồi T10 | Bài 1 nêu đúng lợi nhuận lệch 5, 9, 8 tỷ từ tháng 7 và TP. Hồ Chí Minh bất thường, có tên sheet. Bài 3: T9 còn 120 phản hồi, T10 còn 134, có sheet sạch và sheet báo cáo mới | Nút Copilot mờ: mở file từ OneDrive. @skill-builder không có: dùng file Skill Excel .zip (Manage plugins & skills > Custom skills). Xóa skill đã tạo khi chạy thử để buổi demo tạo lại từ đầu |
+| PowerPoint (Lab 4) | Bài 1: áp mẫu bằng Design > Browse for Themes, làm gọn deck, gõ "/" chọn báo cáo Word để thêm slide, Visualize. Bài 4: bản sao Mẫu thương hiệu, gõ "/" chọn Kế hoạch 2027 | Bài 1: cả deck đổi màu, font, chân trang; tiêu đề thành thông điệp; số liệu giữ nguyên; slide mới đúng 3 vấn đề. Bài 4: 6 slide dùng bố cục của mẫu, có bảng 3 cấp bậc 8 / 12 / 25 triệu | Copilot không sửa được cả deck một lần: sửa từng slide. Bài 4 ra theme mặc định: Design > Browse for Themes chọn lại mẫu. Giữ lại **bản deck và mẫu gốc** cho buổi học |
+| Outlook (Lab 5) | Phân 3 nhóm email; Summary by Copilot một chuỗi email dài; Draft with Copilot; Coaching by Copilot; email mới gõ "/" chọn báo cáo Word | Có ít nhất 10 email trong 3 ngày gần nhất và 1 chuỗi email nhiều người; thư nháp bám đúng chuỗi email; email từ báo cáo có 432 tỷ, 84 tỷ, 39%, 20% | Hộp thư trống: gửi trước vài email và một chuỗi trả lời qua lại giữa các tài khoản |
 | Teams (Lab 6) | Gõ "/" chọn transcript mẫu trong Copilot Chat, hỏi 3 câu và lập biên bản; nếu dùng cuộc họp thật: họp thử có bật Recording và Transcript | Trả lời đúng phần bỏ lỡ, việc của Phòng Kế hoạch (08/12, 10/12), 2 điểm chưa thống nhất; tab Recap xuất hiện sau cuộc họp thử | Không có Recap: kiểm tra đã bật Transcript và tài khoản có tham dự; Recap có thể mất vài phút mới hiện. Dùng transcript mẫu thay cho cuộc họp thật |
 
 ### 3.4 Chạy thử các tính năng mới
@@ -98,9 +117,10 @@ Tính năng nào chưa có trên tenant thì chuyển bài đó sang **speaker d
 | Nút Work IQ | 1 | Thấy nút Work IQ góc trên bên trái Copilot Chat |
 | Copilot bật Track Changes, thêm comment | 2 | Prompt Bài 1 tạo được vết sửa và comment trong Word desktop |
 | Interactive canvas | 3 | Gõ @interactive-canvas trong Copilot của Excel tạo được dashboard |
+| Skills trong Excel | 3 | Gõ @skill-builder tạo và lưu được skill; thấy **Manage plugins & skills** > **Custom skills** |
 | Visualize this slide, Interactive Slide, Generate speaker notes | 4 | Có skill trong **+ > Choose skills**, nút **Interactive Slide** ở tab Insert, mục **Generate speaker notes** ở View > Notes |
 | @Copilot trong nhóm chat | 6 | Thêm được Copilot vào nhóm chat bằng **Add agents and bots** |
-| Researcher | 7 | Thấy Researcher trong Agents; **chạy sẵn báo cáo** bằng đề bài trong lab (mất 3-10 phút) và giữ tab kết quả |
+| Researcher | 7 | Thấy Researcher trong Agents; **chạy sẵn báo cáo** bằng đề bài trong lab, đính kèm cả file Excel và Kế hoạch 2027 (mất 3-10 phút), giữ tab kết quả |
 | Agent Builder | 8 | Thấy **New Agent**, tạo và chia sẻ được agent |
 | SharePoint agent, agent trong Teams | 9 | Xem mục 4.2 |
 
@@ -194,12 +214,12 @@ Câu nối sang bước tiếp theo (chỉ nói miệng): khi doanh nghiệp mu�
 | Lab | Bài chính | Chuẩn bị và lưu ý |
 |---|---|---|
 | 1 - Copilot Chat | "Bạn biết gì về tôi?", dấu "/", bức tranh quý 3 từ Excel và Word | Cần dữ liệu thật trong hộp thư, lịch. Đáp án Bài 3: kế hoạch chưa đề cập lợi nhuận giảm 16,8% (thầu phụ vượt 39%) và 36% doanh thu từ một khách hàng |
-| 2 - Word | Copilot sửa báo cáo bằng Track Changes; duyệt và viết tóm tắt điều hành | Word desktop. Đáp án: 5 chỗ sai so với kế hoạch (dưới 13%, +45, 32 giờ, quý 3/2027, 64 tỷ) và 3 đề xuất trái Sổ tay (Mục 5.1, 5.2, 7.3). Nếu Copilot không tự bật được Track Changes, bật tay ở tab Review |
-| 3 - Excel | Xu hướng và điểm bất thường; Interactive canvas | File mở từ OneDrive. Đáp án: từ tháng 7 lợi nhuận thấp hơn kế hoạch 5, 9, 8 tỷ do chi phí; TP. Hồ Chí Minh bất thường (biên 15%, nghỉ việc 26,3%, NPS 29). Skill: chỉ demo |
-| 4 - PowerPoint | Áp mẫu thương hiệu và làm gọn deck có sẵn; thêm slide từ báo cáo + Visualize this slide; Interactive slide; speaker notes | PowerPoint desktop; học viên tải file mẫu thương hiệu về máy để dùng Browse for Themes |
-| 5 - Outlook | Hộp thư thành danh sách việc, tóm tắt chuỗi email, soạn thư trả lời | Chỉ làm nếu còn thời gian |
+| 2 - Word | Bài 1 Track Changes và duyệt thay đổi; Bài 2 tờ trình trên mẫu có sẵn | Word desktop. Đáp án Bài 1: 5 chỗ sai so với kế hoạch (dưới 13%, +45, 32 giờ, quý 3/2027, 64 tỷ) và 3 đề xuất trái Sổ tay (Mục 5.1, 5.2, 7.3). Bài 2: điểm cần chỉ cho khách hàng là Copilot **tự sửa đề xuất sai** của bản nháp (Giám đốc Tài chính → Tổng Giám đốc, không báo giá → 03 báo giá, 45% → 30%) khi điền mẫu |
+| 3 - Excel | Xu hướng và điểm bất thường; Interactive canvas; skill làm báo cáo hằng tháng | File mở từ OneDrive. Đáp án: từ tháng 7 lợi nhuận thấp hơn kế hoạch 5, 9, 8 tỷ do chi phí; TP. Hồ Chí Minh bất thường (biên 15%, nghỉ việc 26,3%, NPS 29). Skill: chiếu video, nhấn mạnh tháng 10 chạy lại chỉ bằng một câu |
+| 4 - PowerPoint | Bài 1 cập nhật deck có sẵn từ báo cáo Word + Visualize; Bài 2 interactive slide; Bài 3 speaker notes; Bài 4 deck mới từ Word trên mẫu thương hiệu | PowerPoint desktop; học viên tải file mẫu thương hiệu về máy để dùng Browse for Themes. Bài 4 chiếu video |
+| 5 - Outlook | Hộp thư thành danh sách việc, tóm tắt chuỗi email, soạn thư trả lời, email từ báo cáo Word | Chỉ làm nếu còn thời gian; ưu tiên bước 5 vì nối tiếp câu chuyện |
 | 6 - Teams | 3 câu hỏi trên transcript mẫu; @Copilot trong nhóm chat | Chia nhóm 3-4 người trước khi vào bài. Người gọi @Copilot cần licence. Copilot chưa dùng được trong chat của cuộc họp |
-| 7 - Researcher | Đề bài 3 câu hỏi cho kế hoạch 2027 | Chỉ show báo cáo chạy sẵn, không chạy trực tiếp |
+| 7 - Researcher | Đề bài 3 câu hỏi, đính kèm số liệu quý 3 và Kế hoạch 2027 | Chỉ show báo cáo chạy sẵn. Nhấn mạnh: viết báo cáo AI nào cũng làm được, khác biệt là Researcher **đối chiếu với tài liệu nội bộ** (chỉ ra kế hoạch còn thiếu rủi ro khách hàng lớn và thầu phụ) |
 
 Đáp án đầy đủ của mọi lab nằm trong demo-files/README.md của dự án.
 

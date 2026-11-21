@@ -7,6 +7,7 @@
 >
 > - Biến hộp thư thành danh sách việc cần làm ngay và việc để sau
 > - Nắm một chuỗi email dài và soạn thư trả lời đúng trọng tâm
+> - Soạn email mới từ nội dung một tài liệu Word bằng "/"
 >
 > **Biết được**
 >
@@ -34,8 +35,13 @@
 > Soạn thư phản hồi chuỗi email: ghi nhận vấn đề, nêu rõ việc tôi sẽ làm, việc tôi cần người khác hỗ trợ và thời hạn, hẹn thời điểm cập nhật tiếp theo. Giọng điềm tĩnh, rõ ràng. Chỗ nào chưa chắc chắn ghi [CẦN XÁC NHẬN].
 
 4. Trước khi gửi, chọn **Coaching by Copilot** để xem góp ý về giọng điệu
+5. Tạo email mới, chọn **Draft with Copilot**, gõ "/" chọn [Báo cáo quản lý Q3 2026 (bản nháp).docx](#file-report) và nhập:
 
-**Kết quả mong đợi:** Danh sách 3 nhóm việc, bản tóm tắt chuỗi email, và một thư trả lời nháp anh/chị chỉ cần chỉnh lại trước khi gửi.
+> **PROMPT:**
+>
+> Soạn email gửi Ban Giám đốc giới thiệu báo cáo quản lý quý 3 đính kèm: 3 điểm chính trong mục Kết quả quý 3, mỗi điểm có số liệu so với kế hoạch, và đề nghị Ban Giám đốc cho ý kiến trước ngày họp giao ban. Không quá 120 chữ.
+
+**Kết quả mong đợi:** Danh sách 3 nhóm việc, bản tóm tắt chuỗi email, một thư trả lời nháp anh/chị chỉ cần chỉnh lại trước khi gửi, và email gửi Ban Giám đốc nêu doanh thu **432 tỷ** (đạt 99,1% kế hoạch), lợi nhuận **84 tỷ** (giảm 16,8%) do chi phí thầu phụ **vượt kế hoạch 39%**, tỷ lệ nghỉ việc **20%**.
 
 > [!TIP]
 > Nếu anh/chị là quản lý, đổi nhóm (1) thành *"Cần tôi quyết định hoặc phê duyệt hôm nay"* và nhóm (2) thành *"Có thể giao cho thành viên trong đội"*.

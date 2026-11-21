@@ -23,6 +23,7 @@ FILES = {  # đường dẫn trên site: tên file gốc
     "phan-hoi-khach-hang-t9-t10-2026.xlsx": "Phản hồi khách hàng T9-T10 2026 (xuất từ hệ thống).xlsx",
     "ke-hoach-hoat-dong-2027.docx": "Kế hoạch Hoạt động 2027 (dự thảo).docx",
     "bao-cao-quan-ly-q3-2026-ban-nhap.docx": "Báo cáo quản lý Q3 2026 (bản nháp).docx",
+    "mau-to-trinh-gia-dinh.docx": "Mẫu tờ trình (giả định).docx",
     "transcript-hop-giao-ban-q3-mau.docx": "Transcript họp giao ban quý 3 (mẫu).docx",
     "town-hall-q3-2026-ban-nhap.pptx": "Town hall Q3 2026 (bản nháp).pptx",
     "mau-thuong-hieu-gia-dinh.pptx": "Mẫu thương hiệu (giả định).pptx",

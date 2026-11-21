@@ -26,9 +26,9 @@ Các lab không gắn với một phòng ban cố định. Bảng dưới đây 
 | Lab | Ứng dụng | Nhân viên, chuyên viên | Trưởng nhóm, quản lý |
 |-----|----------|------------------------|----------------------|
 | 1 | Copilot Chat | Hỏi về công việc của mình, gọi người, cuộc họp, file bằng "/" | Tìm vấn đề trong số liệu mà kế hoạch còn thiếu |
-| 2 | Word | Sửa báo cáo có sẵn theo kế hoạch và chính sách, có vết sửa | Duyệt từng thay đổi trước khi gửi cấp trên |
-| 3 | Excel | Tìm xu hướng và điểm bất thường trong số liệu | Dashboard tương tác cho cuộc họp |
-| 4 | PowerPoint | Làm mới slide có sẵn theo mẫu thương hiệu, speaker notes | Slide tương tác cho buổi họp toàn công ty |
+| 2 | Word | Sửa báo cáo có sẵn theo kế hoạch và chính sách, có vết sửa; điền tờ trình trên mẫu có sẵn | Duyệt từng thay đổi trước khi gửi cấp trên |
+| 3 | Excel | Tìm xu hướng và điểm bất thường; skill làm báo cáo hằng tháng từ dữ liệu thô | Dashboard tương tác cho cuộc họp |
+| 4 | PowerPoint | Làm mới slide có sẵn, tạo slide từ tài liệu Word theo mẫu thương hiệu, speaker notes | Slide tương tác cho buổi họp toàn công ty |
 | 5 | Outlook | Xử lý hộp thư, soạn thư khó | Phân loại việc cần quyết và việc giao lại |
 | 6 | Teams | Biết mình bỏ lỡ gì trong cuộc họp, @Copilot trong nhóm chat | Biên bản có người phụ trách và thời hạn, chia việc cho nhóm |
 | 7 | Researcher | Nghiên cứu chủ đề chuyên môn | Chuẩn bị đề xuất, chiến lược |
@@ -48,11 +48,11 @@ Workshop không đi qua mọi nút bấm, mà tập trung vào các tình huốn
 |---|--------------|-------|
 | 1 | **Copilot hiểu ngữ cảnh công việc.** Không chỉ trả lời câu hỏi, Copilot làm việc với email, cuộc họp, con người và tài liệu mà anh/chị có quyền truy cập, ngay từ ngày đầu | Lab 1 |
 | 2 | **Dấu "/" là thao tác dùng hằng ngày.** Gõ "/" để gọi đúng người, file, email, cuộc họp làm nguồn, trong Copilot Chat, Word, Excel, PowerPoint | Lab 1-4 |
-| 3 | **Microsoft 365 là một luồng công việc liên tục.** Copilot làm việc ngay trong Word, Excel, PowerPoint, Teams, trên file có sẵn, không cần chép nội dung sang công cụ AI bên ngoài rồi chép kết quả trở lại | Lab 2-4 |
+| 3 | **Microsoft 365 là một luồng công việc liên tục.** Copilot làm việc ngay trong Word, Excel, PowerPoint, Teams, trên file có sẵn: từ một tài liệu Word tạo ra tờ trình, bộ slide hay email; từ dữ liệu Excel thô ra báo cáo. Không cần chép nội dung sang công cụ AI bên ngoài rồi chép kết quả trở lại | Lab 2-5 |
 | 4 | **Teams là trung tâm cộng tác.** Cuộc họp thành hành động, @Copilot trong nhóm chat, và là nơi đưa agent đến với đồng nghiệp | Lab 6, Lab 9 |
 | 5 | **Anh/chị tự tạo được tài sản AI.** Agent và skill giúp chuẩn hóa một quy trình nhiều bước, thay vì viết lại nhiều prompt mỗi lần | Lab 8, Lab 9 |
 
-Mỗi lab mở đầu bằng khung **Sau lab này** (làm được gì, biết được gì), phần **Thực hành trong buổi học**, và phần **Tự thực hành thêm** để luyện tiếp sau buổi học. Mỗi lab có tình huống và file demo riêng, làm lab nào trước cũng được.
+Mỗi lab mở đầu bằng khung **Sau lab này** (làm được gì, biết được gì), phần **Thực hành trong buổi học**, và phần **Tự thực hành thêm** để luyện tiếp sau buổi học. Các lab Copilot Chat, Word, Excel, PowerPoint cùng xoay quanh một câu chuyện (chuẩn bị báo cáo quý 3 và Kế hoạch 2027), nhưng mỗi lab bắt đầu từ file demo có sẵn, nên làm lab nào trước cũng được.
 
 ### Tính năng mới trong workshop
 
@@ -66,7 +66,7 @@ Các bài có nhãn [MỚI] dùng tính năng Microsoft mới phát hành.
 | **Visualize this slide**, **interactive slide**, **Generate speaker notes** | PowerPoint | Lab 4 |
 | **@Copilot** trong nhóm chat | Teams | Lab 6 |
 | **SharePoint agent** trong nhóm chat Teams | Teams, SharePoint | Lab 9 |
-| **Skills** trong Excel và Copilot Chat | Excel, Copilot Chat | Lab 3, Lab 8 (tự thực hành thêm) |
+| **Skills** trong Excel và Copilot Chat | Excel, Copilot Chat | Lab 3; Lab 8 (tự thực hành thêm) |
 
 ---
 

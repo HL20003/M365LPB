@@ -39,7 +39,9 @@ W = A4[0] - 36 * mm
 
 def inline(t):
     t = t.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-    return re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", t)
+    t = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", t)
+    t = re.sub(r"(?<![*\w])\*(?!\s)(.+?)(?<!\s)\*(?![*\w])", r"<i>\1</i>", t)
+    return re.sub(r"`(.+?)`", r'<font face="Courier">\1</font>', t)
 
 
 def make_table(rows):
@@ -49,8 +51,8 @@ def make_table(rows):
     # độ rộng cột theo độ dài chữ, có giới hạn trên/dưới
     lens = [max(len(r[i]) if i < len(r) else 0 for r in data) for i in range(ncol)]
     # không để cột hẹp hơn từ dài nhất trong cột (tránh cắt đôi từ như "Copilot", "PowerPoint")
-    words = [max((len(w) for r in data if i < len(r) for w in r[i].replace("**", "").split()), default=1) for i in range(ncol)]
-    weights = [min(max(l, 20, wl * 3.8), 90) for l, wl in zip(lens, words)]
+    words = [max((len(w) for r in data if i < len(r) for w in re.sub(r"[*`]", "", r[i]).split()), default=1) for i in range(ncol)]
+    weights = [min(max(l, 20, wl * 5.2), 90) for l, wl in zip(lens, words)]
     widths = [W * w / sum(weights) for w in weights]
     body = [[Paragraph(inline(c), cellb if r == 0 else cell) for c in row] for r, row in enumerate(data)]
     t = Table(body, colWidths=widths, repeatRows=1)
