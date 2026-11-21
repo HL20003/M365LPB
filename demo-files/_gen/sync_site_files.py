@@ -16,7 +16,6 @@ DST = SRC.parent / "public" / "files"
 SKILLS = SRC / "skills"
 
 FILES = {  # đường dẫn trên site: tên file gốc
-    "hop-dong-dich-vu-to-chuc-su-kien.docx": "Hợp đồng Dịch vụ Tổ chức Sự kiện (dự thảo).docx",
     "so-tay-chinh-sach-noi-bo.docx": "Sổ tay Chính sách Nội bộ.docx",
     "sample-chinh-sach-bao-mat-thong-tin.docx": "SAMPLE Chính sách Bảo mật Thông tin.docx",
     "bao-cao-ket-qua-kinh-doanh-q3-2026.xlsx": "Báo cáo Kết quả Kinh doanh Q3 2026.xlsx",
@@ -30,6 +29,7 @@ FILES = {  # đường dẫn trên site: tên file gốc
 }
 SKILL_ZIPS = {  # đường dẫn trên site: (tên khi tải về, thư mục skill, có bọc thư mục không)
     "skill-excel-bao-cao-phan-hoi-khach-hang.zip": ("Skill Excel - bao-cao-phan-hoi-khach-hang.zip", "bao-cao-phan-hoi-khach-hang", True),
+    "skill-ppt-slide-tom-tat-dieu-hanh.zip": ("Skill PowerPoint - slide-tom-tat-dieu-hanh.zip", "slide-tom-tat-dieu-hanh", True),
     "skill-chat-bao-cao-tuan.zip": ("Skill Copilot Chat - bao-cao-tuan.zip", "bao-cao-tuan", False),
 }
 ZIP_NAME = "copilot-workshop-demo-files.zip"

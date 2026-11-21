@@ -6,33 +6,29 @@
 > **Làm được**
 >
 > - Làm mới một bộ slide **có sẵn**: áp mẫu thương hiệu, nhờ Copilot rút gọn chữ và viết lại tiêu đề, giữ nguyên số liệu
-> - Thêm slide từ báo cáo Word bằng "/" và biến slide nhiều chữ thành hình minh họa với **Visualize this slide**
-> - Tạo **interactive slide** (dòng thời gian bấm được khi trình chiếu)
-> - Tạo **speaker notes** cho cả bài và diễn tập trước câu hỏi khó
-> - Tạo bộ slide **mới** từ tài liệu Word, dựng trên **mẫu thương hiệu** của công ty
+> - Thêm một **skill** vào Copilot trong PowerPoint và dùng lại cho mọi bộ slide trình Ban Giám đốc
 >
 > **Biết được**
 >
-> - Không bắt đầu từ trang trắng: Copilot sửa trên bộ slide đang có, hoặc dựng slide mới trên mẫu thương hiệu từ tài liệu Word
-> - **Skill** trong PowerPoint là các việc Copilot làm sẵn được, chọn tại **+** > **Choose skills**
-> - Interactive slide chỉ bấm được khi trình chiếu trong PowerPoint; in hoặc xuất PDF sẽ thành ảnh tĩnh
+> - Không bắt đầu từ trang trắng: Copilot sửa trên bộ slide đang có và đối chiếu số liệu với tài liệu Word gọi bằng "/"
+> - **Skill** là một quy chuẩn viết một lần, gọi lại bằng **@tên-skill**: cả đơn vị trình bày theo cùng một bố cục
+> - Ngoài skill tự thêm, PowerPoint có sẵn các skill như **Visualize this slide**, **Review this presentation**, **Prepare for questions** tại **+** > **Choose skills**
 
 ## Tình huống
 
 > **Anh/chị** - *người được nhờ hoàn thiện bài trình bày cho buổi họp toàn công ty*
 >
-> Phòng Truyền thông nội bộ gửi bản nháp bộ slide cho buổi họp toàn công ty (town hall) quý 3: đúng nội dung, nhưng toàn chữ, tiêu đề chỉ là tên chủ đề, chưa theo mẫu thương hiệu, và chưa có slide về những vấn đề cần hành động trong báo cáo quản lý quý 3. Thay vì làm lại từ đầu, anh/chị cập nhật ngay trên bộ slide có sẵn.
+> Phòng Truyền thông nội bộ gửi bản nháp bộ slide cho buổi họp toàn công ty (town hall) quý 3: đúng nội dung, nhưng toàn chữ, tiêu đề chỉ là tên chủ đề và chưa theo mẫu thương hiệu. Thay vì làm lại từ đầu, anh/chị cập nhật ngay trên bộ slide có sẵn. Ngoài ra, Ban Giám đốc yêu cầu mọi bộ slide trình lên phải có một **slide tóm tắt điều hành** theo cùng bố cục.
 
 **Tài liệu demo:**
 
 - [Town hall Q3 2026 (bản nháp).pptx](#file-townhall): 8 slide, nhiều chữ, theme mặc định
 - [Mẫu thương hiệu (giả định).pptx](#file-brand): mẫu thương hiệu của công ty giả định (màu, font, chân trang "Phân loại: Nội bộ")
-- [Báo cáo quản lý Q3 2026 (bản nháp).docx](#file-report): nguồn cho slide mới
-- [Kế hoạch Hoạt động 2027 (dự thảo).docx](#file-plan): tài liệu gốc để kiểm tra số liệu và nguồn cho bộ slide mới ở Bài tập 4
+- [Kế hoạch Hoạt động 2027 (dự thảo).docx](#file-plan): tài liệu gốc để kiểm tra số liệu
 
 ## Thực hành trong buổi học
 
-### Bài tập 1: Cập nhật bộ slide có sẵn từ báo cáo Word [MỚI]
+### Bài tập 1: Cập nhật bộ slide có sẵn theo mẫu thương hiệu
 
 [video:ppt-update-deck]
 
@@ -55,78 +51,71 @@
 
 **Kết quả mong đợi:** Tiêu đề thành thông điệp, ví dụ *"Doanh thu đạt 99,1% kế hoạch nhưng lợi nhuận giảm 16,8%"*, *"Nghỉ việc 20%, cao gần gấp đôi kế hoạch"*. Mỗi slide còn 3-4 ý, số liệu (432 tỷ, 84 tỷ, 1.162 nhân viên, 58 người nghỉ việc, 8/12/25 triệu ngân sách đào tạo) giữ nguyên.
 
-**Thêm slide từ báo cáo Word và biến thành hình minh họa:**
+### Bài tập 2: Dạy Copilot quy chuẩn slide tóm tắt điều hành bằng skill [MỚI]
 
-5. Chọn slide **Kết quả kinh doanh quý 3**
-6. Trong khung Copilot, gõ "/" chọn [Báo cáo quản lý Q3 2026 (bản nháp).docx](#file-report), rồi nhập:
+[video:ppt-skill]
+
+Mọi bộ slide trình Ban Giám đốc cần một slide tóm tắt điều hành theo cùng bố cục. Thay vì mỗi lần viết lại một prompt dài, anh/chị thêm quy chuẩn này vào Copilot **một lần** dưới dạng **skill**, rồi gọi lại cho bất kỳ bộ slide nào.
+
+**Thêm skill:**
+
+1. Mở [Town hall Q3 2026 (bản nháp).pptx](#file-townhall) **từ OneDrive** bằng **PowerPoint trên máy tính** (bộ slide sau Bài tập 1 hay bản nháp gốc đều được)
+2. Trong khung Copilot, bấm **+** > **Choose skills**, cuộn xuống cuối danh sách, chọn **Manage skills** > **Add skill**
+3. Bấm **Sao chép** ở khung dưới đây, dán vào ô nội dung skill và chọn **Add**. Skill được lưu vào thư mục **Skills** trên OneDrive của anh/chị
+
+```skill
+---
+name: slide-tom-tat-dieu-hanh
+description: Tạo một slide tóm tắt điều hành theo quy chuẩn trình Ban Giám đốc cho bộ slide đang mở. Dùng khi người dùng nhờ làm slide tóm tắt, executive summary hoặc chuẩn bị bộ slide trình Ban Giám đốc.
+---
+
+# Slide tóm tắt điều hành
+
+Mọi bộ slide trình Ban Giám đốc có một slide tóm tắt điều hành theo cùng một bố cục, để người đọc nắm được toàn bộ nội dung trong 30 giây.
+
+## Các bước
+
+1. Đọc toàn bộ bộ slide đang mở. Không dùng thông tin ngoài bộ slide.
+2. Thêm MỘT slide ngay sau slide bìa, dùng bố cục và màu của mẫu đang áp dụng, giữ chân trang phân loại.
+3. Tiêu đề: một câu nêu thông điệp chính của cả bộ slide, tối đa 15 từ, có ít nhất một con số.
+4. Nội dung chia đúng ba khối, mỗi khối tối đa 2 dòng, mỗi dòng có ít nhất một con số so sánh (với kế hoạch, kỳ trước hoặc chuẩn ngành):
+   - **Kết quả**: những gì đã đạt được
+   - **Vấn đề**: tối đa 2 vấn đề lớn nhất và nguyên nhân
+   - **Hướng xử lý**: giải pháp đã có trong bộ slide
+5. Dòng cuối: "Cần Ban Giám đốc quyết định:" kèm 1-2 việc cụ thể, có thời hạn nếu bộ slide có nêu.
+6. Giữ nguyên mọi con số như trong bộ slide. Con số nào không chắc chắn thì ghi [CẦN XÁC NHẬN].
+7. Sau khi tạo slide, trả lời trong khung chat bằng bảng: Con số | Lấy từ slide nào.
+
+## Không làm
+
+- Không thêm số liệu, cam kết hay quyền lợi không có trong bộ slide.
+- Không sửa các slide khác.
+```
+
+**Chạy skill:**
+
+4. Trong khung Copilot, gõ **@slide-tom-tat-dieu-hanh** (hoặc chọn trong **+** > **Choose skills**) và nhập:
 
 > **PROMPT:**
 >
-> Thêm một slide ngay sau slide này với tiêu đề là thông điệp chính về những vấn đề cần hành động, lấy từ mục 1 "Kết quả quý 3" của báo cáo đính kèm: lợi nhuận giảm, chi phí thuê thầu phụ vượt kế hoạch, tỷ lệ nghỉ việc cao. Mỗi vấn đề một dòng, có con số so với kế hoạch. Giữ đúng số liệu trong báo cáo.
+> @slide-tom-tat-dieu-hanh Tạo slide tóm tắt điều hành cho bộ slide này.
 
-7. Với slide vừa thêm, bấm **+** > **Choose skills** > **Visualize this slide** (hoặc gõ *"Visualize this slide"*)
-8. Lặp lại **Visualize this slide** với slide **Chương trình Phát triển và Phúc lợi 2027** (slide nhiều chữ nhất)
+**Kết quả mong đợi:** Một slide mới ngay sau slide bìa, cùng màu của mẫu đang dùng:
 
-**Kết quả mong đợi:** Slide mới có tiêu đề kiểu *"Ba vấn đề cần xử lý trước khi chốt Kế hoạch 2027"*, gồm lợi nhuận **84 tỷ, giảm 16,8%**; chi phí thuê thầu phụ **50 tỷ, vượt kế hoạch 39%**; tỷ lệ nghỉ việc **20%** (kế hoạch 11,5%). Sau **Visualize this slide**, mỗi vấn đề thành một khối có biểu tượng; slide phúc lợi thành bố cục 3 cột theo cấp bậc (ngân sách đào tạo 8 / 12 / 25 triệu đồng).
+- **Tiêu đề** kiểu *"Doanh thu đạt 99,1% kế hoạch nhưng lợi nhuận giảm 16,8%"*
+- **Kết quả:** doanh thu **432 tỷ đồng** (99,1% kế hoạch, tăng 3,3% so với quý 2)
+- **Vấn đề:** lợi nhuận trước thuế **84 tỷ** (79% kế hoạch) do chi phí thầu phụ **50 tỷ, vượt kế hoạch 39%**; tỷ lệ nghỉ việc **20%** (kế hoạch 11,5%, ngành 13,5%)
+- **Hướng xử lý:** bốn sáng kiến 2027, trong đó lộ trình nghề nghiệp, mentor và tăng ngân sách đào tạo
+- **Cần Ban Giám đốc quyết định:** phê duyệt Kế hoạch 2027 trong **tháng 11/2026**
+- Trong khung chat có bảng Con số | Lấy từ slide nào để anh/chị kiểm tra
+
+5. Thử lại với một bộ slide của chính anh/chị: mở file, gõ **@slide-tom-tat-dieu-hanh**. Không phải viết lại yêu cầu nào
 
 > [!TIP]
-> Kiểm tra lại từng con số trên hình sau khi Copilot vẽ. Nếu chưa ưng, hỏi tiếp: *"Dùng bố cục 3 cột, làm nổi bật con số bằng màu nhấn của mẫu thương hiệu"*.
-
-### Bài tập 2: Tạo interactive slide cho lộ trình triển khai [MỚI]
-
-[video:ppt-interactive]
-
-1. Chọn slide **Lộ trình triển khai**
-2. Chọn tab **Insert** (hoặc **Home**) > **Interactive Slide**. Khung Copilot hiện các dạng: **Summary**, **Timeline**, **Dashboard**, **Comparison**, **Custom**. Chọn **Timeline**
-3. Nhập prompt:
-
-> **PROMPT:**
->
-> Tạo dòng thời gian tương tác cho lộ trình triển khai Kế hoạch 2027 từ nội dung slide này: 11/2026, 12/2026, 01/2027, Quý 1/2027, Quý 3/2027 và đánh giá hằng quý. Khi bấm vào mỗi mốc, hiện hoạt động, đơn vị chủ trì và việc nhân viên cần làm ở mốc đó. Dùng màu của mẫu thương hiệu.
-
-4. Bấm **Slide Show** và thử bấm vào từng mốc
-5. Chỉnh bằng câu lệnh nếu cần, ví dụ: *"Làm nổi bật mốc 01/2027 vì ảnh hưởng tới mọi nhân viên"*
-
-**Kết quả mong đợi:** Dòng thời gian 6 mốc, bấm vào mốc **01/2027** hiện *"Áp dụng Chương trình Phát triển và Phúc lợi 2027, trao đổi 1:1 với quản lý"*, mốc **Quý 1/2027** hiện *"Đào tạo Copilot theo vai trò cho toàn bộ nhân viên"*.
+> Không dán được nội dung? Tải [Skill PowerPoint - slide-tom-tat-dieu-hanh.zip](#file-skill-ppt) và giải nén. Trong khung Copilot, bấm **...** > **Manage skills** > **Custom skills** > **Create OneDrive folder** > **Open skills folder**, chép thư mục **slide-tom-tat-dieu-hanh** vào đó và bấm **Refresh**. Tên thư mục phải trùng với dòng *name* trong SKILL.md.
 
 > [!NOTE]
-> Interactive slide **chỉ chỉnh được bằng câu lệnh cho Copilot**. Người xem không cần licence Copilot vẫn bấm được khi trình chiếu trong PowerPoint (Windows, Mac, web). Khi in, xuất PDF hoặc mở trên điện thoại, slide hiện thành ảnh tĩnh.
-
-### Bài tập 3: Speaker notes và diễn tập câu hỏi khó [MỚI]
-
-1. Chọn tab **View** > **Notes** (mũi tên) > **Generate speaker notes for all slides**
-2. Đọc lời trình bày Copilot đề xuất, bấm **Keep it** để lưu vào phần ghi chú của từng slide (hoặc **Discard**)
-3. Diễn tập: trong khung Copilot, nhập:
-
-> **PROMPT:**
->
-> Hãy đóng vai một nhân viên làm việc 3 năm, đang mệt vì làm thêm giờ và vừa nhận lời mời từ một công ty khác. Dựa trên bộ slide này, đặt 5 câu hỏi khó nhất người đó có thể hỏi tôi trong buổi họp toàn công ty. Với mỗi câu, gợi ý cách trả lời ngắn gọn, trung thực, chỉ dựa trên những gì kế hoạch đã nêu, và chỉ ra slide nào cần bổ sung.
-
-**Kết quả mong đợi:** Mỗi slide có speaker notes, tổng thời lượng phù hợp một bài 10 phút. 5 câu hỏi sát thực tế, ví dụ *"Bao giờ giờ làm thêm thật sự giảm?"*, *"Lộ trình nghề nghiệp có gắn với tăng lương không?"*, *"Dùng Copilot có phải để cắt giảm người không?"*, kèm gợi ý trả lời.
-
-> [!TIP]
-> Chỉ cần notes cho một slide: chọn **Generate speaker notes for current slide**. Speaker notes hoạt động tốt nhất với bài dưới 50 slide.
-
-### Bài tập 4: Tạo bộ slide mới từ tài liệu Word theo mẫu thương hiệu
-
-[video:ppt-from-word]
-
-Khi chưa có bộ slide nào, anh/chị vẫn không bắt đầu từ trang trắng: mở **mẫu thương hiệu** của công ty và để Copilot dựng nội dung từ tài liệu Word.
-
-1. Mở [Mẫu thương hiệu (giả định).pptx](#file-brand) **từ OneDrive** bằng **PowerPoint trên máy tính**
-2. Chọn **File** > **Save a Copy**, đặt tên *Kế hoạch 2027 - họp toàn công ty.pptx* và mở bản sao
-3. Nhấn **Copilot**, gõ "/" chọn [Kế hoạch Hoạt động 2027 (dự thảo).docx](#file-plan), rồi nhập:
-
-> **PROMPT:**
->
-> Dùng các bố cục của mẫu này, tạo bộ slide 6 trang từ file đính kèm để trình bày Kế hoạch 2027 tại buổi họp toàn công ty, thay cho 2 slide mẫu. Viết bằng ngôn ngữ của nhân viên: thay đổi gì, mỗi người được gì và cần làm gì. Có một slide về bốn sáng kiến trọng tâm, một slide so sánh quyền lợi của 3 cấp bậc dạng bảng, một slide lộ trình triển khai, slide cuối là 3 việc mỗi người làm trong tháng 1. Tiêu đề mỗi slide là một thông điệp. Bỏ phần ngân sách chi tiết và chỉ tiêu theo từng văn phòng.
-
-4. Kiểm tra từng slide, chỉnh bằng câu lệnh nếu cần, ví dụ: *"Slide quyền lợi: đổi thành bảng 3 cột, làm nổi bật ngân sách đào tạo bằng màu nhấn của mẫu"*
-
-**Kết quả mong đợi:** Bộ slide 6 trang mang màu, font và chân trang "Phân loại: Nội bộ" của mẫu thương hiệu; slide bìa dùng bố cục nền tối của mẫu. Nội dung gồm bốn sáng kiến trọng tâm, bảng quyền lợi 3 cấp bậc (ngân sách đào tạo **8 / 12 / 25 triệu đồng**), lộ trình từ **11/2026** đến **Quý 3/2027**, và 3 việc cho tháng 1 (trong đó có trao đổi 1:1 với quản lý). Không có số liệu ngân sách chi tiết.
-
-> [!TIP]
-> Nếu slide Copilot tạo chưa theo mẫu, chọn **Design** > **Browse for Themes...** và chọn lại file mẫu thương hiệu như ở Bài tập 1. Công ty đã có mẫu dùng chung trong thư viện của tổ chức thì dùng mẫu đó: mẫu càng chuẩn, slide Copilot tạo càng đúng thương hiệu.
+> Trong **+** > **Choose skills** còn có các skill dựng sẵn như **Review this presentation** (góp ý từng slide), **Visualize this slide** và **Prepare for questions** (dự đoán câu hỏi của người nghe). Skill anh/chị tự thêm chỉ mình anh/chị thấy; muốn cả đơn vị dùng chung, nhờ quản trị viên triển khai skill cho tổ chức.
 
 ## Tự thực hành thêm
 
@@ -142,7 +131,7 @@ Khi chưa có bộ slide nào, anh/chị vẫn không bắt đầu từ trang tr
 ## Lưu ý tuân thủ
 
 > [!NOTE]
-> Slide dùng ngoài phạm vi người được xem tài liệu gốc không được chứa số liệu Mật. Không hứa hẹn quyền lợi chưa được phê duyệt. Kiểm tra mọi con số trên slide, kể cả trên hình do **Visualize this slide** và interactive slide tạo ra, khớp với tài liệu chính thức trước khi trình bày.
+> Slide dùng ngoài phạm vi người được xem tài liệu gốc không được chứa số liệu Mật. Không hứa hẹn quyền lợi chưa được phê duyệt. Kiểm tra mọi con số trên slide, kể cả trên slide Copilot tạo thêm, khớp với tài liệu chính thức trước khi trình bày.
 
 ## Prompt đề xuất - PowerPoint
 
@@ -151,12 +140,6 @@ Khi chưa có bộ slide nào, anh/chị vẫn không bắt đầu từ trang tr
 > **PROMPT:**
 >
 > Rút bộ slide này còn 3 slide quan trọng nhất cho buổi họp 15 phút, giữ lại bảng so sánh và bước tiếp theo.
-
-### Dashboard tương tác
-
-> **PROMPT:**
->
-> Tạo interactive slide dạng Dashboard từ slide kết quả kinh doanh: doanh thu, lợi nhuận trước thuế, tỷ lệ nghỉ việc và NPS, mỗi chỉ số so với kế hoạch; bấm vào chỉ số hiện nguyên nhân chính.
 
 ### Báo cáo định kỳ
 

@@ -6,8 +6,8 @@
 > **Làm được**
 >
 > - Hỏi Copilot về một workbook nhiều sheet để tìm **xu hướng** và **điểm bất thường**, có số liệu và tên sheet
-> - Biến báo cáo nhiều sheet thành **dashboard tương tác** bằng Interactive canvas
 > - Tạo **skill** để Copilot tự làm sạch file dữ liệu thô và lập sheet báo cáo mới mỗi tháng
+> - Biến báo cáo nhiều sheet thành **dashboard tương tác** bằng Interactive canvas
 >
 > **Biết được**
 >
@@ -20,7 +20,7 @@
 >
 > Doanh thu quý 3 gần đạt kế hoạch nhưng lợi nhuận lại giảm. Trước cuộc họp, anh/chị cần biết vấn đề **bắt đầu từ khi nào** và **tập trung ở đâu**, rồi có một dashboard để Ban Giám đốc tự xem theo từng văn phòng.
 
-**Tệp demo:** [Báo cáo Kết quả Kinh doanh Q3 2026.xlsx](#file-business), gồm các sheet *Tổng quan Q3*, *PL_Budget_Actual*, *Doanh thu tháng*, *Danh sách dự án*, *Theo văn phòng*, *Benchmark*. Bài tập 3 dùng thêm [Phản hồi khách hàng T9-T10 2026 (xuất từ hệ thống).xlsx](#file-feedback).
+**Tệp demo:** [Báo cáo Kết quả Kinh doanh Q3 2026.xlsx](#file-business), gồm các sheet *Tổng quan Q3*, *PL_Budget_Actual*, *Doanh thu tháng*, *Danh sách dự án*, *Theo văn phòng*, *Benchmark*. Bài tập 2 dùng thêm [Phản hồi khách hàng T9-T10 2026 (xuất từ hệ thống).xlsx](#file-feedback).
 
 ## Thực hành trong buổi học
 
@@ -48,25 +48,7 @@
 > [!TIP]
 > Copilot ghi tên sheet cho từng con số để anh/chị kiểm tra nhanh.
 
-### Bài tập 2: Dashboard tương tác với Interactive canvas [MỚI]
-
-[video:excel-canvas]
-
-1. Vẫn trong file trên, nhấn **Copilot** và nhập:
-
-> **PROMPT:**
->
-> @interactive-canvas Tạo dashboard tương tác cho cuộc họp kết quả quý 3 từ các sheet Theo văn phòng, PL_Budget_Actual và Benchmark. Gồm: thẻ chỉ số doanh thu, lợi nhuận trước thuế và tỷ lệ nghỉ việc so với kế hoạch; biểu đồ tỷ lệ nghỉ việc theo văn phòng có đường trung vị ngành; biểu đồ doanh thu và biên lợi nhuận theo văn phòng; bộ lọc chọn văn phòng. Làm nổi bật các văn phòng có tỷ lệ nghỉ việc trên 15%.
-
-2. Bấm thử bộ lọc văn phòng, rồi chỉnh dashboard bằng câu lệnh, ví dụ:
-
-> **PROMPT:**
->
-> Thêm một thẻ chỉ số NPS so với quý 2, và đổi biểu đồ doanh thu thành biểu đồ cột sắp xếp từ cao xuống thấp.
-
-**Kết quả mong đợi:** Dashboard có thẻ **doanh thu 432 tỷ đồng** (đạt 99,1% kế hoạch), **lợi nhuận trước thuế 84 tỷ đồng** (79% kế hoạch), **tỷ lệ nghỉ việc 20%** (kế hoạch 11,5%). Biểu đồ nghỉ việc có đường trung vị ngành **13,5%**, **TP. Hồ Chí Minh 26,3%** được làm nổi bật; chỉ Đà Nẵng thấp hơn trung vị. Khi sửa số liệu trong sheet, dashboard cập nhật theo.
-
-### Bài tập 3: Tạo skill biến file dữ liệu thô thành báo cáo hằng tháng [MỚI]
+### Bài tập 2: Tạo skill biến file dữ liệu thô thành báo cáo hằng tháng [MỚI]
 
 [video:excel-skill]
 
@@ -97,6 +79,24 @@ Mỗi tháng anh/chị nhận file phản hồi khách hàng xuất từ hệ th
 
 > [!TIP]
 > Không tạo được skill bằng @skill-builder? Tải [Skill Excel - bao-cao-phan-hoi-khach-hang.zip](#file-skill-excel) và giải nén. Trong khung Copilot, bấm **...** > **Manage plugins & skills** > **Custom skills** > **Create OneDrive folder** > **Open skills folder**, chép thư mục **bao-cao-phan-hoi-khach-hang** vào đó và bấm **Refresh**. Một cách khác: chọn **Add** > **Record a skill**, tự làm một lần các bước rồi bấm **Stop** và **Save skill**.
+
+### Bài tập 3: Dashboard tương tác với Interactive canvas [MỚI]
+
+[video:excel-canvas]
+
+1. Mở lại [Báo cáo Kết quả Kinh doanh Q3 2026.xlsx](#file-business), nhấn **Copilot** và nhập:
+
+> **PROMPT:**
+>
+> @interactive-canvas Tạo dashboard tương tác cho cuộc họp kết quả quý 3 từ các sheet Theo văn phòng, PL_Budget_Actual và Benchmark. Gồm: thẻ chỉ số doanh thu, lợi nhuận trước thuế và tỷ lệ nghỉ việc so với kế hoạch; biểu đồ tỷ lệ nghỉ việc theo văn phòng có đường trung vị ngành; biểu đồ doanh thu và biên lợi nhuận theo văn phòng; bộ lọc chọn văn phòng. Làm nổi bật các văn phòng có tỷ lệ nghỉ việc trên 15%.
+
+2. Bấm thử bộ lọc văn phòng, rồi chỉnh dashboard bằng câu lệnh, ví dụ:
+
+> **PROMPT:**
+>
+> Thêm một thẻ chỉ số NPS so với quý 2, và đổi biểu đồ doanh thu thành biểu đồ cột sắp xếp từ cao xuống thấp.
+
+**Kết quả mong đợi:** Dashboard có thẻ **doanh thu 432 tỷ đồng** (đạt 99,1% kế hoạch), **lợi nhuận trước thuế 84 tỷ đồng** (79% kế hoạch), **tỷ lệ nghỉ việc 20%** (kế hoạch 11,5%). Biểu đồ nghỉ việc có đường trung vị ngành **13,5%**, **TP. Hồ Chí Minh 26,3%** được làm nổi bật; chỉ Đà Nẵng thấp hơn trung vị. Khi sửa số liệu trong sheet, dashboard cập nhật theo.
 
 ## Tự thực hành thêm
 

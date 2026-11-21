@@ -1,126 +1,74 @@
-# Lab 8 - Agent Builder in Copilot Chat
+# Lab 8 - Agent Builder: tạo agent và đưa vào Teams
 
 ## Sau lab này
 
 > [!OUTCOME]
 > **Làm được**
 >
-> - Tự tạo agent **Policy Assistant** cho cả công ty chỉ bằng tiếng Việt, không cần lập trình
+> - Tự tạo agent **Policy Assistant** chỉ bằng tiếng Việt, không cần lập trình
 > - Kiểm tra agent bằng bộ câu hỏi có đáp án, kể cả câu ngoài phạm vi, trước khi chia sẻ
-> - Tạo agent và chia sẻ link cho đồng nghiệp
+> - Chia sẻ agent cho đồng nghiệp và dùng agent ngay trong **Teams**
 >
 > **Biết được**
 >
-> - Agent giúp chuẩn hóa cách trả lời từ tài liệu nội bộ có kiểm soát, thay vì mỗi người tự viết prompt
-> - Agent tôn trọng phân quyền: người dùng chỉ nhận được nội dung từ tài liệu họ có quyền xem
-> - Sau khi tạo, đưa agent vào Teams để đồng nghiệp dùng ngay nơi làm việc (Lab 9)
-
-## Khái niệm cần biết
-
-| Khái niệm | Giải thích |
-|-----------|------------|
-| **Agent** | Trợ lý AI được tuỳ chỉnh, trả lời câu hỏi dựa trên instructions và knowledge sources đã cấu hình |
-| **Instructions** | Phần cấu hình quy định agent làm gì, trả lời theo giọng điệu nào và không được làm gì |
-| **Knowledge source** | Tài liệu agent dùng để trả lời (file, thư mục SharePoint, website), giúp câu trả lời chính xác và có nguồn |
-| **Starter prompts** | Các câu hỏi gợi ý hiển thị sẵn trên giao diện chat để người dùng bấm vào và bắt đầu |
-
-Agent Builder có hai cách làm việc, lab này dùng lần lượt từng cách:
-
-| Cách | Dùng để | Trong lab |
-|------|---------|-----------|
-| **Mô tả bằng prompt** (Describe) | Gõ mô tả agent bằng lời rồi nhấn **Send**, làm theo các câu hỏi của Agent Builder; Agent Builder tự điền cấu hình | Phần B |
-| **Configure** | Xem và chỉnh trực tiếp từng trường: Name, Description, Instructions, Knowledge, Starter prompts | Phần C |
-
-Khung chat thử nghiệm bên phải màn hình luôn hiển thị để anh/chị thử agent bất cứ lúc nào (Phần D).
+> - Agent chuẩn hóa cách trả lời từ tài liệu nội bộ có kiểm soát, thay vì mỗi người tự viết prompt
+> - Agent tôn trọng phân quyền: người hỏi chỉ nhận được nội dung từ tài liệu họ có quyền xem
+> - Agent chỉ thật sự có giá trị khi đến được nơi mọi người làm việc: **Teams**
 
 ## Tình huống
 
-> Ở công ty nào cũng vậy, nhân viên liên tục hỏi Phòng Hành chính - Nhân sự, Kế toán và quản lý trực tiếp cùng những câu hỏi: được bao nhiêu ngày phép, công tác phí tối đa bao nhiêu, mua sắm cần mấy báo giá và ai duyệt. Anh/chị tạo **Policy Assistant** - một trợ lý nội bộ giúp mọi nhân viên tự tra cứu nhanh chính sách nghỉ phép, làm việc từ xa, công tác phí, mua sắm và thẩm quyền phê duyệt, đào tạo, bảo mật và phúc lợi. Agent chỉ trả lời dựa trên Sổ tay Chính sách Nội bộ để đảm bảo chính xác.
+> Nhân viên liên tục hỏi Phòng Hành chính - Nhân sự, Kế toán và quản lý trực tiếp cùng những câu hỏi: được bao nhiêu ngày phép, công tác phí tối đa bao nhiêu, mua sắm cần mấy báo giá và ai duyệt. Anh/chị tạo **Policy Assistant**, trợ lý giúp mọi nhân viên tự tra cứu chính sách, chỉ trả lời dựa trên Sổ tay Chính sách Nội bộ, rồi đưa trợ lý này vào Teams cho đồng nghiệp dùng.
 
-**Knowledge source:** [Sổ tay Chính sách Nội bộ.docx](#file-handbook) - tải file và lưu vào **OneDrive** của anh/chị trước khi bắt đầu (xem [cách tải file Word/Excel về máy](#module-1/cach-tai-file-word-excel-ve-may)).
+**Tài liệu nguồn:** [Sổ tay Chính sách Nội bộ.docx](#file-handbook). Dùng file trên **site SharePoint của workshop** nếu người hướng dẫn đã chia sẻ, hoặc tải lên **OneDrive** của anh/chị trước khi bắt đầu.
 
-**Kết quả cuối lab:** một agent tên **Policy Assistant**, trả lời từ Sổ tay, có dẫn mục, từ chối câu hỏi ngoài phạm vi và có link chia sẻ cho đồng nghiệp.
+| Khái niệm | Nghĩa |
+|-----------|-------|
+| **Instructions** | Lời dặn cho agent: làm gì, giọng điệu nào, không được làm gì |
+| **Knowledge** | Tài liệu agent dùng để trả lời, giúp câu trả lời chính xác và có nguồn |
+| **Starter prompts** | Câu hỏi gợi ý hiện sẵn để người dùng bấm vào |
+| **Describe / Configure** | Hai cách làm việc trong Agent Builder: mô tả bằng lời để Agent Builder tự điền, hoặc chỉnh trực tiếp từng trường |
 
-## Phần A: Mở Agent Builder
+## Thực hành trong buổi học
 
-### Bước 1: Mở Agent Builder
+### Bài tập 1: Mô tả agent bằng lời
 
-1. Vào [https://m365.cloud.microsoft/](https://m365.cloud.microsoft/) bằng **tài khoản công ty** (không dùng tài khoản Microsoft cá nhân như Outlook.com, Hotmail) và mở **Copilot**
-2. Ở thanh điều hướng bên trái, tìm mục **Agents**, chọn **New Agent**
-3. Màn hình Agent Builder mở ra: ô mô tả agent ở giữa, nút **Configure** để chỉnh chi tiết, khung chat thử nghiệm ở bên phải
+1. Vào [https://m365.cloud.microsoft/](https://m365.cloud.microsoft/) bằng **tài khoản công ty**, mở **Copilot**
+2. Ở thanh bên trái, chọn **Agents** > **New Agent**. Màn hình Agent Builder có ô mô tả ở giữa, nút **Configure** và khung chat thử bên phải
+3. Gửi lần lượt 2 prompt dưới đây, đợi Agent Builder trả lời xong mới gửi prompt tiếp theo:
+
+> **PROMPT:**
+>
+> Tạo trợ lý nội bộ tên "Policy Assistant" cho toàn bộ nhân viên, giúp tra cứu nhanh chính sách nội bộ: thời gian làm việc, nghỉ phép, làm việc từ xa, công tác phí, mua sắm và thẩm quyền phê duyệt, tạm ứng, đào tạo, bảo mật thông tin và phúc lợi. Giọng điệu thân thiện, ngắn gọn, dễ hiểu với cả nhân viên mới. Trình bày định mức và cấp phê duyệt dạng bảng khi có thể, có ví dụ tính cụ thể khi người hỏi nêu thâm niên, chức danh hoặc giá trị. Cuối mỗi câu trả lời ghi mục tương ứng, ví dụ "(Nguồn: Sổ tay, Mục 4)".
+
+> **PROMPT:**
+>
+> Giới hạn: chỉ trả lời dựa trên Sổ tay Chính sách Nội bộ; nếu Sổ tay không có thông tin, nói rõ và đề nghị liên hệ đầu mối theo Mục 10. Không trả lời câu hỏi ngoài chính sách nội bộ. Không tự phê duyệt hay cam kết thay cấp có thẩm quyền, không tư vấn kỷ luật hay lương thưởng của cá nhân cụ thể; khi cần ngoại lệ, chỉ ra đúng cấp phê duyệt. Nếu người dùng nhập số CCCD, số tài khoản, mật khẩu hoặc lương cá nhân, nhắc họ không chia sẻ dữ liệu này.
+
+**Kết quả mong đợi:** Agent Builder tự điền **Name**, **Description**, **Instructions** và **Starter prompts**. Nội dung tự sinh có thể hơi khác giữa các học viên, điều này là bình thường.
+
+> [!NOTE]
+> Không thấy **New Agent**? Nhấn `Ctrl + F5` để tải lại trang. Giao diện Copilot đang được cập nhật nên vị trí nút có thể hơi khác hướng dẫn.
+
+### Bài tập 2: Hoàn thiện trong Configure
+
+1. Chọn **Configure** và kiểm tra:
+
+| Trường | Cần thấy |
+|--------|----------|
+| **Name** | Policy Assistant |
+| **Description** | Một câu: agent giúp nhân viên tra cứu chính sách và quy trình nội bộ |
+| **Instructions** | Đủ phạm vi, giọng điệu, dẫn mục Sổ tay, không cam kết thay cấp phê duyệt, nhắc không nhập dữ liệu cá nhân. Thiếu câu nào thì gõ thêm vào cuối ô |
+
+2. Ở **Knowledge**, thêm [Sổ tay Chính sách Nội bộ.docx](#file-handbook) (chọn từ SharePoint hoặc OneDrive)
+3. Bật **Only use specified sources** để agent chỉ dùng Sổ tay, không dùng kiến thức chung hay nội dung web
+4. Ở **Starter prompts**, giữ hoặc sửa để có 3-4 câu hay hỏi nhất, ví dụ *"Tôi làm 6 năm thì được bao nhiêu ngày phép?"*, *"Mua sắm bao nhiêu tiền thì cần ai duyệt?"*
 
 > [!TIP]
-> Agent Builder còn cho phép **chọn một template có sẵn** trong danh sách rồi tuỳ chỉnh bằng **Configure**. Lab này tạo agent từ đầu bằng prompt để anh/chị nắm được từng phần cấu hình.
+> Từ bước này, chỉ chỉnh trong **Configure**. Gõ thêm prompt mô tả có thể khiến Agent Builder viết lại toàn bộ Instructions và mất phần anh/chị đã sửa.
 
-> [!NOTE]
-> Microsoft đang triển khai giao diện **Home** mới cho Copilot, nên vị trí nút và tên gọi trên máy anh/chị có thể hơi khác hướng dẫn. Nếu không thấy **New Agent**, nhấn `Ctrl + F5` để tải lại trang.
+### Bài tập 3: Test agent trước khi tạo
 
-## Phần B: Mô tả agent bằng prompt
-
-Nhập lần lượt **cả 3 prompt** dưới đây vào ô mô tả, mỗi prompt nhấn **Send**. Sau mỗi prompt, đợi Agent Builder trả lời xong rồi mới gửi prompt tiếp theo. Agent Builder có thể hỏi thêm để làm rõ; 3 prompt dưới đây đã trả lời sẵn các câu hỏi thường gặp, nên anh/chị chỉ cần gửi prompt tiếp theo.
-
-### Bước 2: Mô tả mục đích của agent
-
-> **PROMPT:**
->
-> Tôi muốn xây dựng một trợ lý nội bộ tên "Policy Assistant" cho toàn bộ nhân viên công ty. Agent giúp nhân viên tra cứu nhanh chính sách nội bộ: thời gian làm việc, nghỉ phép, làm việc từ xa, công tác phí, mua sắm và thẩm quyền phê duyệt, tạm ứng và thanh toán cho nhà cung cấp, đào tạo, bảo mật thông tin và phúc lợi.
-
-### Bước 3: Quy định giọng điệu và cách trình bày
-
-> **PROMPT:**
->
-> Giọng điệu thân thiện, rõ ràng, đi thẳng vào vấn đề, dễ hiểu với cả nhân viên mới. Trả lời ngắn gọn, có ví dụ tính cụ thể khi người hỏi nêu thâm niên, chức danh hoặc giá trị mua sắm. Trình bày định mức và cấp phê duyệt dưới dạng bảng khi có thể. Cuối mỗi câu trả lời ghi rõ mục tương ứng trong Sổ tay, ví dụ "(Nguồn: Sổ tay, Mục 4)".
-
-### Bước 4: Định nghĩa giới hạn của agent
-
-> **PROMPT:**
->
-> Agent chỉ trả lời dựa trên Sổ tay Chính sách Nội bộ. Nếu Sổ tay không có thông tin, nói rõ là chưa có thông tin và đề nghị người dùng liên hệ đúng đầu mối theo Mục 10 của Sổ tay. Không trả lời câu hỏi ngoài phạm vi chính sách và quy trình nội bộ. Không tự phê duyệt hay cam kết thay cho cấp có thẩm quyền, không tư vấn về trường hợp kỷ luật hay lương thưởng của cá nhân cụ thể. Khi câu hỏi cần phê duyệt ngoại lệ, chỉ ra đúng cấp phê duyệt. Nếu người dùng nhập số CCCD, số tài khoản, mật khẩu hoặc thông tin lương cá nhân, nhắc họ không chia sẻ dữ liệu này trong cuộc trò chuyện.
-
-> [!NOTE]
-> Sau 3 prompt, Agent Builder đã tự điền **tên**, **mô tả**, **instructions** và **starter prompts**. Nội dung tự sinh có thể hơi khác nhau giữa các học viên, điều này là bình thường. Phần C sẽ kiểm tra và chỉnh lại.
-
-## Phần C: Kiểm tra và hoàn thiện trong Configure
-
-### Bước 5: Kiểm tra Name, Description và Instructions
-
-1. Chọn **Configure**
-2. Kiểm tra từng trường:
-
-| Trường | Cần thấy | Nếu chưa đúng |
-|--------|----------|---------------|
-| **Name** | Policy Assistant | Sửa trực tiếp trong ô Name |
-| **Description** | Một câu mô tả agent giúp nhân viên tra cứu chính sách và quy trình nội bộ | Sửa trực tiếp |
-| **Instructions** | Có đủ: phạm vi, giọng điệu, dẫn mục Sổ tay, không cam kết thay cấp phê duyệt, không tư vấn về cá nhân cụ thể, nhắc không nhập dữ liệu cá nhân | Bổ sung câu còn thiếu vào cuối ô Instructions |
-
-> [!TIP]
-> Từ đây trở đi, nên chỉnh trực tiếp trong **Configure** thay vì quay lại gõ prompt mô tả. Prompt mô tả mới có thể khiến Agent Builder viết lại toàn bộ Instructions và làm mất phần anh/chị đã sửa tay.
-
-### Bước 6: Thêm Sổ tay làm knowledge source
-
-1. Kéo xuống phần **Knowledge**
-2. Thêm file [Sổ tay Chính sách Nội bộ.docx](#file-handbook): chọn file đã lưu trên **OneDrive**, hoặc tải file lên trực tiếp
-3. Bật toggle **Only use specified sources** để agent chỉ dùng Sổ tay, không dùng kiến thức chung của mô hình hay nội dung web
-
-> [!NOTE]
-> Với agent trả lời về chính sách, nên luôn bật **Only use specified sources**: câu trả lời kiểm chứng được và agent không tự "bịa" định mức hay quy trình. Đổi lại, agent sẽ không trả lời được câu hỏi nằm ngoài Sổ tay, và đó chính là hành vi mong muốn.
-
-### Bước 7: Chỉnh starter prompts
-
-Kéo xuống phần **Starter prompts**. Giữ hoặc thay để có các câu hỏi nhân viên hay hỏi nhất, ví dụ:
-
-| Title | Message |
-|-------|---------|
-| Ngày phép | Tôi làm 6 năm thì được bao nhiêu ngày phép năm? |
-| Công tác phí | Đi công tác trong nước thì khách sạn và phụ cấp ăn tối đa bao nhiêu? |
-| Thẩm quyền phê duyệt | Mua sắm trị giá bao nhiêu thì cần cấp nào phê duyệt và mấy báo giá? |
-| Sử dụng AI | Những thông tin nào không được nhập vào Copilot? |
-
-## Phần D: Test agent trước khi tạo
-
-### Bước 8: Thử agent trong khung chat thử nghiệm
-
-Nhập lần lượt các câu hỏi dưới đây vào khung chat thử nghiệm bên phải, nhấn **Send**, và so sánh với cột **Câu trả lời đúng**.
+Trong khung chat thử bên phải, hỏi lần lượt 4 câu và so với đáp án:
 
 > **PROMPT:**
 >
@@ -136,53 +84,65 @@ Nhập lần lượt các câu hỏi dưới đây vào khung chat thử nghiệ
 
 > **PROMPT:**
 >
-> Nhà cung cấp đề nghị tạm ứng 40% giá trị hợp đồng. Có được không, và nếu được thì cần điều kiện gì?
+> Giá vàng tuần tới có tăng không? Tôi có nên mua vàng không?
+
+**Kết quả mong đợi:**
+
+| Câu hỏi | Câu trả lời đúng |
+|---------|------------------|
+| Phép năm, 6 năm | **15 ngày**; chuyển sang năm sau **tối đa 5 ngày**, dùng trước **31/03** (Mục 2.2) |
+| Công tác Đà Nẵng | Khách sạn tối đa **1,2 triệu đồng/đêm**, ăn **250.000 đồng/ngày**, quyết toán trong **10 ngày làm việc** (Mục 4) |
+| Mua phần mềm 650 triệu | **3 báo giá**, **Giám đốc Tài chính** phê duyệt (Mục 5.1) |
+| Giá vàng | Agent **từ chối** vì ngoài phạm vi Sổ tay |
+
+Câu trả lời chưa đạt (không dẫn mục, sai số liệu, vẫn trả lời câu giá vàng)? Vào **Configure**, kiểm tra **Only use specified sources** đã bật chưa, bổ sung quy tắc còn thiếu vào **Instructions**, rồi test lại.
+
+### Bài tập 4: Tạo, chia sẻ và dùng agent trong Teams
+
+**Tạo và chia sẻ:**
+
+1. Chọn **Create**. Khi tạo xong, nhấn **Copy** để sao chép link agent
+2. Chọn **Change sharing settings** > **Specific users in your organization**, nhập tên 1-2 đồng nghiệp ngồi cạnh, nhấn **Save**
+3. Gửi link agent cho các đồng nghiệp đó trong một nhóm chat **Teams**
+
+**Dùng agent trong Teams:**
+
+4. Mở **Teams**, chọn **Copilot** ở thanh bên trái, chọn **Policy Assistant** trong danh sách agent
+5. Hỏi một câu:
 
 > **PROMPT:**
 >
-> Giá vàng tuần tới có tăng không? Tôi có nên mua vàng không?
+> Nhà cung cấp đề nghị tạm ứng 40% giá trị hợp đồng. Có được không, và nếu được thì cần điều kiện gì?
 
-| Câu hỏi | Câu trả lời đúng (theo Sổ tay) |
-|---------|--------------------------------|
-| Phép năm, 6 năm thâm niên | **15 ngày** (từ 5 đến dưới 10 năm). Phép chưa dùng được chuyển **tối đa 5 ngày**, phải dùng trước **31/03**. Nguồn: Mục 2.2 |
-| Công tác Đà Nẵng, chuyên viên | Khách sạn tối đa **1,2 triệu đồng/đêm**, phụ cấp ăn **250.000 đồng/ngày**; quyết toán trong **10 ngày làm việc** sau chuyến đi, kèm hóa đơn hợp lệ. Nguồn: Mục 4 |
-| Mua phần mềm 650 triệu | Thuộc mức trên 500 triệu đến 2 tỷ: cần **3 báo giá**, **Giám đốc Tài chính** phê duyệt. Nguồn: Mục 5.1 |
-| Tạm ứng 40% | Vượt mức tối đa 30% nên là **ngoại lệ**: cần **Giám đốc Tài chính** phê duyệt và nhà cung cấp có **bảo lãnh tạm ứng của ngân hàng**. Nguồn: Mục 5.2 |
-| Giá vàng | Agent **từ chối** vì ngoài phạm vi Sổ tay |
+6. Mở link agent đồng nghiệp gửi cho anh/chị và hỏi thử một câu
 
-Nếu câu trả lời chưa đạt (không dẫn mục, sai số liệu, vẫn trả lời câu hỏi giá vàng), quay lại **Configure**: kiểm tra toggle **Only use specified sources** đã bật chưa, và bổ sung vào ô **Instructions** quy tắc còn thiếu. Sau đó test lại.
-
-## Phần E: Tạo và chia sẻ agent
-
-### Bước 9: Tạo agent và lấy link chia sẻ
-
-1. Khi đã hài lòng với kết quả test, chọn **Create**
-2. Khi tạo xong, màn hình hiện liên kết tới agent. Nhấn **Copy** để sao chép liên kết
-3. Chọn **Change sharing settings** và chọn phạm vi chia sẻ. Vì agent dùng file trên OneDrive/SharePoint làm knowledge source, nên chọn **Specific users in your organization** và nhập tên đồng nghiệp hoặc nhóm cần dùng
-4. Nhấn **Save**
-5. Dán liên kết vào email hoặc Teams chat để gửi cho đồng nghiệp
-6. Mở agent từ mục **Agents** ở thanh điều hướng bên trái và hỏi lại một câu trong Bước 8
+**Kết quả mong đợi:** Policy Assistant trả lời ngay trong Teams như trong Copilot Chat: tạm ứng 40% vượt mức tối đa 30% nên là **ngoại lệ**, cần **Giám đốc Tài chính** phê duyệt và **bảo lãnh tạm ứng của ngân hàng** (Mục 5.2). Agent đồng nghiệp chia sẻ cũng dùng được trong Teams.
 
 > [!NOTE]
-> - Người nhận chỉ dùng được agent, **không sửa được**; chỉ chủ sở hữu agent mới chỉnh sửa được.
-> - Agent tôn trọng phân quyền: người không có **quyền đọc** file Sổ tay thì agent không trả lời từ file đó cho người ấy. Trong môi trường thật, nên đặt Sổ tay trong một **thư mục hoặc site SharePoint** do phòng ban phụ trách quản lý và cấp quyền đọc cho đúng nhóm nhân viên; khi tài liệu được cập nhật, agent tự dùng phiên bản mới.
+> - Người được chia sẻ chỉ **dùng** agent, không sửa được. Muốn chia sẻ lại hoặc chỉnh sửa: chọn agent ở thanh bên trái Copilot > **...** > **Share** hoặc **Edit**.
+> - Agent trả lời theo quyền của **người hỏi**. Nếu Sổ tay nằm trên OneDrive cá nhân của anh/chị, đồng nghiệp không có quyền đọc file sẽ **không nhận được câu trả lời**. Với agent dùng thật, đặt tài liệu nguồn trên **site SharePoint** do phòng ban quản lý và cấp quyền đọc cho đúng nhóm; khi tài liệu cập nhật, agent tự dùng bản mới.
 
-> [!TIP]
-> Để chia sẻ lại sau này: chọn **Policy Assistant** ở thanh điều hướng bên trái → **... (More)** → **Share**. Menu **...** này cũng là nơi mở lại agent để chỉnh sửa.
+## Ba cấp độ agent
+
+| | SharePoint agent | Agent Builder | Copilot Studio |
+|---|------------------|---------------|----------------|
+| **Dùng khi** | Hỏi đáp tài liệu của một site, thư viện | Agent nghiệp vụ đơn giản: lời dặn, tài liệu nguồn, câu hỏi gợi ý | Tích hợp hệ thống nghiệp vụ, thực hiện hành động, quản trị và phân phối quy mô lớn |
+| **Ai tạo** | Người có quyền chỉnh sửa site | Người dùng, ngay trong Copilot Chat | Nhóm IT hoặc người phát triển |
+| **Đưa đến người dùng** | Thêm vào nhóm chat, kênh Teams | Chia sẻ link, dùng trong Copilot Chat và Teams | Teams, Copilot Chat, website và các kênh khác |
 
 ## Lưu ý tuân thủ
 
 > [!NOTE]
-> - Agent tự tạo chỉ chia sẻ trong nội bộ công ty; knowledge source phải là thư mục SharePoint có phân quyền.
-> - Agent phục vụ khách hàng bên ngoài phải được Phòng Công nghệ Thông tin và Pháp chế phê duyệt.
+> - Agent tự tạo chỉ chia sẻ trong nội bộ công ty; tài liệu nguồn phải nằm ở thư mục hoặc site SharePoint có phân quyền đúng.
 > - Bật **Only use specified sources** với mọi agent trả lời về chính sách, quy trình và định mức.
-> - Không ghi mật khẩu, dữ liệu khách hàng hay dữ liệu cá nhân vào nội dung skill.
+> - Agent phục vụ khách hàng bên ngoài phải được Phòng Công nghệ Thông tin và Pháp chế phê duyệt.
+> - Không ghi mật khẩu, dữ liệu khách hàng hay dữ liệu cá nhân vào Instructions hay tài liệu nguồn.
 
 ## Tự thực hành thêm
 
 ### Tạo skill trong Copilot Chat [MỚI]
 
-Agent ở Phần A-E giúp **nhiều người hỏi đáp** từ một bộ tài liệu. **Skill** giải quyết một nhu cầu khác: dạy Copilot **một quy trình làm việc** của anh/chị (các bước, mẫu trình bày, quy tắc), để lần sau chỉ cần gọi tên là Copilot làm đúng như vậy. Ở bài này, anh/chị biến việc viết báo cáo tuần thành skill.
+Agent ở các bài tập trên giúp **nhiều người hỏi đáp** từ một bộ tài liệu. **Skill** giải quyết một nhu cầu khác: dạy Copilot **một quy trình làm việc** của anh/chị (các bước, mẫu trình bày, quy tắc), để lần sau chỉ cần gọi tên là Copilot làm đúng như vậy. Ở bài này, anh/chị biến việc viết báo cáo tuần thành skill.
 
 > [!NOTE]
 > Skills trong Copilot Chat cần licence **Microsoft 365 Copilot**. Nếu không thấy mục **Agents**, hãy tìm trong nút **Plugins**.
@@ -228,9 +188,9 @@ Agent ở Phần A-E giúp **nhiều người hỏi đáp** từ một bộ tài
 
 Lặp lại quy trình trên với một chủ đề của riêng anh/chị:
 
-1. **Chủ đề** - Agent hỗ trợ việc gì? (hướng dẫn nhân viên mới, FAQ quy trình của phòng, tra cứu sản phẩm và dịch vụ, hỏi đáp quy trình IT, mẫu văn bản thường dùng...)
+1. **Chủ đề** - Agent hỗ trợ việc gì? (hướng dẫn nhân viên mới, FAQ quy trình của phòng, tra cứu sản phẩm và dịch vụ, hỏi đáp quy trình IT...)
 2. **Người dùng và giọng điệu** - Dành cho ai? Trang trọng hay thân thiện?
-3. **Knowledge sources** - Thư mục hoặc site SharePoint nào làm nguồn? Ai đang có quyền đọc?
+3. **Knowledge** - Thư mục hoặc site SharePoint nào làm nguồn? Ai đang có quyền đọc?
 4. **Giới hạn** - Agent không được trả lời hoặc cam kết điều gì?
 5. **Starter prompts** - 3-4 câu hỏi người dùng hay hỏi nhất
-6. **Bộ câu test** - 3 câu có đáp án rõ trong tài liệu và 1 câu ngoài phạm vi để kiểm tra agent có từ chối không
+6. **Bộ câu test** - 3 câu có đáp án rõ trong tài liệu và 1 câu ngoài phạm vi

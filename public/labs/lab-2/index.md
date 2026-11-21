@@ -5,27 +5,55 @@
 > [!OUTCOME]
 > **Làm được**
 >
+> - Từ báo cáo và Sổ tay, nhờ Copilot điền một **tờ trình mới trên mẫu có sẵn** của công ty
 > - Nhờ Copilot sửa một báo cáo **có sẵn** ở chế độ **Track Changes**, đối chiếu với tài liệu nội bộ, mỗi chỗ sửa có comment ghi nguồn
 > - Duyệt từng thay đổi của Copilot trong tab **Review**: chấp nhận, từ chối, trả lời comment
-> - Từ báo cáo và Sổ tay, nhờ Copilot điền một **tờ trình mới trên mẫu có sẵn** của công ty
 >
 > **Biết được**
 >
+> - Gõ "/" để nối nhiều tài liệu nội bộ: một tài liệu Word có thể là nguồn để tạo ra tài liệu Word khác
 > - Copilot làm việc trên file đang dùng và trên mẫu của công ty, không cần viết từ trang trắng
 > - Mọi chỗ Copilot sửa đều **hiện rõ** và có lý do; người phụ trách vẫn là người quyết định giữ hay bỏ
-> - Gõ "/" để nối nhiều tài liệu nội bộ: một tài liệu Word có thể là nguồn để tạo ra tài liệu Word khác
 
 ## Tình huống
 
 > **Anh/chị** - *chuyên viên Phòng Kế hoạch*
 >
-> Đồng nghiệp đã soạn bản nháp **Báo cáo quản lý quý 3** và nhờ anh/chị hoàn thiện trước khi gửi Ban Giám đốc. Bản nháp có vài chỗ ghi sai mục tiêu của Kế hoạch 2027, và mục đề xuất chưa được đối chiếu với Sổ tay Chính sách Nội bộ. Sau đó, đề xuất ký hợp đồng khung thuê thầu phụ 3,2 tỷ đồng trong báo cáo cần có **tờ trình** riêng theo mẫu của công ty.
+> Bản nháp **Báo cáo quản lý quý 3** do đồng nghiệp soạn có đề xuất ký hợp đồng khung thuê thầu phụ 3,2 tỷ đồng. Đề xuất này cần một **tờ trình** riêng theo mẫu của công ty để trình phê duyệt. Đồng nghiệp cũng nhờ anh/chị hoàn thiện chính bản nháp đó trước khi gửi Ban Giám đốc: vài chỗ ghi sai mục tiêu của Kế hoạch 2027, và mục đề xuất chưa được đối chiếu với Sổ tay Chính sách Nội bộ.
 
-**Tài liệu demo:** [Báo cáo quản lý Q3 2026 (bản nháp).docx](#file-report), [Kế hoạch Hoạt động 2027 (dự thảo).docx](#file-plan), [Sổ tay Chính sách Nội bộ.docx](#file-handbook) và [Mẫu tờ trình (giả định).docx](#file-memo-template).
+**Tài liệu demo:** [Mẫu tờ trình (giả định).docx](#file-memo-template), [Báo cáo quản lý Q3 2026 (bản nháp).docx](#file-report), [Sổ tay Chính sách Nội bộ.docx](#file-handbook) và [Kế hoạch Hoạt động 2027 (dự thảo).docx](#file-plan).
 
 ## Thực hành trong buổi học
 
-### Bài tập 1: Copilot sửa báo cáo bằng Track Changes [MỚI]
+### Bài tập 1: Soạn tờ trình trên mẫu có sẵn từ báo cáo và Sổ tay
+
+[video:word-memo-template]
+
+Anh/chị không viết từ trang trắng mà để Copilot điền mẫu tờ trình có sẵn, lấy nội dung từ báo cáo và đối chiếu với Sổ tay.
+
+1. Mở [Mẫu tờ trình (giả định).docx](#file-memo-template) **từ OneDrive** bằng **Word trên máy tính**
+2. Chọn **File** > **Save a Copy**, đặt tên *Tờ trình hợp đồng thầu phụ Q4.docx* và mở bản sao (giữ nguyên mẫu gốc để dùng lại)
+3. Nhấn **Copilot**, gõ "/" chọn [Báo cáo quản lý Q3 2026 (bản nháp).docx](#file-report), gõ "/" lần nữa chọn [Sổ tay Chính sách Nội bộ.docx](#file-handbook)
+4. Nhập prompt:
+
+> **PROMPT:**
+>
+> Điền mẫu tờ trình này để xin phê duyệt đề xuất ký hợp đồng khung thuê thầu phụ 3,2 tỷ đồng ở mục 3 của Báo cáo quản lý Q3 2026 đính kèm. Giữ nguyên cấu trúc 5 mục và các bảng của mẫu, thay toàn bộ nội dung trong ngoặc vuông. Mục 1 dùng số liệu quý 3 trong báo cáo. Mục 3 đối chiếu từng nội dung với Sổ tay Chính sách Nội bộ: đề xuất nào trong báo cáo chưa đúng quy định thì điều chỉnh cho đúng và ghi rõ đã điều chỉnh gì. Thông tin không có trong hai tài liệu thì ghi [CẦN XÁC NHẬN].
+
+**Kết quả mong đợi:** Tờ trình mới đúng bố cục mẫu, đã điều chỉnh những đề xuất sai trong bản nháp báo cáo:
+
+| Mục trong mẫu | Copilot điền |
+|---------------|--------------|
+| Kính gửi | **Tổng Giám đốc** (hợp đồng trên 2 tỷ đồng, Sổ tay Mục 5.1), không phải Giám đốc Tài chính như bản nháp |
+| 1. Sự cần thiết | Chi phí thuê thầu phụ **50 tỷ**, vượt kế hoạch **39%**; lợi nhuận **84 tỷ**, giảm **16,8%**; tỷ lệ nghỉ việc **20%**, các dự án chậm cần nhân lực |
+| 2. Nội dung đề xuất | Giá trị **3,2 tỷ đồng**; tạm ứng tối đa **30%** (960 triệu đồng); tên nhà thầu và thời hạn ghi **[CẦN XÁC NHẬN]** |
+| 3. Căn cứ quy định | Cần **03 báo giá** (bản nháp ghi không lấy thêm báo giá); **Pháp chế** rà soát trước khi trình; tạm ứng 45% trong bản nháp hạ về tối đa 30%, vượt mức là ngoại lệ cần Giám đốc Tài chính duyệt và bảo lãnh ngân hàng (Mục 5.2); hợp đồng có điều khoản chi phí phát sinh và phạt vi phạm **8%** (Mục 5.3) |
+| Ý kiến và phê duyệt | Người đề xuất, **Phòng Pháp chế** rà soát, **Tổng Giám đốc** phê duyệt (có thể thêm Giám đốc Tài chính cho ý kiến) |
+
+> [!TIP]
+> Nếu Copilot chỉ trả lời trong khung chat mà không điền vào tài liệu, nhập tiếp: *"Cập nhật trực tiếp nội dung này vào tài liệu, giữ nguyên các bảng của mẫu."* Với công việc thật, thay mẫu giả định bằng mẫu tờ trình, biên bản hay báo cáo chính thức của đơn vị.
+
+### Bài tập 2: Copilot sửa báo cáo bằng Track Changes [MỚI]
 
 [video:word-track-changes]
 
@@ -69,45 +97,7 @@
 > [!TIP]
 > Copilot **đề xuất**, anh/chị **quyết định**: không bấm **Accept All** khi chưa đọc từng thay đổi. Comment có ghi nguồn giúp kiểm tra mỗi chỗ trong vài giây.
 
-### Bài tập 2: Soạn tờ trình trên mẫu có sẵn từ báo cáo và Sổ tay
-
-[video:word-memo-template]
-
-Báo cáo đề xuất ký hợp đồng khung thuê thầu phụ 3,2 tỷ đồng. Đề xuất này cần một tờ trình riêng theo mẫu của công ty. Anh/chị không viết từ trang trắng mà để Copilot điền mẫu có sẵn, lấy nội dung từ báo cáo và đối chiếu với Sổ tay.
-
-1. Mở [Mẫu tờ trình (giả định).docx](#file-memo-template) **từ OneDrive** bằng **Word trên máy tính**
-2. Chọn **File** > **Save a Copy**, đặt tên *Tờ trình hợp đồng thầu phụ Q4.docx* và mở bản sao (giữ nguyên mẫu gốc để dùng lại)
-3. Nhấn **Copilot**, gõ "/" chọn [Báo cáo quản lý Q3 2026 (bản nháp).docx](#file-report), gõ "/" lần nữa chọn [Sổ tay Chính sách Nội bộ.docx](#file-handbook)
-4. Nhập prompt:
-
-> **PROMPT:**
->
-> Điền mẫu tờ trình này để xin phê duyệt đề xuất ký hợp đồng khung thuê thầu phụ 3,2 tỷ đồng ở mục 3 của Báo cáo quản lý Q3 2026 đính kèm. Giữ nguyên cấu trúc 5 mục và các bảng của mẫu, thay toàn bộ nội dung trong ngoặc vuông. Mục 1 dùng số liệu quý 3 trong báo cáo. Mục 3 đối chiếu từng nội dung với Sổ tay Chính sách Nội bộ: đề xuất nào trong báo cáo chưa đúng quy định thì điều chỉnh cho đúng và ghi rõ đã điều chỉnh gì. Thông tin không có trong hai tài liệu thì ghi [CẦN XÁC NHẬN].
-
-**Kết quả mong đợi:** Tờ trình mới đúng bố cục mẫu, đã điều chỉnh những đề xuất sai trong bản nháp báo cáo:
-
-| Mục trong mẫu | Copilot điền |
-|---------------|--------------|
-| Kính gửi | **Tổng Giám đốc** (hợp đồng trên 2 tỷ đồng, Sổ tay Mục 5.1), không phải Giám đốc Tài chính như bản nháp |
-| 1. Sự cần thiết | Chi phí thuê thầu phụ **50 tỷ**, vượt kế hoạch **39%**; lợi nhuận **84 tỷ**, giảm **16,8%**; tỷ lệ nghỉ việc **20%**, các dự án chậm cần nhân lực |
-| 2. Nội dung đề xuất | Giá trị **3,2 tỷ đồng**; tạm ứng tối đa **30%** (960 triệu đồng); tên nhà thầu và thời hạn ghi **[CẦN XÁC NHẬN]** |
-| 3. Căn cứ quy định | Cần **03 báo giá** (bản nháp ghi không lấy thêm báo giá); **Pháp chế** rà soát trước khi trình; tạm ứng 45% trong bản nháp hạ về tối đa 30%, vượt mức là ngoại lệ cần Giám đốc Tài chính duyệt và bảo lãnh ngân hàng (Mục 5.2); hợp đồng có điều khoản chi phí phát sinh và phạt vi phạm **8%** (Mục 5.3) |
-| Ý kiến và phê duyệt | Người đề xuất, **Phòng Pháp chế** rà soát, **Tổng Giám đốc** phê duyệt (có thể thêm Giám đốc Tài chính cho ý kiến) |
-
-> [!TIP]
-> Nếu Copilot chỉ trả lời trong khung chat mà không điền vào tài liệu, nhập tiếp: *"Cập nhật trực tiếp nội dung này vào tài liệu, giữ nguyên các bảng của mẫu."* Với công việc thật, thay mẫu giả định bằng mẫu tờ trình, biên bản hay báo cáo chính thức của đơn vị.
-
 ## Tự thực hành thêm
-
-### Sửa hợp đồng theo chính sách bằng Track Changes
-
-Mở [Hợp đồng Dịch vụ Tổ chức Sự kiện (dự thảo).docx](#file-contract) (hợp đồng 2,35 tỷ đồng với Công ty Sự kiện Lam Kiều, cuối tài liệu có *Ghi chú của người soạn thảo*), gõ "/" chọn Sổ tay, rồi nhập:
-
-> **PROMPT:**
->
-> Bật Track Changes. Phần Ghi chú của người soạn thảo ở cuối hợp đồng cần đưa vào Điều 8 (Thanh toán) và Điều 9 (Chi phí phát sinh, hủy và phạt vi phạm). Hãy soạn Điều 8 và Điều 9 ngay sau Điều 7, đồng thời sửa mọi điểm chưa đúng Sổ tay Chính sách Nội bộ, kể cả nội dung về dữ liệu khách mời. Với mỗi chỗ sửa, thêm một comment ghi mục Sổ tay làm căn cứ. Những điểm cần cấp có thẩm quyền quyết định thì không tự sửa, chỉ thêm comment nêu rõ cần ai quyết định.
-
-**Kết quả mong đợi:** Tạm ứng 50% → tối đa 30% (Mục 5.2); thanh toán 5 ngày → 30 ngày sau nghiệm thu (5.2); chi phí phát sinh phải được chấp thuận bằng văn bản (5.3); phạt 5% → 8% (5.3); dữ liệu khách mời chỉ họ tên và email công việc (7.3). Phí hủy 100% (cần Pháp chế rà soát) và mới có 2 báo giá (cần 3, Tổng Giám đốc duyệt) chỉ được ghi comment.
 
 ### Từ chính sách thành hướng dẫn cho đồng nghiệp
 

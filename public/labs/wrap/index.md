@@ -9,18 +9,17 @@
 | Lab 1 | Copilot Chat | Hỏi Copilot về công việc của mình; gọi người, cuộc họp, file bằng "/"; tìm vấn đề trong số liệu mà kế hoạch còn thiếu |
 | Lab 2 | Word | Copilot sửa báo cáo có sẵn bằng **Track Changes**, comment ghi nguồn; điền **tờ trình mới trên mẫu có sẵn** từ báo cáo và Sổ tay |
 | Lab 3 | Excel | Tìm xu hướng và điểm bất thường; dashboard **Interactive canvas**; **skill** biến dữ liệu thô thành báo cáo hằng tháng |
-| Lab 4 | PowerPoint | Cập nhật bộ slide có sẵn theo **mẫu thương hiệu**, thêm slide từ báo cáo Word; **Visualize this slide**, **interactive slide**, speaker notes; tạo bộ slide mới từ tài liệu Word trên mẫu thương hiệu |
+| Lab 4 | PowerPoint | Cập nhật bộ slide có sẵn theo **mẫu thương hiệu**; thêm **skill** slide tóm tắt điều hành và dùng lại cho mọi bộ slide |
 | Lab 5 | Outlook | Hộp thư thành danh sách việc, tóm tắt chuỗi email, soạn thư trả lời; soạn email từ báo cáo Word |
 | Lab 6 | Teams | Biết mình bỏ lỡ gì trong cuộc họp, việc của mình, điểm chưa thống nhất; **@Copilot** trong nhóm chat |
 | Lab 7 | Researcher | Nghiên cứu nhiều bước, kết hợp web với số liệu và kế hoạch nội bộ |
-| Lab 8 | Agent Builder | Tạo agent Policy Assistant, kiểm tra và chia sẻ cho đồng nghiệp |
-| Lab 9 | Teams, SharePoint | **Đưa agent vào Teams** và thêm **SharePoint agent** vào nhóm chat |
+| Lab 8 | Agent Builder, Teams | Tạo agent Policy Assistant, kiểm tra, chia sẻ cho đồng nghiệp và **dùng ngay trong Teams** |
 
 ## 5 điều cần nhớ
 
 1. **Copilot hiểu ngữ cảnh công việc.** Copilot làm việc với email, cuộc họp, con người và tài liệu mà anh/chị có quyền truy cập, ngay từ ngày đầu, không cần tải dữ liệu lên hay khai báo lại vai trò
 2. **Dấu "/" là thao tác dùng hằng ngày.** Gõ "/" để gọi đúng người, file, email, cuộc họp, trong mọi ứng dụng
-3. **Microsoft 365 là một luồng công việc liên tục.** Từ Copilot Chat sang Word, Excel, PowerPoint, Teams, trên file có sẵn: một tài liệu thành tờ trình, bộ slide hay email, không phải chép nội dung qua lại giữa các công cụ
+3. **Microsoft 365 là một luồng công việc liên tục.** Từ Copilot Chat sang Word, Excel, PowerPoint, Teams, trên file có sẵn: một tài liệu thành tờ trình hay email, một bộ slide có thêm slide tóm tắt điều hành, không phải chép nội dung qua lại giữa các công cụ
 4. **Teams là trung tâm cộng tác.** Cuộc họp thành hành động, cả nhóm cùng làm việc với Copilot, và agent đến được với đồng nghiệp
 5. **Anh/chị tự tạo được tài sản AI.** Agent và skill chuẩn hóa một quy trình nhiều bước, thay vì viết lại nhiều prompt mỗi lần
 

@@ -1346,3 +1346,10 @@ a:hover {
     width: 24px; height: 24px; border-radius: 50%;
     background: var(--blue); color: var(--white); font-size: 0.7rem; padding-left: 2px;
 }
+
+/* Khung nội dung skill (```skill trong Markdown) */
+.module-content .skill-card .skill-body {
+    margin: 0; padding: 14px 16px; background: transparent; border: 0;
+    font-family: Consolas, 'Cascadia Mono', monospace; font-size: 0.85rem; line-height: 1.55;
+    white-space: pre-wrap; word-break: break-word; color: var(--text);
+}
