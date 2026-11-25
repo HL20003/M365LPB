@@ -10,18 +10,18 @@ const DEMO_ZIP_URL = 'files/copilot-workshop-demo-files.zip';
 // Trong Markdown, viết [tên file](#file-<id>) để link tới file tương ứng.
 const demoFiles = [
     { id: 'report', name: 'Báo cáo quản lý Q3 2026 (bản nháp).docx', desc: 'Lab 2 - Word, Lab 5 - Outlook', icon: 'word', url: 'files/bao-cao-quan-ly-q3-2026-ban-nhap.docx' },
-    { id: 'handbook', name: 'Sổ tay Chính sách Nội bộ.docx', desc: 'Lab 2 - Word, Lab 8 - Agent Builder', icon: 'word', url: 'files/so-tay-chinh-sach-noi-bo.docx' },
+    { id: 'handbook', name: 'Sổ tay Chính sách Nội bộ.docx', desc: 'Lab 2 - Word, Lab 7 - Agent Builder', icon: 'word', url: 'files/so-tay-chinh-sach-noi-bo.docx' },
     { id: 'policy-sample', name: 'SAMPLE Chính sách Bảo mật Thông tin.docx', desc: 'Lab 2 - Word (tự thực hành thêm)', icon: 'word', url: 'files/sample-chinh-sach-bao-mat-thong-tin.docx' },
-    { id: 'business', name: 'Báo cáo Kết quả Kinh doanh Q3 2026.xlsx', desc: 'Lab 1 - Copilot Chat, Lab 3 - Excel, Lab 7 - Researcher', icon: 'excel', url: 'files/bao-cao-ket-qua-kinh-doanh-q3-2026.xlsx' },
+    { id: 'business', name: 'Báo cáo Kết quả Kinh doanh Q3 2026.xlsx', desc: 'Lab 1 - Copilot Chat, Lab 3 - Excel', icon: 'excel', url: 'files/bao-cao-ket-qua-kinh-doanh-q3-2026.xlsx' },
     { id: 'feedback', name: 'Phản hồi khách hàng T9-T10 2026 (xuất từ hệ thống).xlsx', desc: 'Lab 3 - Excel (tạo skill)', icon: 'excel', url: 'files/phan-hoi-khach-hang-t9-t10-2026.xlsx' },
     { id: 'memo-template', name: 'Mẫu tờ trình (giả định).docx', desc: 'Lab 2 - Word (soạn tờ trình trên mẫu có sẵn)', icon: 'word', url: 'files/mau-to-trinh-gia-dinh.docx' },
-    { id: 'plan', name: 'Kế hoạch Hoạt động 2027 (dự thảo).docx', desc: 'Lab 1 - Copilot Chat, Lab 2 - Word, Lab 4 - PowerPoint, Lab 7 - Researcher', icon: 'word', url: 'files/ke-hoach-hoat-dong-2027.docx' },
+    { id: 'plan', name: 'Kế hoạch Hoạt động 2027 (dự thảo).docx', desc: 'Lab 1 - Copilot Chat, Lab 2 - Word, Lab 4 - PowerPoint', icon: 'word', url: 'files/ke-hoach-hoat-dong-2027.docx' },
     { id: 'transcript', name: 'Transcript họp giao ban quý 3 (mẫu).docx', desc: 'Lab 6 - Teams', icon: 'word', url: 'files/transcript-hop-giao-ban-q3-mau.docx' },
     { id: 'townhall', name: 'Town hall Q3 2026 (bản nháp).pptx', desc: 'Lab 4 - PowerPoint (bộ slide có sẵn)', icon: 'powerpoint', url: 'files/town-hall-q3-2026-ban-nhap.pptx' },
     { id: 'brand', name: 'Mẫu thương hiệu (giả định).pptx', desc: 'Lab 4 - PowerPoint (mẫu thương hiệu)', icon: 'powerpoint', url: 'files/mau-thuong-hieu-gia-dinh.pptx' },
     { id: 'skill-excel', name: 'Skill Excel - bao-cao-phan-hoi-khach-hang.zip', desc: 'Lab 3 - Excel (skill mẫu)', icon: 'zip', url: 'files/skill-excel-bao-cao-phan-hoi-khach-hang.zip' },
     { id: 'skill-ppt', name: 'Skill PowerPoint - slide-tom-tat-dieu-hanh.zip', desc: 'Lab 4 - PowerPoint (skill mẫu, dự phòng)', icon: 'zip', url: 'files/skill-ppt-slide-tom-tat-dieu-hanh.zip' },
-    { id: 'skill-chat', name: 'Skill Copilot Chat - bao-cao-tuan.zip', desc: 'Lab 8 - Skills in Copilot Chat (skill mẫu cho phần tự thực hành)', icon: 'zip', url: 'files/skill-chat-bao-cao-tuan.zip' },
+    { id: 'skill-chat', name: 'Skill Copilot Chat - bao-cao-tuan.zip', desc: 'Lab 7 - Skills in Copilot Chat (skill mẫu cho phần tự thực hành)', icon: 'zip', url: 'files/skill-chat-bao-cao-tuan.zip' },
 ];
 
 // Video demo cho các bài dài. Trong Markdown, viết [video:<id>] trên một dòng riêng.
@@ -45,8 +45,7 @@ const modules = {
     'lab-4':    { title: 'Lab 4 - Copilot trong PowerPoint', file: 'labs/lab-4/index.md' },
     'lab-5':    { title: 'Lab 5 - Copilot trong Outlook', file: 'labs/lab-5/index.md' },
     'lab-6':    { title: 'Lab 6 - Copilot trong Teams', file: 'labs/lab-6/index.md' },
-    'lab-7':    { title: 'Lab 7 - Researcher Agent', file: 'labs/lab-7/index.md' },
-    'lab-8':    { title: 'Lab 8 - Agent Builder: tạo agent và đưa vào Teams', file: 'labs/lab-8/index.md' },
+    'lab-7':    { title: 'Lab 7 - Agent Builder: tạo agent và đưa vào Teams', file: 'labs/lab-7/index.md' },
     'wrap':     { title: 'Tổng kết', file: 'labs/wrap/index.md' }
 };
 

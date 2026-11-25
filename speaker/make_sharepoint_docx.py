@@ -1,6 +1,6 @@
 """Tạo "Hướng dẫn trình bày SharePoint agent.docx" cho speaker (tài liệu nội bộ, không đưa lên site).
 
-SharePoint agent không còn là bài tập của học viên: speaker giới thiệu và demo sau Lab 8.
+SharePoint agent không còn là bài tập của học viên: speaker giới thiệu và demo sau Lab 7.
 Chạy: python make_sharepoint_docx.py  (cần python-docx; dùng chung kiểu chữ với file demo trong demo-files/_gen)
 """
 import sys
@@ -21,17 +21,17 @@ def build():
     doc = new_doc()
     footer_note(doc, "Tài liệu nội bộ cho speaker và trợ giảng - không gửi học viên")
     title(doc, "HƯỚNG DẪN TRÌNH BÀY SHAREPOINT AGENT",
-          "Copilot Overview Workshop (bản general v2)  |  Phần giới thiệu sau Lab 8  |  Cập nhật 22/11/2026")
+          "Copilot Overview Workshop (bản general v2)  |  Phần giới thiệu sau Lab 7  |  Cập nhật 25/11/2026")
 
     doc.add_heading("1. Phần này nằm ở đâu trong buổi học", 1)
     table(doc, ["Mục", "Nội dung"], [
-        ["Thời điểm", "Phút 105-112, ngay sau Lab 8 Bài tập 4 (học viên vừa dùng Policy Assistant trong Teams)"],
-        ["Hình thức", "Speaker demo trên máy chiếu, học viên xem. Trên site lab không có bài tập SharePoint agent, chỉ có bảng \"Ba cấp độ agent\" cuối Lab 8"],
+        ["Thời điểm", "Phút 105-112, ngay sau Lab 7 Bài tập 4 (học viên vừa dùng Policy Assistant trong Teams)"],
+        ["Hình thức", "Speaker demo trên máy chiếu, học viên xem. Trên site lab không có bài tập SharePoint agent, chỉ có bảng \"Ba cấp độ agent\" cuối Lab 7"],
         ["Thời lượng", "5 phút demo + 2 phút giải thích ba cấp độ agent"],
         ["Cần có", "Site SharePoint của workshop, agent Trợ lý Sổ tay tạo sẵn, một nhóm chat Teams demo, ảnh chụp dự phòng"],
     ], [3.5, 13])
     para(doc, "Vì sao speaker demo thay vì học viên tự làm: tạo SharePoint agent cần quyền chỉnh sửa site, và agent tạo bằng Agent Builder "
-              "(Lab 8) hiện chưa thêm được vào nhóm chat Teams. Demo SharePoint agent cho khách hàng thấy bước tiếp theo: agent vào thẳng "
+              "(Lab 7) hiện chưa thêm được vào nhóm chat Teams. Demo SharePoint agent cho khách hàng thấy bước tiếp theo: agent vào thẳng "
               "nhóm chat, cả nhóm cùng hỏi.")
 
     doc.add_heading("2. Ba thông điệp cần truyền tải", 1)
@@ -54,7 +54,7 @@ def build():
         ["7", "Chụp ảnh màn hình từng bước 3-6", "Có bộ ảnh dự phòng nếu demo trực tiếp lỗi"],
         ["8", "Gỡ agent khỏi nhóm chat sau khi thử (... của nhóm chat > Manage apps > ... cạnh agent > Remove) nếu muốn demo lại bước thêm agent", "Nhóm chat sẵn sàng cho buổi học"],
     ], [0.8, 9.7, 6])
-    para(doc, "Policy Assistant ở Lab 8 cũng nên dùng Sổ tay trên chính site này: khi học viên chia sẻ agent cho nhau, người nhận có quyền đọc "
+    para(doc, "Policy Assistant ở Lab 7 cũng nên dùng Sổ tay trên chính site này: khi học viên chia sẻ agent cho nhau, người nhận có quyền đọc "
               "file nên vẫn nhận được câu trả lời.")
 
     doc.add_heading("4. Kịch bản demo", 1)
@@ -92,7 +92,7 @@ def build():
          "Tích hợp hệ thống nghiệp vụ, thực hiện hành động, quản trị và phân phối quy mô lớn"],
         ["Ai tạo", "Người có quyền chỉnh sửa site", "Người dùng, ngay trong Copilot Chat", "Nhóm IT hoặc người phát triển"],
         ["Đưa đến người dùng", "Thêm vào nhóm chat, kênh Teams", "Chia sẻ link, dùng trong Copilot Chat và Teams", "Teams, Copilot Chat, website và các kênh khác"],
-        ["Trong buổi học", "Speaker demo (tài liệu này)", "Lab 8, học viên tự làm", "Chỉ giới thiệu"],
+        ["Trong buổi học", "Speaker demo (tài liệu này)", "Lab 7, học viên tự làm", "Chỉ giới thiệu"],
     ], [3, 4.4, 4.6, 4.5])
     para(doc, "Câu nối sang bước tiếp theo (chỉ nói miệng): \"Khi doanh nghiệp muốn đưa agent đến nhiều người dùng Teams hơn, hoặc cần agent kết nối "
               "hệ thống nghiệp vụ và thực hiện hành động, đó là lúc dùng Copilot Studio. Phần này chúng tôi sẽ đi sâu trong buổi làm việc kỹ thuật.\"")

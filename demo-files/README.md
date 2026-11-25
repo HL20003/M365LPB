@@ -9,18 +9,18 @@ Sau khi tạo lại file, chạy `python _gen/sync_site_files.py` để chép sa
 | id trong app.js | File | Dùng ở |
 |---|---|---|
 | `report` | Báo cáo quản lý Q3 2026 (bản nháp).docx (cố ý có lỗi) | Lab 2 Word, Lab 5 Outlook |
-| `handbook` | Sổ tay Chính sách Nội bộ.docx | Lab 2 Word, Lab 8 Agent Builder, speaker demo SharePoint agent |
+| `handbook` | Sổ tay Chính sách Nội bộ.docx | Lab 2 Word, Lab 7 Agent Builder, speaker demo SharePoint agent |
 | `policy-sample` | SAMPLE Chính sách Bảo mật Thông tin.docx (cố ý lỗi định dạng) | Lab 2 Word (tự thực hành) |
-| `business` | Báo cáo Kết quả Kinh doanh Q3 2026.xlsx | Lab 1 Copilot Chat, Lab 3 Excel, Lab 7 Researcher |
+| `business` | Báo cáo Kết quả Kinh doanh Q3 2026.xlsx | Lab 1 Copilot Chat, Lab 3 Excel |
 | `feedback` | Phản hồi khách hàng T9-T10 2026 (xuất từ hệ thống).xlsx (cố ý chưa làm sạch) | Lab 3 Excel Bài 2 (skill) |
 | `memo-template` | Mẫu tờ trình (giả định).docx (mẫu trống có chỗ điền trong ngoặc vuông) | Lab 2 Word Bài 1 |
-| `plan` | Kế hoạch Hoạt động 2027 (dự thảo).docx | Lab 1, Lab 2, Lab 4, Lab 7 |
+| `plan` | Kế hoạch Hoạt động 2027 (dự thảo).docx | Lab 1, Lab 2, Lab 4 |
 | `transcript` | Transcript họp giao ban quý 3 (mẫu).docx | Lab 6 Teams |
 | `townhall` | Town hall Q3 2026 (bản nháp).pptx (nhiều chữ, theme mặc định) | Lab 4 PowerPoint |
 | `brand` | Mẫu thương hiệu (giả định).pptx | Lab 4 PowerPoint |
 | `skill-excel` | Skill Excel - bao-cao-phan-hoi-khach-hang.zip (từ `skills/bao-cao-phan-hoi-khach-hang/SKILL.md`, có bọc thư mục) | Lab 3 Bài 2 (dự phòng) |
 | `skill-ppt` | Skill PowerPoint - slide-tom-tat-dieu-hanh.zip (từ `skills/slide-tom-tat-dieu-hanh/SKILL.md`, có bọc thư mục) | Lab 4 Bài 2 (dự phòng) |
-| `skill-chat` | Skill Copilot Chat - bao-cao-tuan.zip (từ `skills/bao-cao-tuan/SKILL.md`, SKILL.md ở gốc zip) | Lab 8 (tự thực hành) |
+| `skill-chat` | Skill Copilot Chat - bao-cao-tuan.zip (từ `skills/bao-cao-tuan/SKILL.md`, SKILL.md ở gốc zip) | Lab 7 (tự thực hành) |
 
 ## Tạo lại file
 
@@ -52,9 +52,8 @@ Trên Windows, đặt `PYTHONIOENCODING=utf-8` nếu terminal báo lỗi in ti�
 | 10-20 | Copilot, Work IQ và bảo mật dữ liệu: "Bạn biết gì về tôi và công việc của tôi?", dấu "/" gọi người, file, email, cuộc họp | Lab 1 Bài 1-2 |
 | 20-50 | Từ dữ liệu công việc đến kết quả hoàn chỉnh: Chat (Lab 1 Bài 3) → Word (Lab 2) → Excel (Lab 3) → PowerPoint (Lab 4). Một câu chuyện (báo cáo quý 3, Kế hoạch 2027), nhưng mỗi lab bắt đầu từ file demo có sẵn. Mỗi lab có ít nhất một bước tạo file mới từ file nguồn (Word → tờ trình, Excel thô → báo cáo, deck → slide tóm tắt bằng skill, Word → email). Bài dài (tờ trình, skill Excel, skill PowerPoint) chiếu video. Outlook chỉ nói nhanh nếu còn thời gian. Chi tiết: speaker/Huong dan speaker.md mục 2.1 | Lab 1 Bài 3, Lab 2-5 |
 | 50-70 | Teams: từ cuộc họp đến hành động (transcript mẫu, 3 câu hỏi), @Copilot trong nhóm chat | Lab 6 |
-| 70-80 | Researcher: **chỉ show kết quả chạy sẵn**, nhấn mạnh việc đưa dữ liệu công ty vào phân tích | Lab 7 |
-| 80-105 | Hands-on: Policy Assistant bằng Agent Builder | Lab 8 |
-| 105-112 | Đưa agent vào Teams (Lab 8 Bài 4), speaker demo SharePoint agent trong nhóm chat, ba cấp độ SharePoint agent / Agent Builder / Copilot Studio | Lab 8; speaker/Hướng dẫn trình bày SharePoint agent.docx |
+| 70-105 | Hands-on: Policy Assistant bằng Agent Builder (thêm 10 phút từ phần Researcher đã bỏ) | Lab 7 |
+| 105-112 | Đưa agent vào Teams (Lab 7 Bài 4), speaker demo SharePoint agent trong nhóm chat, ba cấp độ SharePoint agent / Agent Builder / Copilot Studio | Lab 7; speaker/Hướng dẫn trình bày SharePoint agent.docx |
 | 112-120 | Tổng kết, 3 câu hỏi, chốt 1-2 tình huống ưu tiên, giới thiệu workshop kỹ thuật tiếp theo | Tổng kết |
 
 ### 5 điểm speaker cần làm khách hàng nhớ
@@ -72,7 +71,7 @@ Trên Windows, đặt `PYTHONIOENCODING=utf-8` nếu terminal báo lỗi in ti�
 - Demo việc AI nào cũng làm được (viết một đoạn văn, vẽ biểu đồ đơn giản)
 - Cam kết về mô hình, giá, quyền sử dụng hay roadmap khi chưa có thông tin chính thức
 - Trình bày agent như nội dung độc lập: luôn kết thúc bằng chia sẻ và đưa agent vào Teams
-- Cố hoàn thành cả 8 lab trong buổi; phần "Tự thực hành thêm" để học viên tự làm sau
+- Cố hoàn thành cả 7 lab trong buổi; phần "Tự thực hành thêm" để học viên tự làm sau
 - **Skills** (Excel, Copilot Chat): chuẩn bị sẵn để demo, hẹn buổi 2 hướng dẫn build chi tiết; bài build nằm ở "Tự thực hành thêm"
 - Không giới thiệu Analyst
 
@@ -83,10 +82,9 @@ Trên Windows, đặt `PYTHONIOENCODING=utf-8` nếu terminal báo lỗi in ti�
   @Copilot trong group chat (public preview, cần bật Show preview features trong chính sách cập nhật Teams), Skills in Copilot Chat
   (cần licence Microsoft 365 Copilot; nút Agents có thể đã đổi thành Plugins).
 - Lab 6: nếu dùng cuộc họp thật, bật Recording và Transcript; nếu không, học viên dùng file transcript mẫu.
-- Lab 7: chạy sẵn một báo cáo Researcher (mất 3-10 phút).
 - Demo SharePoint agent (speaker): tạo trước **Trợ lý Sổ tay** từ Sổ tay trên site SharePoint của workshop, cấp quyền đọc cho học viên, gửi link site. Xem speaker/Hướng dẫn trình bày SharePoint agent.docx.
   Kiểm tra tenant cho phép tạo agent trong Copilot Chat; agent của Agent Builder xuất hiện trong Copilot ở Teams.
-- Roadmap: agent tạo bằng Agent Builder chưa thêm được vào group chat Teams; khi phát hành, có thể đưa bước thêm agent vào nhóm chat vào Lab 8.
+- Roadmap: agent tạo bằng Agent Builder chưa thêm được vào group chat Teams; khi phát hành, có thể đưa bước thêm agent vào nhóm chat vào Lab 7.
   @Copilot trong kênh (channel agent) chưa có tài liệu chính thức, kiểm tra trước khi giới thiệu.
 
 ## Đáp án tham khảo
@@ -119,10 +117,7 @@ Trên Windows, đặt `PYTHONIOENCODING=utf-8` nếu terminal báo lỗi in ti�
   Nhân sự gửi kế hoạch giữ chân TP. HCM 05/12.
 - **Lab 6 Bài 2 (@Copilot):** việc: số liệu 01/12 (Tài chính), kiểm soát hợp đồng thầu phụ từ 01/12, kế hoạch giữ chân 05/12 (Nhân sự),
   báo cáo chốt 08/12 [CHƯA CÓ người gửi]; chưa ai trả lời: ai trình Tổng Giám đốc mức cắt thầu phụ, ai trả lời câu hỏi giờ làm thêm tại town hall.
-- **Lab 7:** nghỉ việc 20% (trung vị 13,5%), giờ đào tạo 19,2 giờ/người/năm (trung vị 32), khách hàng lớn nhất 36% (trung vị 20%),
-  biên LNTT 19,4% (trung vị 22%), NPS 36 (trung vị 44). Đối chiếu Kế hoạch 2027: đã có giải pháp nghỉ việc, đào tạo;
-  chưa có mục rủi ro khách hàng lớn và kiểm soát chi phí thầu phụ.
-- **Lab 8 Bài 3-4:** 6 năm thâm niên → 15 ngày phép, chuyển tối đa 5 ngày, dùng trước 31/03; chuyên viên đi Đà Nẵng: khách sạn tối đa
+- **Lab 7 Bài 3-4:** 6 năm thâm niên → 15 ngày phép, chuyển tối đa 5 ngày, dùng trước 31/03; chuyên viên đi Đà Nẵng: khách sạn tối đa
   1,2 triệu/đêm, ăn 250.000 đồng/ngày, quyết toán trong 10 ngày làm việc; mua sắm 650 triệu → 3 báo giá, Giám đốc Tài chính duyệt;
   tạm ứng 40% (Bài 4, hỏi trong Teams) là ngoại lệ, cần Giám đốc Tài chính duyệt và bảo lãnh tạm ứng của ngân hàng; giá vàng → từ chối.
 - **Demo SharePoint agent (Trợ lý Sổ tay):** hợp đồng thầu phụ 3,2 tỷ → 3 báo giá, Tổng Giám đốc sau Pháp chế (5.1); tạm ứng tối đa 30%,

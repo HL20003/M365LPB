@@ -279,7 +279,7 @@ def plan():
     doc.save(OUT / "Kế hoạch Hoạt động 2027 (dự thảo).docx")
 
 
-# ============================================================ Lab 2 + Lab 8: Sổ tay chính sách (knowledge source)
+# ============================================================ Lab 2 + Lab 7: Sổ tay chính sách (knowledge source)
 def handbook():
     doc = new_doc()
     footer_note(doc, FICTION + " Phiên bản 2.1 - hiệu lực từ 01/07/2026.")

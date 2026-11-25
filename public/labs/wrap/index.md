@@ -12,8 +12,7 @@
 | Lab 4 | PowerPoint | Cập nhật bộ slide có sẵn theo **mẫu thương hiệu**; thêm **skill** slide tóm tắt điều hành và dùng lại cho mọi bộ slide |
 | Lab 5 | Outlook | Hộp thư thành danh sách việc, tóm tắt chuỗi email, soạn thư trả lời; soạn email từ báo cáo Word |
 | Lab 6 | Teams | Biết mình bỏ lỡ gì trong cuộc họp, việc của mình, điểm chưa thống nhất; **@Copilot** trong nhóm chat |
-| Lab 7 | Researcher | Nghiên cứu nhiều bước, kết hợp web với số liệu và kế hoạch nội bộ |
-| Lab 8 | Agent Builder, Teams | Tạo agent Policy Assistant, kiểm tra, chia sẻ cho đồng nghiệp và **dùng ngay trong Teams** |
+| Lab 7 | Agent Builder, Teams | Tạo agent Policy Assistant, kiểm tra, chia sẻ cho đồng nghiệp và **dùng ngay trong Teams** |
 
 ## 5 điều cần nhớ
 

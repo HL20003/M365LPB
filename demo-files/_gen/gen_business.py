@@ -1,4 +1,4 @@
-"""Tạo Báo cáo Kết quả Kinh doanh Q3 2026.xlsx (Lab 1, Lab 3, Lab 7).
+"""Tạo Báo cáo Kết quả Kinh doanh Q3 2026.xlsx (Lab 1, Lab 3).
 
 Công ty dịch vụ giả định, không nêu tên. Đơn vị: tỷ đồng (dự án: triệu đồng). Số liệu được thiết kế để có các "điểm lệch":
   1) Doanh thu tăng nhưng lợi nhuận giảm vì chi phí thuê thầu phụ vượt kế hoạch

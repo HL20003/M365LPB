@@ -82,7 +82,7 @@
 >
 > Dựa trên email, cuộc họp và tài liệu của tôi trong 7 ngày qua, soạn báo cáo tuần gửi quản lý trực tiếp gồm 4 phần: việc đã hoàn thành, việc đang làm và tiến độ, vấn đề cần hỗ trợ hoặc cần quyết định, và kế hoạch tuần tới. Mỗi ý ghi rõ nguồn thông tin. Tối đa một trang.
 
-Tuần nào cũng viết báo cáo? Ở phần Tự thực hành thêm của [Lab 8](#lab-8), anh/chị biến prompt này thành **skill** để gọi lại bằng tên.
+Tuần nào cũng viết báo cáo? Ở phần Tự thực hành thêm của [Lab 7](#lab-7), anh/chị biến prompt này thành **skill** để gọi lại bằng tên.
 
 ### Tắt Work IQ để cập nhật xu hướng công khai
 

@@ -1,12 +1,12 @@
 # Hướng dẫn speaker - Copilot Overview Workshop
 
-Bản general v2, cập nhật 22/11/2026. Tài liệu nội bộ cho người trình bày và trợ giảng, không gửi cho học viên.
+Bản general v2, cập nhật 25/11/2026. Tài liệu nội bộ cho người trình bày và trợ giảng, không gửi cho học viên.
 
 ## 1. Buổi workshop này là gì
 
 Đây là buổi **giới thiệu 120 phút**, không phải khóa đào tạo đủ tính năng. Mục tiêu là để khách hàng thấy giá trị của Microsoft 365 Copilot trong công việc của họ, tự tay tạo được một agent, và muốn đi tiếp (thử nghiệm, mở rộng licence, xây agent, workshop kỹ thuật).
 
-- Site lab có 8 lab. **Không cố làm hết**: trong buổi chỉ làm phần "Thực hành trong buổi học"; phần "Tự thực hành thêm" để học viên tự làm sau.
+- Site lab có 7 lab. **Không cố làm hết**: trong buổi chỉ làm phần "Thực hành trong buổi học"; phần "Tự thực hành thêm" để học viên tự làm sau.
 - Lab 1-4 cùng **một câu chuyện** (chuẩn bị báo cáo quý 3 và Kế hoạch 2027) để speaker kể liền mạch Chat → Word → Excel → PowerPoint. Nhưng mỗi lab bắt đầu từ file demo có sẵn, nên học viên làm lab nào trước cũng được.
 - Mỗi lab Office có ít nhất một bước **tạo file mới từ file nguồn**: báo cáo Word → tờ trình Word, file Excel thô → sheet báo cáo, bộ slide → slide tóm tắt điều hành (skill), báo cáo Word → email. Đây là cách minh họa điểm 3 "luồng công việc liên tục".
 - Bài có nhãn "Tính năng mới" dùng tính năng Microsoft mới phát hành hoặc đang triển khai dần: phải chạy thử trên tenant trước (mục 3.3 và 3.4).
@@ -25,7 +25,7 @@ Bản general v2, cập nhật 22/11/2026. Tài liệu nội bộ cho người t
 - Tạo PowerPoint từ trang trắng. Lab 4 chỉ **chỉnh deck có sẵn**.
 - Demo việc AI nào cũng làm được (viết một đoạn văn, vẽ biểu đồ đơn giản). Vì vậy "viết tóm tắt điều hành" chỉ còn trong Prompt đề xuất của Lab 2.
 - Cam kết về mô hình, giá, quyền sử dụng hay ngày phát hành khi chưa có thông tin chính thức.
-- Dừng agent ở chỗ "đã tạo xong". Luôn kết thúc bằng chia sẻ và đưa agent vào Teams (Lab 8 Bài 4), rồi demo SharePoint agent trong nhóm chat.
+- Dừng agent ở chỗ "đã tạo xong". Luôn kết thúc bằng chia sẻ và đưa agent vào Teams (Lab 7 Bài 4), rồi demo SharePoint agent trong nhóm chat.
 - Giới thiệu Analyst.
 
 ## 2. Agenda 120 phút và việc của speaker
@@ -36,9 +36,8 @@ Bản general v2, cập nhật 22/11/2026. Tài liệu nội bộ cho người t
 | 10-20 | Copilot, Work IQ, bảo mật dữ liệu | Lab 1 Bài 1-2 | Demo "Bạn biết gì về tôi và công việc của tôi?" và dấu "/" gọi người, cuộc họp | Làm Bài 1 trên tài khoản của mình |
 | 20-50 | Từ dữ liệu công việc đến kết quả hoàn chỉnh | Lab 1 Bài 3, Lab 2, 3, 4 (Lab 5 nếu còn giờ) | Kể một câu chuyện qua 4 ứng dụng, xem mục 2.1. Demo trực tiếp bài ngắn, chiếu video bài dài. Skills chỉ demo, hẹn buổi 2 hướng dẫn build | Làm theo bài demo trực tiếp; bài có video để tự làm sau |
 | 50-70 | Teams: từ cuộc họp đến hành động | Lab 6 | Demo 3 câu hỏi trên transcript mẫu; chia nhóm 3-4 người cho bài @Copilot | Bài 1 (transcript), Bài 2 (nhóm chat) |
-| 70-80 | Researcher | Lab 7 | **Chỉ show báo cáo chạy sẵn**, nhấn mạnh việc đưa dữ liệu công ty vào phân tích | Xem, có thể gửi đề bài rồi chuyển lab |
-| 80-105 | Hands-on: Policy Assistant | Lab 8 Bài 1-3 | Dẫn từng bài, đi vòng hỗ trợ | Tự tạo, hoàn thiện và test agent |
-| 105-112 | Đưa agent vào Teams, 3 cấp độ | Lab 8 Bài 4 + speaker demo | Hướng dẫn chia sẻ và mở agent trong Teams; **speaker demo SharePoint agent** trong nhóm chat; giải thích 3 cấp độ | Bài 4: chia sẻ agent, dùng trong Teams; xem demo |
+| 70-105 | Hands-on: Policy Assistant | Lab 7 Bài 1-3 | Dẫn từng bài, đi vòng hỗ trợ; có thêm 10 phút (trước đây dành cho Researcher) để giúp người làm chậm và cho cả lớp test kỹ | Tự tạo, hoàn thiện và test agent |
+| 105-112 | Đưa agent vào Teams, 3 cấp độ | Lab 7 Bài 4 + speaker demo | Hướng dẫn chia sẻ và mở agent trong Teams; **speaker demo SharePoint agent** trong nhóm chat; giải thích 3 cấp độ | Bài 4: chia sẻ agent, dùng trong Teams; xem demo |
 | 112-120 | Tổng kết, chốt bước tiếp theo | Tổng kết | Hỏi 3 câu, chốt 1-2 tình huống ưu tiên, giới thiệu buổi tiếp theo | Trả lời, góp ý |
 
 ### 2.1 Phút 20-50: một câu chuyện qua 4 ứng dụng
@@ -61,7 +60,7 @@ Câu chuyện: *"Quý 3 vừa xong, doanh thu gần đạt nhưng lợi nhuận 
 
 ### 3.1 Tài khoản, licence, quyền
 
-- Mỗi học viên có **tài khoản công ty** với licence **Microsoft 365 Copilot**. Licence này cần cho Copilot trong Word, Excel, PowerPoint, Outlook, Teams, Researcher, @Copilot trong nhóm chat, agent trong Teams và Skills.
+- Mỗi học viên có **tài khoản công ty** với licence **Microsoft 365 Copilot**. Licence này cần cho Copilot trong Word, Excel, PowerPoint, Outlook, Teams, @Copilot trong nhóm chat, agent trong Teams và Skills.
 - Học viên dùng **Word, Excel, PowerPoint bản cài trên máy** (Microsoft 365, kênh cập nhật mới) cho Lab 2 và Lab 4, cùng **Teams bản desktop**.
 - **Tài khoản demo mới sẽ trống**: Lab 1 Bài 1-2, Lab 5 cần email, cuộc họp, chat có thật trong 2 tuần gần nhất. Nếu dùng tài khoản lab, gửi vài email và tạo vài cuộc họp giữa các tài khoản trước 1-2 ngày.
 - Quản trị viên tenant kiểm tra:
@@ -77,16 +76,16 @@ Câu chuyện: *"Quý 3 vừa xong, doanh thu gần đạt nhưng lợi nhuận 
 
 | File | Dùng ở |
 |---|---|
-| Báo cáo Kết quả Kinh doanh Q3 2026.xlsx | Lab 1, Lab 3, Lab 7 |
-| Kế hoạch Hoạt động 2027 (dự thảo).docx | Lab 1, Lab 2, Lab 4, Lab 7 |
+| Báo cáo Kết quả Kinh doanh Q3 2026.xlsx | Lab 1, Lab 3 |
+| Kế hoạch Hoạt động 2027 (dự thảo).docx | Lab 1, Lab 2, Lab 4 |
 | Báo cáo quản lý Q3 2026 (bản nháp).docx | Lab 2, Lab 5 |
 | Mẫu tờ trình (giả định).docx | Lab 2 Bài 1 |
-| Sổ tay Chính sách Nội bộ.docx | Lab 2, Lab 8, demo SharePoint agent |
+| Sổ tay Chính sách Nội bộ.docx | Lab 2, Lab 7, demo SharePoint agent |
 | Town hall Q3 2026 (bản nháp).pptx, Mẫu thương hiệu (giả định).pptx | Lab 4 |
 | Skill PowerPoint .zip (slide-tom-tat-dieu-hanh) | Lab 4 Bài 2 (dự phòng) |
 | Transcript họp giao ban quý 3 (mẫu).docx | Lab 6 |
 | Phản hồi khách hàng T9-T10 2026.xlsx, Skill Excel .zip | Lab 3 Bài 2 |
-| Skill Copilot Chat .zip | Lab 8 (tự thực hành) |
+| Skill Copilot Chat .zip | Lab 7 (tự thực hành) |
 
 ### 3.3 Chạy thử phần Office (1-2 ngày trước)
 
@@ -121,20 +120,19 @@ Tính năng nào chưa có trên tenant thì chuyển bài đó sang **speaker d
 | Skills trong Excel | 3 | Gõ @skill-builder tạo và lưu được skill; thấy **Manage plugins & skills** > **Custom skills** |
 | Skills trong PowerPoint | 4 | Thấy **+** > **Choose skills**, có **Manage skills** > **Add skill**; skill tự thêm gọi được bằng @tên-skill |
 | @Copilot trong nhóm chat | 6 | Thêm được Copilot vào nhóm chat bằng **Add agents and bots** |
-| Researcher | 7 | Thấy Researcher trong Agents; **chạy sẵn báo cáo** bằng đề bài trong lab, đính kèm cả file Excel và Kế hoạch 2027 (mất 3-10 phút), giữ tab kết quả |
 | Agent Builder | 8 | Thấy **New Agent**, tạo và chia sẻ được agent |
 | Agent trong Teams | 8 | Agent tạo bằng Agent Builder hiện trong Teams > Copilot |
 | SharePoint agent | Demo | Xem mục 4.2 |
 
-## 4. Phần agent (Lab 8 và demo SharePoint agent)
+## 4. Phần agent (Lab 7 và demo SharePoint agent)
 
 Đây là phần học viên nhớ nhất: họ **tự tạo** được một agent và thấy agent **đến được Teams**. Cần chuẩn bị kỹ nhất.
 
-### 4.1 Lab 8 - Policy Assistant và đưa vào Teams (hands-on, khoảng 30 phút)
+### 4.1 Lab 7 - Policy Assistant và đưa vào Teams (hands-on, khoảng 40 phút)
 
 **Chuẩn bị:**
 
-- Speaker tự làm hết Lab 8 trên tenant trước 1 ngày, giữ lại agent của mình làm bản demo.
+- Speaker tự làm hết Lab 7 trên tenant trước 1 ngày, giữ lại agent của mình làm bản demo.
 - Tạo sẵn một **Policy Assistant dự phòng** và chia sẻ cho toàn bộ học viên, để ai không tạo được agent vẫn làm tiếp được phần test và Bài 4.
 - **Nên đặt Sổ tay trên site SharePoint của workshop** (học viên có quyền đọc) và cho học viên chọn file từ đó làm knowledge. Nếu mỗi người dùng file trên OneDrive cá nhân, khi chia sẻ agent cho người ngồi cạnh, người đó **không nhận được câu trả lời** vì không có quyền đọc file của người tạo.
 
@@ -170,12 +168,12 @@ Tính năng nào chưa có trên tenant thì chuyển bài đó sang **speaker d
 
 ### 4.2 Demo SharePoint agent (speaker, khoảng 7 phút)
 
-SharePoint agent **không còn là bài tập** trên site: speaker demo trên máy chiếu ngay sau Lab 8 Bài 4. Chi tiết chuẩn bị, kịch bản, lời dẫn, đáp án và xử lý sự cố nằm trong file **speaker/Hướng dẫn trình bày SharePoint agent.docx**.
+SharePoint agent **không còn là bài tập** trên site: speaker demo trên máy chiếu ngay sau Lab 7 Bài 4. Chi tiết chuẩn bị, kịch bản, lời dẫn, đáp án và xử lý sự cố nằm trong file **speaker/Hướng dẫn trình bày SharePoint agent.docx**.
 
 - Thông điệp: agent phải đến được nơi mọi người làm việc; SharePoint agent vào thẳng nhóm chat, cả nhóm cùng @mention và cùng thấy câu trả lời; agent trả lời theo quyền của người hỏi.
 - Lý do demo SharePoint agent: agent tạo bằng Agent Builder hiện **chưa thêm được vào nhóm chat**. Không hứa ngày Agent Builder hỗ trợ việc này.
 - Chuẩn bị trước 1 ngày: agent **Trợ lý Sổ tay** trên site SharePoint của workshop, nhóm chat demo 2-3 tài khoản nội bộ, ảnh chụp dự phòng.
-- Kết thúc bằng bảng **Ba cấp độ agent** (cuối Lab 8 trên site) và câu nối sang Copilot Studio. **Không nêu giá, mô hình tính phí hay ngày phát hành.**
+- Kết thúc bằng bảng **Ba cấp độ agent** (cuối Lab 7 trên site) và câu nối sang Copilot Studio. **Không nêu giá, mô hình tính phí hay ngày phát hành.**
 
 ## 5. Ghi chú theo từng lab còn lại
 
@@ -187,7 +185,6 @@ SharePoint agent **không còn là bài tập** trên site: speaker demo trên m
 | 4 - PowerPoint | Bài 1 cập nhật deck có sẵn theo mẫu thương hiệu; Bài 2 skill slide tóm tắt điều hành | PowerPoint desktop; học viên tải file mẫu thương hiệu về máy để dùng Browse for Themes. Bài 2: nhấn mạnh skill là **quy chuẩn của đơn vị**, viết một lần, ai cũng gọi được; skill tự thêm chỉ người thêm thấy, muốn dùng chung thì quản trị viên triển khai skill cho tổ chức. |
 | 5 - Outlook | Hộp thư thành danh sách việc, tóm tắt chuỗi email, soạn thư trả lời, email từ báo cáo Word | Chỉ làm nếu còn thời gian; ưu tiên bước 5 vì nối tiếp câu chuyện |
 | 6 - Teams | 3 câu hỏi trên transcript mẫu; @Copilot trong nhóm chat | Chia nhóm 3-4 người trước khi vào bài. Người gọi @Copilot cần licence. Copilot chưa dùng được trong chat của cuộc họp |
-| 7 - Researcher | Đề bài 3 câu hỏi, đính kèm số liệu quý 3 và Kế hoạch 2027 | Chỉ show báo cáo chạy sẵn. Nhấn mạnh: viết báo cáo AI nào cũng làm được, khác biệt là Researcher **đối chiếu với tài liệu nội bộ** (chỉ ra kế hoạch còn thiếu rủi ro khách hàng lớn và thầu phụ) |
 
 Đáp án đầy đủ của mọi lab nằm trong demo-files/README.md của dự án.
 
