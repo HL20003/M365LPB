@@ -30,7 +30,7 @@ Không mở trực tiếp `index.html` bằng file:// vì trang tải nội dung
 
 ## Mật khẩu lớp học
 
-Site được khóa bằng một mật khẩu chung (`src/worker.js`). Người truy cập thấy trang **Đăng nhập**, nhập đúng mật khẩu thì vào được site trong 7 ngày; nút **Đăng xuất** ở thanh trên cùng.
+Site được khóa bằng một mật khẩu chung (`src/worker.js`). Người truy cập thấy trang **Đăng nhập**, nhập đúng mật khẩu thì vào được site trong 1 ngày, sau đó nhập lại (vẫn mật khẩu cũ); nút **Đăng xuất** ở thanh trên cùng.
 
 - **Đặt hoặc đổi mật khẩu:** Cloudflare dashboard > Workers & Pages > `m365copilot-general-lab-v2` > Settings > **Variables and Secrets** > Add, chọn loại **Secret**, tên `LAB_PASSWORD`. Hoặc chạy `npx wrangler secret put LAB_PASSWORD`. Đổi mật khẩu thì mọi người phải đăng nhập lại.
 - **Không ghi mật khẩu vào code**: repo GitHub đang public.

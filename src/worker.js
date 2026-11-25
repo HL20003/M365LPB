@@ -7,7 +7,7 @@
 // - /logout xoá cookie.
 
 const COOKIE = 'lab_session';
-const SESSION_DAYS = 7;
+const SESSION_DAYS = 1; // hết hạn thì nhập lại cùng mật khẩu; đổi LAB_PASSWORD thì mọi phiên hết hiệu lực ngay
 const enc = new TextEncoder();
 
 export default {
