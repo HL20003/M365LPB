@@ -14,13 +14,23 @@
 > - Copilot không chỉ vẽ một biểu đồ: nó đọc nhiều sheet cùng lúc và giải thích **vì sao** số liệu thay đổi
 > - Dạy một lần, dùng lại mỗi tháng: skill lưu trên OneDrive và được gọi bằng **@tên-skill**, không phải viết lại prompt dài
 
+> [!TIP]
+> **Chuẩn bị trước khi bắt đầu**
+>
+> - Tải lên **OneDrive**: [Báo cáo Kết quả Kinh doanh Q3 2026.xlsx](#file-business) cho Bài tập 1 và 3, [Phản hồi khách hàng T9-T10 2026 (xuất từ hệ thống).xlsx](#file-feedback) cho Bài tập 2
+> - Tải **về máy**: [Skill Excel - bao-cao-phan-hoi-khach-hang.zip](#file-skill-excel), skill mẫu cho Bài tập 2
+>
+> **Sau Bài tập 2, nếu vẫn chưa tạo được skill:** giải nén file zip trên. Trong khung Copilot của Excel, bấm **...** > **Manage plugins & skills** > **Custom skills** > **Create OneDrive folder** > **Open skills folder**, chép thư mục **bao-cao-phan-hoi-khach-hang** vào đó và bấm **Refresh**. Hoặc chọn **Add** > **Record a skill**, tự làm một lần các bước rồi bấm **Stop** và **Save skill**.
+>
+> Xem [cách tải file về máy](#module-1/cach-tai-file-word-excel-ve-may) nếu cần.
+
 ## Tình huống
 
 > **Anh/chị** - *người cần hiểu nhanh số liệu quý 3*
 >
 > Doanh thu quý 3 gần đạt kế hoạch nhưng lợi nhuận lại giảm. Trước cuộc họp, anh/chị cần biết vấn đề **bắt đầu từ khi nào** và **tập trung ở đâu**, rồi có một dashboard để Ban Giám đốc tự xem theo từng văn phòng.
 
-**Tệp demo:** [Báo cáo Kết quả Kinh doanh Q3 2026.xlsx](#file-business), gồm các sheet *Tổng quan Q3*, *PL_Budget_Actual*, *Doanh thu tháng*, *Danh sách dự án*, *Theo văn phòng*, *Benchmark*. Bài tập 2 dùng thêm [Phản hồi khách hàng T9-T10 2026 (xuất từ hệ thống).xlsx](#file-feedback).
+**Báo cáo Kết quả Kinh doanh Q3 2026** gồm các sheet *Tổng quan Q3*, *PL_Budget_Actual*, *Doanh thu tháng*, *Danh sách dự án*, *Theo văn phòng*, *Benchmark*.
 
 ## Thực hành trong buổi học
 
@@ -78,7 +88,7 @@ Mỗi tháng anh/chị nhận file phản hồi khách hàng xuất từ hệ th
 - **Tháng 10:** cùng cấu trúc, không phải mô tả lại các bước: **134 phản hồi**; **Thay đổi nhân sự dự án tăng từ 24 lên 33** (20% lên 25%)
 
 > [!TIP]
-> Không tạo được skill bằng @skill-builder? Tải [Skill Excel - bao-cao-phan-hoi-khach-hang.zip](#file-skill-excel) và giải nén. Trong khung Copilot, bấm **...** > **Manage plugins & skills** > **Custom skills** > **Create OneDrive folder** > **Open skills folder**, chép thư mục **bao-cao-phan-hoi-khach-hang** vào đó và bấm **Refresh**. Một cách khác: chọn **Add** > **Record a skill**, tự làm một lần các bước rồi bấm **Stop** và **Save skill**.
+> Làm theo các bước trên mà Copilot vẫn chưa tạo được skill? Dùng skill mẫu theo phần **Chuẩn bị trước khi bắt đầu** ở đầu trang, rồi chạy tiếp bước 4.
 
 ### Bài tập 3: Dashboard tương tác với Interactive canvas [MỚI]
 

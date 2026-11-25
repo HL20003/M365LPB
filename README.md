@@ -27,3 +27,13 @@ Không mở trực tiếp `index.html` bằng file:// vì trang tải nội dung
 
 - Thêm hoặc đổi lab: sửa file markdown trong `public/labs/`, cập nhật `modules` trong `public/js/app.js` và bảng lịch trình trong `public/index.html`.
 - Đổi file demo: xem `demo-files/README.md`. Trong markdown, `[tên file](#file-<id>)` tự thành link tải file có id tương ứng trong `demoFiles` của `app.js`.
+
+## Mật khẩu lớp học
+
+Site được khóa bằng một mật khẩu chung (`src/worker.js`). Người truy cập thấy trang **Đăng nhập**, nhập đúng mật khẩu thì vào được site trong 7 ngày; nút **Đăng xuất** ở thanh trên cùng.
+
+- **Đặt hoặc đổi mật khẩu:** Cloudflare dashboard > Workers & Pages > `m365copilot-general-lab-v2` > Settings > **Variables and Secrets** > Add, chọn loại **Secret**, tên `LAB_PASSWORD`. Hoặc chạy `npx wrangler secret put LAB_PASSWORD`. Đổi mật khẩu thì mọi người phải đăng nhập lại.
+- **Không ghi mật khẩu vào code**: repo GitHub đang public.
+- Chưa đặt `LAB_PASSWORD` thì site báo "chưa sẵn sàng" thay vì mở công khai.
+- **Logo trên trang đăng nhập:** đặt file logo SoftwareOne chính thức tại `public/brand/softwareone-logo.svg` (thư mục `public/brand/` xem được khi chưa đăng nhập, chỉ để file thương hiệu ở đây). Chưa có file thì trang hiện chữ "SoftwareOne" thay thế.
+- Chạy thử trên máy: tạo file `.dev.vars` (đã có trong .gitignore) với dòng `LAB_PASSWORD=<mật khẩu thử>`, rồi `npx wrangler dev`.

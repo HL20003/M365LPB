@@ -14,17 +14,21 @@
 > - **Skill** là một quy chuẩn viết một lần, gọi lại bằng **@tên-skill**: cả đơn vị trình bày theo cùng một bố cục
 > - Ngoài skill tự thêm, PowerPoint có sẵn các skill như **Visualize this slide**, **Review this presentation**, **Prepare for questions** tại **+** > **Choose skills**
 
+> [!TIP]
+> **Chuẩn bị trước khi bắt đầu**
+>
+> - Tải lên **OneDrive**: [Town hall Q3 2026 (bản nháp).pptx](#file-townhall), bộ slide cần làm mới, và [Kế hoạch Hoạt động 2027 (dự thảo).docx](#file-plan) để đối chiếu số liệu
+> - Tải **về máy**: [Mẫu thương hiệu (giả định).pptx](#file-brand) để áp mẫu ở Bài tập 1, và [Skill PowerPoint - slide-tom-tat-dieu-hanh.zip](#file-skill-ppt), skill mẫu cho Bài tập 2
+>
+> **Sau Bài tập 2, nếu vẫn chưa thêm được skill:** giải nén file zip trên. Trong khung Copilot của PowerPoint, bấm **...** > **Manage skills** > **Custom skills** > **Create OneDrive folder** > **Open skills folder**, chép thư mục **slide-tom-tat-dieu-hanh** vào đó và bấm **Refresh**. Tên thư mục phải trùng với dòng *name* trong SKILL.md.
+>
+> Xem [cách tải file về máy](#module-1/cach-tai-file-word-excel-ve-may) nếu cần.
+
 ## Tình huống
 
 > **Anh/chị** - *người được nhờ hoàn thiện bài trình bày cho buổi họp toàn công ty*
 >
 > Phòng Truyền thông nội bộ gửi bản nháp bộ slide cho buổi họp toàn công ty (town hall) quý 3: đúng nội dung, nhưng toàn chữ, tiêu đề chỉ là tên chủ đề và chưa theo mẫu thương hiệu. Thay vì làm lại từ đầu, anh/chị cập nhật ngay trên bộ slide có sẵn. Ngoài ra, Ban Giám đốc yêu cầu mọi bộ slide trình lên phải có một **slide tóm tắt điều hành** theo cùng bố cục.
-
-**Tài liệu demo:**
-
-- [Town hall Q3 2026 (bản nháp).pptx](#file-townhall): 8 slide, nhiều chữ, theme mặc định
-- [Mẫu thương hiệu (giả định).pptx](#file-brand): mẫu thương hiệu của công ty giả định (màu, font, chân trang "Phân loại: Nội bộ")
-- [Kế hoạch Hoạt động 2027 (dự thảo).docx](#file-plan): tài liệu gốc để kiểm tra số liệu
 
 ## Thực hành trong buổi học
 
@@ -34,16 +38,15 @@
 
 **Áp mẫu thương hiệu:**
 
-1. Tải [Mẫu thương hiệu (giả định).pptx](#file-brand) về máy
-2. Mở [Town hall Q3 2026 (bản nháp).pptx](#file-townhall) **từ OneDrive** bằng **PowerPoint trên máy tính**
-3. Chọn tab **Design**, mở rộng nhóm **Themes** (mũi tên ở góc dưới bên phải), chọn **Browse for Themes...** và chọn file mẫu thương hiệu vừa tải. Cả bộ slide đổi sang màu, font và chân trang của công ty
+1. Mở [Town hall Q3 2026 (bản nháp).pptx](#file-townhall) **từ OneDrive** bằng **PowerPoint trên máy tính**
+2. Chọn tab **Design**, mở rộng nhóm **Themes** (mũi tên ở góc dưới bên phải), chọn **Browse for Themes...** và chọn file [Mẫu thương hiệu (giả định).pptx](#file-brand) đã tải về máy. Cả bộ slide đổi sang màu, font và chân trang của công ty
 
 > [!TIP]
 > Nếu công ty đã có **mẫu thương hiệu dùng chung** (Brand Kit hoặc template trong thư viện của tổ chức), dùng mẫu đó thay cho file giả định. Copilot học bố cục từ các slide mẫu và slide master của template, nên template càng chuẩn thì slide Copilot tạo càng đúng thương hiệu.
 
 **Làm gọn nội dung bằng Copilot:**
 
-4. Nhấn **Copilot** trên ribbon, tab **Home**, gõ "/" chọn [Kế hoạch Hoạt động 2027 (dự thảo).docx](#file-plan), rồi nhập:
+3. Nhấn **Copilot** trên ribbon, tab **Home**, gõ "/" chọn [Kế hoạch Hoạt động 2027 (dự thảo).docx](#file-plan), rồi nhập:
 
 > **PROMPT:**
 >
@@ -112,7 +115,7 @@ Mọi bộ slide trình Ban Giám đốc có một slide tóm tắt điều hàn
 5. Thử lại với một bộ slide của chính anh/chị: mở file, gõ **@slide-tom-tat-dieu-hanh**. Không phải viết lại yêu cầu nào
 
 > [!TIP]
-> Không dán được nội dung? Tải [Skill PowerPoint - slide-tom-tat-dieu-hanh.zip](#file-skill-ppt) và giải nén. Trong khung Copilot, bấm **...** > **Manage skills** > **Custom skills** > **Create OneDrive folder** > **Open skills folder**, chép thư mục **slide-tom-tat-dieu-hanh** vào đó và bấm **Refresh**. Tên thư mục phải trùng với dòng *name* trong SKILL.md.
+> Làm theo các bước trên mà vẫn chưa thêm được skill? Dùng skill mẫu theo phần **Chuẩn bị trước khi bắt đầu** ở đầu trang, rồi chạy tiếp bước 4.
 
 > [!NOTE]
 > Trong **+** > **Choose skills** còn có các skill dựng sẵn như **Review this presentation** (góp ý từng slide), **Visualize this slide** và **Prepare for questions** (dự đoán câu hỏi của người nghe). Skill anh/chị tự thêm chỉ mình anh/chị thấy; muốn cả đơn vị dùng chung, nhờ quản trị viên triển khai skill cho tổ chức.

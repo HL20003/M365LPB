@@ -203,4 +203,4 @@ Các bài thực hành tuân theo bộ quy định giả định dưới đây, 
 
 ---
 
-Tiếp theo: **[Module 2 - Viết prompt hiệu quả](#module-2)**.
+Tiếp theo: **[Module 2 - Personalization in Copilot](#module-2)**.

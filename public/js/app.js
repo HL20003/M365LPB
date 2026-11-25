@@ -38,8 +38,7 @@ const demoVideos = {
 // Danh sách module và file markdown tương ứng
 const modules = {
     'module-1': { title: 'Module 1 - Giới thiệu Copilot và chuẩn bị', file: 'labs/module-1/index.md' },
-    'module-2': { title: 'Module 2 - Viết prompt hiệu quả', file: 'labs/module-2/index.md' },
-    'module-3': { title: 'Module 3 - Personalization in Copilot', file: 'labs/module-3/index.md' },
+    'module-2': { title: 'Module 2 - Personalization in Copilot', file: 'labs/module-2/index.md' },
     'lab-1':    { title: 'Lab 1 - Copilot Chat', file: 'labs/lab-1/index.md' },
     'lab-2':    { title: 'Lab 2 - Copilot trong Word', file: 'labs/lab-2/index.md' },
     'lab-3':    { title: 'Lab 3 - Copilot trong Excel', file: 'labs/lab-3/index.md' },
@@ -363,7 +362,7 @@ function slugify(text) {
         .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
 
-document.querySelectorAll('.nav-link').forEach(link => {
+document.querySelectorAll('.nav-link[data-view]').forEach(link => {
     link.addEventListener('click', e => {
         e.preventDefault();
         history.pushState(null, '', location.pathname);

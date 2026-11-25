@@ -67,7 +67,7 @@ Trên Windows, đặt `PYTHONIOENCODING=utf-8` nếu terminal báo lỗi in ti�
 
 ### Nên tránh
 
-- Đi lần lượt toàn bộ tính năng Word, Excel, PowerPoint, Outlook; giải thích kỹ thuật prompt cơ bản quá lâu (Module 2 để tự đọc)
+- Đi lần lượt toàn bộ tính năng Word, Excel, PowerPoint, Outlook; giải thích kỹ thuật prompt cơ bản quá lâu
 - Tạo PowerPoint từ trang trắng; chỉ chỉnh deck có sẵn theo template
 - Demo việc AI nào cũng làm được (viết một đoạn văn, vẽ biểu đồ đơn giản)
 - Cam kết về mô hình, giá, quyền sử dụng hay roadmap khi chưa có thông tin chính thức

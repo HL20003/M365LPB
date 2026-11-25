@@ -1,4 +1,4 @@
-# Module 2 - Viết prompt hiệu quả
+# Module 2 - Personalization in Copilot
 
 > [!NOTE]
 > **Toàn bộ tài liệu, số liệu và tình huống trong workshop là bản nháp (draft) dùng cho mục đích đào tạo.** Tên nhân vật, khách hàng và đối tác là giả định.
@@ -9,180 +9,109 @@
 
 Sau module này, anh/chị sẽ:
 
-- Viết prompt rõ ràng theo công thức 4 thành phần
-- Biết cách hỏi tiếp để cải thiện kết quả thay vì viết lại từ đầu
-- Dùng 5 kỹ thuật giúp câu trả lời an toàn và chính xác hơn
-- Có sẵn bộ prompt mẫu cho công việc hằng ngày, dùng được ở mọi phòng ban
+- Biết **Customize Copilot** là gì và vì sao nên thiết lập
+- Viết được hướng dẫn cá nhân để mọi câu trả lời của Copilot đúng vai trò và phong cách của mình
+- Dùng các gợi ý có sẵn và kiểm tra hiệu quả sau khi lưu
 
 ---
 
-## Prompt là gì?
+## Customize Copilot là gì?
 
-**Prompt** là yêu cầu anh/chị gửi cho Copilot bằng ngôn ngữ tự nhiên, giống như giao việc cho một trợ lý. Giao việc càng rõ, kết quả càng sát ý.
+**Customize Copilot** là nơi anh/chị cho Copilot biết **mình là ai** và **muốn nhận câu trả lời như thế nào**. Hướng dẫn này được áp dụng cho mọi cuộc trò chuyện sau đó, nên anh/chị không phải nhắc lại cùng một ngữ cảnh trong từng prompt.
 
-| Prompt chưa tốt | Prompt tốt hơn |
-|-----------------|----------------|
-| "Trả lời email này." | "Soạn thư trả lời khách hàng đang hỏi lịch họp tiến độ dự án, đề xuất 2 khung giờ tuần sau, giọng lịch sự và ngắn gọn." |
-| "Tóm tắt báo cáo." | "Tóm tắt báo cáo kết quả quý 3 thành 5 ý cho quản lý trực tiếp của tôi, mỗi ý có một con số cụ thể." |
-| "Vẽ biểu đồ." | "Tạo biểu đồ cột tỷ lệ nghỉ việc theo văn phòng, sắp xếp giảm dần, tiêu đề nêu văn phòng cao nhất." |
-
----
-
-## Công thức 4 thành phần
-
-| Thành phần | Câu hỏi tự đặt ra | Ví dụ |
-|------------|-------------------|-------|
-| **Mục tiêu** | Tôi cần Copilot làm gì? | "Soạn email nhắc tiến độ..." |
-| **Ngữ cảnh** | Cho ai, để làm gì, tôi là ai? | "...gửi 6 thành viên dự án, đang chậm 2 tuần so với kế hoạch..." |
-| **Nguồn** | Dựa trên tài liệu nào? | "...dựa trên file /Kế hoạch dự án..." |
-| **Kỳ vọng** | Kết quả trông như thế nào? | "...giọng động viên, dưới 150 chữ, kết thúc bằng 3 việc cần làm trong tuần." |
-
-### Ví dụ ghép đủ 4 thành phần
-
-> **PROMPT:**
->
-> Soạn email nhắc tiến độ gửi 6 thành viên dự án [tên dự án], hiện đang chậm 2 tuần so với kế hoạch. Dựa trên file /[Kế hoạch dự án]. Giọng động viên, dưới 150 chữ, kết thúc bằng 3 việc cụ thể cần làm trong tuần này.
-
-> [!TIP]
-> Không cần đủ 4 thành phần trong mọi prompt. Với việc đơn giản, một câu là đủ. Khi kết quả chưa sát ý, hãy bổ sung thành phần còn thiếu.
+| Không thiết lập | Đã thiết lập |
+|-----------------|--------------|
+| Mỗi lần hỏi phải nhắc: "tôi làm ở phòng X, trả lời ngắn gọn, dùng bảng, viết tiếng Việt..." | Chỉ cần hỏi: "Tóm tắt tình hình tuần này", Copilot tự trả lời đúng phong cách |
+| Câu trả lời dài, chung chung, phải chỉnh lại nhiều lần | Câu trả lời đi thẳng vào ý chính, đúng việc của anh/chị |
 
 ---
 
-## Hỏi tiếp để cải thiện
+## Mở Customize Copilot
 
-Không cần viết prompt hoàn hảo ngay lần đầu. Hãy bắt đầu đơn giản rồi hỏi tiếp trong cùng cuộc trò chuyện:
+1. Mở [Copilot Chat](https://m365.cloud.microsoft/) bằng tài khoản công ty
+2. Bấm vào ảnh đại diện hoặc biểu tượng **...**, chọn **Settings**
+3. Chọn **Personalization** ở cột bên trái
+4. Tại dòng **Customize Copilot**, bật công tắc bên phải rồi bấm **Manage**
 
-| Lần | Prompt | Kết quả |
-|-----|--------|---------|
-| 1 | "Tóm tắt email chưa đọc." | Danh sách dài, khó biết việc nào gấp |
-| 2 | "Chỉ giữ email của khách hàng và quản lý của tôi, cho tôi biết việc cần làm." | Gọn hơn, có việc cần làm |
-| 3 | "Trình bày dạng bảng, thêm cột hạn chót, xếp việc gấp lên đầu." | Dùng được ngay để xử lý trong buổi sáng |
+Màn hình **Customize Copilot** gồm 3 phần:
 
-Một số câu hỏi tiếp hay dùng: *"ngắn hơn"*, *"trình bày dạng bảng"*, *"thêm số liệu"*, *"giọng trang trọng hơn"*, *"viết lại cho người không chuyên"*.
-
----
-
-## 5 kỹ thuật để câu trả lời an toàn và chính xác hơn
-
-### 1. Giao vai cho Copilot
-
-Nói cho Copilot biết nó nên suy nghĩ như ai.
-
-> **PROMPT:**
->
-> Bạn là chuyên viên Pháp chế của công ty. Hãy đọc dự thảo hợp đồng này và chỉ ra những điều khoản bất lợi cho bên chúng tôi.
-
-### 2. Đặt ràng buộc an toàn
-
-Ngăn Copilot tự "điền" những thông tin chưa chắc chắn.
-
-> **PROMPT:**
->
-> Soạn thư trả lời khách hàng về tiến độ bàn giao. Không nêu ngày bàn giao hay chi phí nào chưa có trong email. Chỗ nào chưa chắc chắn thì ghi [CẦN XÁC NHẬN].
-
-### 3. Yêu cầu trích dẫn nguồn
-
-Giúp anh/chị kiểm tra nhanh câu trả lời đến từ đâu.
-
-> **PROMPT:**
->
-> Định mức khách sạn khi đi công tác Đà Nẵng của chuyên viên là bao nhiêu? Trả lời dựa trên file /Sổ tay Chính sách Nội bộ và ghi rõ mục tham chiếu. Nếu tài liệu không có thông tin, hãy nói rõ là không có.
-
-### 4. Bảo Copilot hỏi lại khi thiếu thông tin
-
-Tránh để Copilot đoán.
-
-> **PROMPT:**
->
-> Tôi cần soạn tờ trình xin phê duyệt mua phần mềm cho phòng. Trước khi viết, hãy hỏi tôi những thông tin còn thiếu.
-
-### 5. Đưa mẫu đầu ra
-
-Khi cần kết quả theo đúng định dạng quen thuộc, hãy cho Copilot xem một ví dụ.
-
-> **PROMPT:**
->
-> Tóm tắt cuộc họp theo đúng mẫu sau cho từng người: "[Tên] - Việc cần làm: [nội dung] - Hạn: [ngày] - Cần hỗ trợ: [có/không]".
-
----
-
-## Đính kèm file và Prompt Gallery
-
-### Gõ "/" để chỉ đúng tài liệu
-
-- **Copilot Chat, Outlook, PowerPoint:** gõ `/` rồi chọn file trên OneDrive/SharePoint
-- **Word, Excel:** Copilot làm việc trực tiếp với file đang mở
-- Chỉ đúng file giúp Copilot không phải tự đoán và trả lời chính xác hơn
-
-### Prompt Gallery
-
-Microsoft có thư viện prompt mẫu để anh/chị tham khảo và lưu lại:
-
-- **Trong ứng dụng:** mở Copilot, xem các prompt gợi ý
-- **Online:** [Copilot Prompt Gallery](https://copilot.cloud.microsoft/prompts)
-- Prompt hay của mình có thể **lưu lại** và **chia sẻ** cho đồng nghiệp
-
----
-
-## Thư viện prompt dùng hằng ngày
-
-Bộ prompt theo nhịp làm việc trong ngày, dùng được ở mọi vị trí. Anh/chị có thể sao chép và chỉnh lại cho phù hợp.
-
-### Đầu ngày
-
-> **PROMPT:**
->
-> Tóm tắt email chưa đọc từ hôm qua, chia thành: việc cần tôi xử lý hôm nay, người đang chờ tôi phản hồi, và thông tin chỉ để biết.
-
-### Trước một cuộc họp
-
-> **PROMPT:**
->
-> Chuẩn bị cho tôi cuộc họp [tên cuộc họp]: tóm tắt các email và tài liệu liên quan, những gì đã thống nhất lần trước, và 3 câu hỏi nên hỏi.
-
-### Sau cuộc họp
-
-> **PROMPT:**
->
-> Liệt kê các việc cần làm của từng người trong cuộc họp vừa rồi, kèm thời hạn, đánh dấu việc chưa có thời hạn rõ ràng.
-
-### Cuối tuần
-
-> **PROMPT:**
->
-> Tóm tắt những việc quan trọng tôi đã xử lý trong tuần qua dựa trên email, cuộc họp và tài liệu, và liệt kê các việc còn tồn để chuyển sang tuần sau.
-
----
-
-## Gợi ý prompt theo phòng ban
-
-Cùng công thức 4 thành phần, mỗi phòng ban chỉ cần thay mục tiêu và nguồn:
-
-| Phòng ban | Ví dụ prompt |
-|-----------|--------------|
-| **Kinh doanh** | "Từ email trao đổi với khách hàng [tên] trong tháng qua, tóm tắt nhu cầu, phản đối còn mở và đề xuất bước tiếp theo." |
-| **Nhân sự** | "Soạn bản mô tả công việc cho vị trí [chức danh] dựa trên file /[khung năng lực], gồm trách nhiệm chính, yêu cầu và quyền lợi." |
-| **Tài chính - Kế toán** | "Giải thích 3 khoản mục chênh lệch lớn nhất giữa kế hoạch và thực hiện trong file /[báo cáo], viết cho người không chuyên tài chính." |
-| **Marketing** | "Viết 3 phương án tiêu đề và đoạn mở đầu cho bản tin nội bộ về [chủ đề], giọng thân thiện, dưới 80 chữ mỗi phương án." |
-| **Vận hành, CNTT** | "Từ chuỗi email về sự cố [tên sự cố], lập dòng thời gian: thời điểm, việc đã làm, người xử lý, và nguyên nhân gốc nếu đã xác định." |
-| **Hành chính** | "Soạn thông báo gửi toàn công ty về lịch nghỉ Tết, gồm thời gian nghỉ, đầu mối trực và lưu ý khi làm việc từ xa." |
-
----
-
-## Thực hành nhanh
-
-Mở [Copilot Chat](https://m365.cloud.microsoft/), kiểm tra nút **Work IQ** đang bật, và thử hai prompt dưới đây với dữ liệu của chính anh/chị:
-
-> **PROMPT:**
->
-> Tuần này tôi có những cuộc họp nào và cần chuẩn bị gì cho từng cuộc họp?
-
-> **PROMPT:**
->
-> Những việc nào tôi đã hứa với người khác trong email 7 ngày qua mà chưa hoàn thành?
+| Phần | Dùng để làm gì |
+|------|----------------|
+| **Ô nhập hướng dẫn** | Viết thông tin về anh/chị và cách anh/chị muốn Copilot trả lời |
+| **Các gợi ý có sẵn** | Bấm để thêm nhanh một hướng dẫn mẫu vào ô nhập; bấm biểu tượng làm mới để xem thêm gợi ý |
+| **Save customization** | Lưu hướng dẫn, áp dụng cho các cuộc trò chuyện tiếp theo |
 
 > [!NOTE]
-> Hai prompt trên chỉ dùng dữ liệu anh/chị có quyền xem. Nếu kết quả trống, có thể do hộp thư hoặc lịch chưa có nhiều dữ liệu, hãy thử với khoảng thời gian dài hơn.
+> Tính năng có thể do quản trị viên Microsoft 365 của công ty bật hoặc tắt. Nếu không thấy mục **Customize Copilot**, hãy hỏi người hướng dẫn.
+
+---
+
+## Các gợi ý có sẵn hữu ích
+
+Màn hình có sẵn một số gợi ý. Những gợi ý dưới đây hữu ích với hầu hết mọi người:
+
+| Gợi ý | Tác dụng | Khi nào hữu ích |
+|-------|----------|-----------------|
+| **Give honest feedback** | Copilot góp ý thẳng thắn, chỉ ra điểm yếu thay vì chỉ khen | Rà soát báo cáo, đề xuất trước khi gửi |
+| **Use clear and simple language** | Câu chữ rõ ràng, dễ hiểu | Soạn thông báo, email gửi nhiều người |
+| **Prioritize my manager** | Ưu tiên email, yêu cầu từ quản lý trực tiếp | Không bỏ sót việc cấp trên giao |
+| **Highlight decisions in meeting notes** | Làm nổi bật các quyết định trong tóm tắt cuộc họp | Theo dõi kết luận của các buổi họp |
+| **Focus on internal sources** | Ưu tiên tài liệu nội bộ của công ty | Câu hỏi về chính sách, quy trình |
+| **Use bullet points for summaries** | Tóm tắt dạng gạch đầu dòng | Đọc nhanh trên điện thoại giữa các cuộc họp |
+
+> [!TIP]
+> Bấm vào một gợi ý, nội dung sẽ được thêm vào ô nhập. Anh/chị có thể chỉnh lại câu chữ trước khi lưu.
+
+---
+
+## Viết hướng dẫn của riêng anh/chị
+
+Một hướng dẫn tốt trả lời 3 câu hỏi:
+
+| Câu hỏi | Ví dụ |
+|---------|-------|
+| **Tôi là ai, làm việc gì?** | Chuyên viên phòng Nhân sự, phụ trách tuyển dụng và đào tạo cho văn phòng Hà Nội |
+| **Tôi muốn câu trả lời trông như thế nào?** | Tiếng Việt, ý chính trước, dùng bảng khi so sánh, có việc cần làm tiếp |
+| **Điều gì Copilot không được làm?** | Không tự điền số liệu không có nguồn, không đưa ra cam kết thay tôi |
+
+**Mẫu hướng dẫn để sao chép và điền vào chỗ trống:**
+
+> **PROMPT:**
+>
+> Tôi là [chức danh] thuộc [phòng ban], phụ trách [mảng công việc chính], thường làm việc với [đồng nghiệp, khách hàng, đối tác nào]. Khi trả lời tôi: viết bằng tiếng Việt, ngắn gọn, ý chính trước, chi tiết sau; dùng bảng khi so sánh; khi có việc cần làm thì nêu rõ người phụ trách và thời hạn. Góp ý thẳng thắn. Không tự điền số liệu không có trong nguồn, chỗ chưa chắc chắn ghi [CẦN XÁC NHẬN].
+
+**Ví dụ đã điền cho một vài vai trò:**
+
+| Vai trò | Câu mở đầu gợi ý |
+|---------|------------------|
+| Nhân viên kinh doanh | "Tôi là nhân viên kinh doanh, phụ trách 30 khách hàng doanh nghiệp tại miền Nam, theo dõi doanh số và tiến độ hợp đồng..." |
+| Kế toán | "Tôi là kế toán tổng hợp, phụ trách quyết toán chi phí và báo cáo tháng, cần số liệu chính xác đến đơn vị đồng..." |
+| Trưởng nhóm | "Tôi là trưởng nhóm 8 người, cần theo dõi tiến độ, phân công việc và báo cáo hằng tuần cho trưởng phòng..." |
+| Quản lý | "Tôi là trưởng phòng, quản lý 3 nhóm, báo cáo cho Ban Giám đốc, cần ý chính và quyết định cần đưa ra..." |
+
+> [!NOTE]
+> **Không đưa dữ liệu cá nhân hay số liệu kinh doanh chi tiết** vào hướng dẫn. Chỉ mô tả vai trò, phạm vi công việc và cách anh/chị muốn nhận câu trả lời.
+
+---
+
+## Thực hành
+
+1. Trước khi thiết lập, mở cuộc trò chuyện mới và hỏi câu dưới đây, **lưu lại kết quả** để so sánh:
+
+> **PROMPT:**
+>
+> Soạn khung báo cáo tuần này gửi quản lý của tôi dựa trên email và cuộc họp của tôi trong 7 ngày qua.
+
+2. Vào **Settings** > **Personalization** > **Customize Copilot** > **Manage**
+3. Dán mẫu hướng dẫn ở trên vào ô nhập, điền vào chỗ trống cho đúng vai trò của anh/chị
+4. Bấm thêm các gợi ý **Highlight decisions in meeting notes** và **Focus on internal sources**
+5. Bấm **Save customization**
+6. Mở **cuộc trò chuyện mới**, hỏi lại đúng câu ở bước 1 và so sánh hai kết quả
+
+**Kết quả mong đợi:** Câu trả lời sau khi thiết lập ngắn gọn hơn, đúng mảng công việc của anh/chị, có bảng, có việc cần làm tiếp, và đánh dấu [CẦN XÁC NHẬN] ở những chỗ thiếu số liệu.
+
+> [!TIP]
+> Nếu kết quả chưa như ý, quay lại **Customize Copilot** để chỉnh. Hướng dẫn tốt thường được hoàn thiện sau 2-3 lần thử.
 
 ---
 
@@ -190,10 +119,9 @@ Mở [Copilot Chat](https://m365.cloud.microsoft/), kiểm tra nút **Work IQ** 
 
 | Nguyên tắc | Ý chính |
 |------------|---------|
-| **Rõ ràng** | Mục tiêu, ngữ cảnh, nguồn, kỳ vọng |
-| **Hỏi tiếp** | Bắt đầu đơn giản, chỉnh dần trong cùng cuộc trò chuyện |
-| **An toàn** | Giao vai, ràng buộc, yêu cầu trích dẫn, bảo Copilot hỏi lại |
-| **Chỉ đúng nguồn** | Gõ "/" để đính kèm file |
-| **Dùng lại** | Lưu prompt hay vào Prompt Gallery và chia sẻ cho đồng nghiệp |
+| **Thiết lập một lần** | Customize Copilot áp dụng cho mọi cuộc trò chuyện sau đó |
+| **Ba nội dung cốt lõi** | Mình là ai, muốn câu trả lời thế nào, điều gì không được làm |
+| **Dùng gợi ý có sẵn** | Thêm nhanh các hướng dẫn phổ biến rồi chỉnh lại |
+| **Không đưa dữ liệu nhạy cảm** | Chỉ mô tả vai trò và phong cách làm việc |
 
-Tiếp theo: **[Module 3 - Personalization in Copilot](#module-3)**, để Copilot nhớ cách anh/chị làm việc.
+Tiếp theo: bắt đầu thực hành với **[Lab 1 - Copilot Chat](#lab-1)**.
