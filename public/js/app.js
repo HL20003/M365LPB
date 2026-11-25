@@ -18,7 +18,7 @@ const demoFiles = [
     { id: 'plan', name: 'Kế hoạch Hoạt động 2027 (dự thảo).docx', desc: 'Lab 1 - Copilot Chat, Lab 2 - Word, Lab 4 - PowerPoint', icon: 'word', url: 'files/ke-hoach-hoat-dong-2027.docx' },
     { id: 'transcript', name: 'Transcript họp giao ban quý 3 (mẫu).docx', desc: 'Lab 6 - Teams', icon: 'word', url: 'files/transcript-hop-giao-ban-q3-mau.docx' },
     { id: 'townhall', name: 'Town hall Q3 2026 (bản nháp).pptx', desc: 'Lab 4 - PowerPoint (bộ slide có sẵn)', icon: 'powerpoint', url: 'files/town-hall-q3-2026-ban-nhap.pptx' },
-    { id: 'brand', name: 'Mẫu thương hiệu (giả định).pptx', desc: 'Lab 4 - PowerPoint (mẫu thương hiệu)', icon: 'powerpoint', url: 'files/mau-thuong-hieu-gia-dinh.pptx' },
+    { id: 'brand', name: 'Mẫu thương hiệu (giả định).pptx', desc: 'Lab 4 - PowerPoint (template để tạo Brand Kit)', icon: 'powerpoint', url: 'files/mau-thuong-hieu-gia-dinh.pptx' },
     { id: 'skill-excel', name: 'Skill Excel - bao-cao-phan-hoi-khach-hang.zip', desc: 'Lab 3 - Excel (skill mẫu)', icon: 'zip', url: 'files/skill-excel-bao-cao-phan-hoi-khach-hang.zip' },
     { id: 'skill-ppt', name: 'Skill PowerPoint - slide-tom-tat-dieu-hanh.zip', desc: 'Lab 4 - PowerPoint (skill mẫu, dự phòng)', icon: 'zip', url: 'files/skill-ppt-slide-tom-tat-dieu-hanh.zip' },
     { id: 'skill-chat', name: 'Skill Copilot Chat - bao-cao-tuan.zip', desc: 'Lab 7 - Skills in Copilot Chat (skill mẫu cho phần tự thực hành)', icon: 'zip', url: 'files/skill-chat-bao-cao-tuan.zip' },
@@ -31,7 +31,7 @@ const demoVideos = {
     'word-memo-template': { title: 'Điền tờ trình trên mẫu có sẵn', url: '#' },
     'excel-canvas': { title: 'Dashboard tương tác với Interactive canvas', url: '#' },
     'excel-skill': { title: 'Tạo và chạy skill trong Excel', url: '#' },
-    'ppt-update-deck': { title: 'Cập nhật bộ slide có sẵn theo mẫu thương hiệu', url: '#' },
+    'ppt-update-deck': { title: 'Áp brand của công ty cho bộ slide có sẵn', url: '#' },
     'ppt-skill': { title: 'Thêm và chạy skill trong PowerPoint', url: '#' },
 };
 

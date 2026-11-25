@@ -28,7 +28,7 @@ Các lab không gắn với một phòng ban cố định. Bảng dưới đây 
 | 1 | Copilot Chat | Hỏi về công việc của mình, gọi người, cuộc họp, file bằng "/" | Tìm vấn đề trong số liệu mà kế hoạch còn thiếu |
 | 2 | Word | Sửa báo cáo có sẵn theo kế hoạch và chính sách, có vết sửa; điền tờ trình trên mẫu có sẵn | Duyệt từng thay đổi trước khi gửi cấp trên |
 | 3 | Excel | Tìm xu hướng và điểm bất thường; skill làm báo cáo hằng tháng từ dữ liệu thô | Dashboard tương tác cho cuộc họp |
-| 4 | PowerPoint | Làm mới slide có sẵn theo mẫu thương hiệu | Skill slide tóm tắt điều hành dùng chung cho đơn vị |
+| 4 | PowerPoint | Áp brand của công ty cho slide có sẵn | Skill slide tóm tắt điều hành dùng chung cho đơn vị |
 | 5 | Outlook | Xử lý hộp thư, soạn thư khó | Phân loại việc cần quyết và việc giao lại |
 | 6 | Teams | Biết mình bỏ lỡ gì trong cuộc họp, @Copilot trong nhóm chat | Biên bản có người phụ trách và thời hạn, chia việc cho nhóm |
 | 7 | Agent Builder, Teams | Tạo trợ lý tra cứu chính sách, dùng ngay trong Teams | Agent cho phòng ban, đưa đến đồng nghiệp qua Teams |

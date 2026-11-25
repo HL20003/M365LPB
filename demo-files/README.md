@@ -17,7 +17,7 @@ Sau khi tạo lại file, chạy `python _gen/sync_site_files.py` để chép sa
 | `plan` | Kế hoạch Hoạt động 2027 (dự thảo).docx | Lab 1, Lab 2, Lab 4 |
 | `transcript` | Transcript họp giao ban quý 3 (mẫu).docx | Lab 6 Teams |
 | `townhall` | Town hall Q3 2026 (bản nháp).pptx (nhiều chữ, theme mặc định) | Lab 4 PowerPoint |
-| `brand` | Mẫu thương hiệu (giả định).pptx | Lab 4 PowerPoint |
+| `brand` | Mẫu thương hiệu (giả định).pptx | Lab 4 PowerPoint: template để tạo Brand Kit **Công ty giả định** (trainer tạo sẵn, hoặc học viên tự tạo theo Bài tập 1) |
 | `skill-excel` | Skill Excel - bao-cao-phan-hoi-khach-hang.zip (từ `skills/bao-cao-phan-hoi-khach-hang/SKILL.md`, có bọc thư mục) | Lab 3 Bài 2 (dự phòng) |
 | `skill-ppt` | Skill PowerPoint - slide-tom-tat-dieu-hanh.zip (từ `skills/slide-tom-tat-dieu-hanh/SKILL.md`, có bọc thư mục) | Lab 4 Bài 2 (dự phòng) |
 | `skill-chat` | Skill Copilot Chat - bao-cao-tuan.zip (từ `skills/bao-cao-tuan/SKILL.md`, SKILL.md ở gốc zip) | Lab 7 (tự thực hành) |
@@ -81,6 +81,11 @@ Trên Windows, đặt `PYTHONIOENCODING=utf-8` nếu terminal báo lỗi in ti�
   Interactive canvas, Skill Builder, Record a skill (Excel), custom skill (PowerPoint),
   @Copilot trong group chat (public preview, cần bật Show preview features trong chính sách cập nhật Teams), Skills in Copilot Chat
   (cần licence Microsoft 365 Copilot; nút Agents có thể đã đổi thành Plugins).
+- **Lab 4 - Brand Kit "Công ty giả định":** trong Microsoft 365 Copilot app, chọn **Create** > **More...** > **Brand kits** > **Create Brand Kit**, đặt tên **Công ty giả định**,
+  vào **Templates** tải lên `Mẫu thương hiệu (giả định).pptx` (có 2 slide mẫu: bìa và nội dung) rồi **Add to Brand Kit**. Thêm màu
+  #0A2A4E, #00A3A1, #F28C28 và font Segoe UI nếu Brand Kit có mục này. **Publish** (bản nháp không hiện với người khác) và chia sẻ quyền **Viewer**
+  cho học viên. Cần licence Copilot cho phép tạo Brand Kit (tài liệu Microsoft ghi Microsoft 365 Copilot hoặc Copilot Premium, kiểm tra trên tenant),
+  và tổ chức có thể giới hạn người được tạo. Chạy thử trước: + > Select brand > Công ty giả định, rồi prompt định dạng lại deck.
 - Lab 6: nếu dùng cuộc họp thật, bật Recording và Transcript; nếu không, học viên dùng file transcript mẫu.
 - Demo SharePoint agent (speaker): tạo trước **Trợ lý Sổ tay** từ Sổ tay trên site SharePoint của workshop, cấp quyền đọc cho học viên, gửi link site. Xem speaker/Hướng dẫn trình bày SharePoint agent.docx.
   Kiểm tra tenant cho phép tạo agent trong Copilot Chat; agent của Agent Builder xuất hiện trong Copilot ở Teams.

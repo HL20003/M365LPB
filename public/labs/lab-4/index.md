@@ -5,20 +5,20 @@
 > [!OUTCOME]
 > **Làm được**
 >
-> - Làm mới một bộ slide **có sẵn**: áp mẫu thương hiệu, nhờ Copilot rút gọn chữ và viết lại tiêu đề, giữ nguyên số liệu
+> - Áp **brand** của công ty cho một bộ slide **có sẵn** ngay trong Copilot: chọn brand, nhập một câu yêu cầu, cả bộ slide đổi theo màu, font và bố cục thương hiệu
 > - Thêm một **skill** vào Copilot trong PowerPoint và dùng lại cho mọi bộ slide trình Ban Giám đốc
 >
 > **Biết được**
 >
-> - Không bắt đầu từ trang trắng: Copilot sửa trên bộ slide đang có và đối chiếu số liệu với tài liệu Word gọi bằng "/"
+> - **Brand Kit** do công ty quản lý (màu, font, template, slide mẫu): chọn bằng **+** > **Select brand**, Copilot định dạng slide theo đúng thương hiệu thay vì tự đoán
 > - **Skill** là một quy chuẩn viết một lần, gọi lại bằng **@tên-skill**: cả đơn vị trình bày theo cùng một bố cục
 > - Ngoài skill tự thêm, PowerPoint có sẵn các skill như **Visualize this slide**, **Review this presentation**, **Prepare for questions** tại **+** > **Choose skills**
 
 > [!TIP]
 > **Chuẩn bị trước khi bắt đầu**
 >
-> - Tải lên **OneDrive**: [Town hall Q3 2026 (bản nháp).pptx](#file-townhall), bộ slide cần làm mới, và [Kế hoạch Hoạt động 2027 (dự thảo).docx](#file-plan) để đối chiếu số liệu
-> - Tải **về máy**: [Mẫu thương hiệu (giả định).pptx](#file-brand) để áp mẫu ở Bài tập 1, và [Skill PowerPoint - slide-tom-tat-dieu-hanh.zip](#file-skill-ppt), skill mẫu cho Bài tập 2
+> - Tải lên **OneDrive**: [Town hall Q3 2026 (bản nháp).pptx](#file-townhall), bộ slide dùng cho cả hai bài tập
+> - Tải **về máy**: [Skill PowerPoint - slide-tom-tat-dieu-hanh.zip](#file-skill-ppt), skill mẫu cho Bài tập 2, và [Mẫu thương hiệu (giả định).pptx](#file-brand) nếu cần tự tạo Brand Kit ở Bài tập 1
 >
 > **Sau Bài tập 2, nếu vẫn chưa thêm được skill:** giải nén file zip trên. Trong khung Copilot của PowerPoint, bấm **...** > **Manage skills** > **Custom skills** > **Create OneDrive folder** > **Open skills folder**, chép thư mục **slide-tom-tat-dieu-hanh** vào đó và bấm **Refresh**. Tên thư mục phải trùng với dòng *name* trong SKILL.md.
 >
@@ -28,31 +28,35 @@
 
 > **Anh/chị** - *người được nhờ hoàn thiện bài trình bày cho buổi họp toàn công ty*
 >
-> Phòng Truyền thông nội bộ gửi bản nháp bộ slide cho buổi họp toàn công ty (town hall) quý 3: đúng nội dung, nhưng toàn chữ, tiêu đề chỉ là tên chủ đề và chưa theo mẫu thương hiệu. Thay vì làm lại từ đầu, anh/chị cập nhật ngay trên bộ slide có sẵn. Ngoài ra, Ban Giám đốc yêu cầu mọi bộ slide trình lên phải có một **slide tóm tắt điều hành** theo cùng bố cục.
+> Phòng Truyền thông nội bộ gửi bản nháp bộ slide cho buổi họp toàn công ty (town hall) quý 3: nội dung đã đủ nhưng chưa theo thương hiệu công ty. Thay vì chỉnh tay từng slide, anh/chị nhờ Copilot áp brand của công ty cho cả bộ slide. Ngoài ra, Ban Giám đốc yêu cầu mọi bộ slide trình lên phải có một **slide tóm tắt điều hành** theo cùng bố cục.
 
 ## Thực hành trong buổi học
 
-### Bài tập 1: Cập nhật bộ slide có sẵn theo mẫu thương hiệu
+### Bài tập 1: Áp brand của công ty cho bộ slide có sẵn
 
 [video:ppt-update-deck]
 
-**Áp mẫu thương hiệu:**
-
 1. Mở [Town hall Q3 2026 (bản nháp).pptx](#file-townhall) **từ OneDrive** bằng **PowerPoint trên máy tính**
-2. Chọn tab **Design**, mở rộng nhóm **Themes** (mũi tên ở góc dưới bên phải), chọn **Browse for Themes...** và chọn file [Mẫu thương hiệu (giả định).pptx](#file-brand) đã tải về máy. Cả bộ slide đổi sang màu, font và chân trang của công ty
+2. Nhấn **Copilot** trên ribbon, tab **Home**. Trong khung Copilot, bấm **+** > **Select brand** và chọn Brand Kit **Công ty giả định** (hoặc Brand Kit chính thức của công ty anh/chị). Chưa có Brand Kit nào thì xem TIP bên dưới
 
 > [!TIP]
-> Nếu công ty đã có **mẫu thương hiệu dùng chung** (Brand Kit hoặc template trong thư viện của tổ chức), dùng mẫu đó thay cho file giả định. Copilot học bố cục từ các slide mẫu và slide master của template, nên template càng chuẩn thì slide Copilot tạo càng đúng thương hiệu.
+> **Chưa có Brand Kit?** Tạo nhanh tại [office.com/create/brandkit](https://office.com/create/brandkit):
+>
+> - Bấm **Create Brand Kit**, đặt tên **Công ty giả định**
+> - **Templates**: tải lên file [Mẫu thương hiệu (giả định).pptx](#file-brand)
+> - **Colors**: #0A2A4E, #00A3A1, #F28C28
+> - **Fonts**: Segoe UI
+> - Bấm **Publish**, rồi quay lại bước 2 để chọn brand
+>
+> Không thấy nút **Create Brand Kit** thì báo người hướng dẫn.
 
-**Làm gọn nội dung bằng Copilot:**
-
-3. Nhấn **Copilot** trên ribbon, tab **Home**, gõ "/" chọn [Kế hoạch Hoạt động 2027 (dự thảo).docx](#file-plan), rồi nhập:
+3. Chọn brand xong, bộ slide chưa tự đổi. Nhập yêu cầu:
 
 > **PROMPT:**
 >
-> Sửa bộ slide này cho buổi họp toàn công ty, người nghe là mọi nhân viên. Viết lại tiêu đề mỗi slide thành một thông điệp (ví dụ "Doanh thu đạt kế hoạch nhưng lợi nhuận giảm"), rút mỗi slide còn tối đa 4 ý ngắn, mỗi ý không quá 2 dòng. Giữ nguyên mọi con số và kiểm tra số liệu khớp với file Kế hoạch Hoạt động 2027 đính kèm. Không thêm thông tin mới. Cho tôi biết slide nào có số liệu không khớp.
+> Định dạng lại toàn bộ bộ slide này theo brand đã chọn: dùng bố cục từ các slide mẫu của brand, đúng màu, font, slide bìa và chân trang của brand. Giữ nguyên nội dung chữ và số liệu.
 
-**Kết quả mong đợi:** Tiêu đề thành thông điệp, ví dụ *"Doanh thu đạt 99,1% kế hoạch nhưng lợi nhuận giảm 16,8%"*, *"Nghỉ việc 20%, cao gần gấp đôi kế hoạch"*. Mỗi slide còn 3-4 ý, số liệu (432 tỷ, 84 tỷ, 1.162 nhân viên, 58 người nghỉ việc, 8/12/25 triệu ngân sách đào tạo) giữ nguyên.
+**Kết quả mong đợi:** Slide bìa nền xanh đậm, chữ trắng; các slide nội dung có vạch nhấn xanh ngọc cạnh tiêu đề, dải chân trang xanh đậm ghi **◆ CÔNG TY GIẢ ĐỊNH** và **Phân loại: Nội bộ**; tiêu đề và nội dung dùng font Segoe UI. Nội dung chữ và số liệu giữ nguyên.
 
 ### Bài tập 2: Dạy Copilot quy chuẩn slide tóm tắt điều hành bằng skill [MỚI]
 
@@ -62,7 +66,7 @@ Mọi bộ slide trình Ban Giám đốc cần một slide tóm tắt điều h�
 
 **Thêm skill:**
 
-1. Mở [Town hall Q3 2026 (bản nháp).pptx](#file-townhall) **từ OneDrive** bằng **PowerPoint trên máy tính** (bộ slide sau Bài tập 1 hay bản nháp gốc đều được)
+1. Mở [Town hall Q3 2026 (bản nháp).pptx](#file-townhall) **từ OneDrive** bằng **PowerPoint trên máy tính**
 2. Trong khung Copilot, bấm **+** > **Choose skills**, cuộn xuống cuối danh sách, chọn **Manage skills** > **Add skill**
 3. Bấm **Sao chép** ở khung dưới đây, dán vào ô nội dung skill và chọn **Add**. Skill được lưu vào thư mục **Skills** trên OneDrive của anh/chị
 

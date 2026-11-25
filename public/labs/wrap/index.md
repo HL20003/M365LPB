@@ -9,7 +9,7 @@
 | Lab 1 | Copilot Chat | Hỏi Copilot về công việc của mình; gọi người, cuộc họp, file bằng "/"; tìm vấn đề trong số liệu mà kế hoạch còn thiếu |
 | Lab 2 | Word | Copilot sửa báo cáo có sẵn bằng **Track Changes**, comment ghi nguồn; điền **tờ trình mới trên mẫu có sẵn** từ báo cáo và Sổ tay |
 | Lab 3 | Excel | Tìm xu hướng và điểm bất thường; dashboard **Interactive canvas**; **skill** biến dữ liệu thô thành báo cáo hằng tháng |
-| Lab 4 | PowerPoint | Cập nhật bộ slide có sẵn theo **mẫu thương hiệu**; thêm **skill** slide tóm tắt điều hành và dùng lại cho mọi bộ slide |
+| Lab 4 | PowerPoint | Áp **brand** của công ty cho bộ slide có sẵn bằng **Select brand**; thêm **skill** slide tóm tắt điều hành và dùng lại cho mọi bộ slide |
 | Lab 5 | Outlook | Hộp thư thành danh sách việc, tóm tắt chuỗi email, soạn thư trả lời; soạn email từ báo cáo Word |
 | Lab 6 | Teams | Biết mình bỏ lỡ gì trong cuộc họp, việc của mình, điểm chưa thống nhất; **@Copilot** trong nhóm chat |
 | Lab 7 | Agent Builder, Teams | Tạo agent Policy Assistant, kiểm tra, chia sẻ cho đồng nghiệp và **dùng ngay trong Teams** |
