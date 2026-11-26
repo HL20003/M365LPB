@@ -28,7 +28,7 @@ Các lab không gắn với một phòng ban cố định. Bảng dưới đây 
 | 1 | Copilot Chat | Hỏi về công việc của mình, gọi người, cuộc họp, file bằng "/" | Tìm vấn đề trong số liệu mà kế hoạch còn thiếu |
 | 2 | Word | Sửa báo cáo có sẵn theo kế hoạch và chính sách, có vết sửa; điền tờ trình trên mẫu có sẵn | Duyệt từng thay đổi trước khi gửi cấp trên |
 | 3 | Excel | Tìm xu hướng và điểm bất thường; skill làm báo cáo hằng tháng từ dữ liệu thô | Dashboard tương tác cho cuộc họp |
-| 4 | PowerPoint | Áp brand của công ty cho slide có sẵn | Skill slide tóm tắt điều hành dùng chung cho đơn vị |
+| 4 | PowerPoint | Áp brand của công ty cho slide có sẵn | Skill tóm tắt bộ slide thành một slide, dùng lại cho mọi bài trình bày |
 | 5 | Outlook | Xử lý hộp thư, soạn thư khó | Phân loại việc cần quyết và việc giao lại |
 | 6 | Teams | Biết mình bỏ lỡ gì trong cuộc họp, @Copilot trong nhóm chat | Biên bản có người phụ trách và thời hạn, chia việc cho nhóm |
 | 7 | Agent Builder, Teams | Tạo trợ lý tra cứu chính sách, dùng ngay trong Teams | Agent cho phòng ban, đưa đến đồng nghiệp qua Teams |
@@ -46,7 +46,7 @@ Workshop không đi qua mọi nút bấm, mà tập trung vào các tình huốn
 |---|--------------|-------|
 | 1 | **Copilot hiểu ngữ cảnh công việc.** Không chỉ trả lời câu hỏi, Copilot làm việc với email, cuộc họp, con người và tài liệu mà anh/chị có quyền truy cập, ngay từ ngày đầu | Lab 1 |
 | 2 | **Dấu "/" là thao tác dùng hằng ngày.** Gõ "/" để gọi đúng người, file, email, cuộc họp làm nguồn, trong Copilot Chat, Word, Excel, PowerPoint | Lab 1-4 |
-| 3 | **Microsoft 365 là một luồng công việc liên tục.** Copilot làm việc ngay trong Word, Excel, PowerPoint, Teams, trên file có sẵn: từ một tài liệu Word tạo ra tờ trình hay email; từ dữ liệu Excel thô ra báo cáo; từ bộ slide có sẵn ra slide tóm tắt điều hành. Không cần chép nội dung sang công cụ AI bên ngoài rồi chép kết quả trở lại | Lab 2-5 |
+| 3 | **Microsoft 365 là một luồng công việc liên tục.** Copilot làm việc ngay trong Word, Excel, PowerPoint, Teams, trên file có sẵn: từ một tài liệu Word tạo ra tờ trình hay email; từ dữ liệu Excel thô ra báo cáo; từ bộ slide có sẵn ra slide tóm tắt. Không cần chép nội dung sang công cụ AI bên ngoài rồi chép kết quả trở lại | Lab 2-5 |
 | 4 | **Teams là trung tâm cộng tác.** Cuộc họp thành hành động, @Copilot trong nhóm chat, và là nơi đưa agent đến với đồng nghiệp | Lab 6, Lab 7 |
 | 5 | **Anh/chị tự tạo được tài sản AI.** Agent và skill giúp chuẩn hóa một quy trình nhiều bước, thay vì viết lại nhiều prompt mỗi lần | Lab 3, Lab 4, Lab 7 |
 

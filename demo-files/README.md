@@ -17,9 +17,9 @@ Sau khi tạo lại file, chạy `python _gen/sync_site_files.py` để chép sa
 | `plan` | Kế hoạch Hoạt động 2027 (dự thảo).docx | Lab 1, Lab 2, Lab 4 |
 | `transcript` | Transcript họp giao ban quý 3 (mẫu).docx | Lab 6 Teams |
 | `townhall` | Town hall Q3 2026 (bản nháp).pptx (nhiều chữ, theme mặc định) | Lab 4 PowerPoint |
-| `brand` | Mẫu thương hiệu (giả định).pptx | Lab 4 PowerPoint: template để tạo Brand Kit **Công ty giả định** (trainer tạo sẵn, hoặc học viên tự tạo theo Bài tập 1) |
+| `brand` | Mẫu thương hiệu (giả định).pptx | Lab 4 PowerPoint: template để tạo Brand Kit **Công ty giả định** (trainer tạo sẵn, hoặc học viên tự tạo theo TIP ở Bài tập 2) |
 | `skill-excel` | Skill Excel - bao-cao-phan-hoi-khach-hang.zip (từ `skills/bao-cao-phan-hoi-khach-hang/SKILL.md`, có bọc thư mục) | Lab 3 Bài 2 (dự phòng) |
-| `skill-ppt` | Skill PowerPoint - slide-tom-tat-dieu-hanh.zip (từ `skills/slide-tom-tat-dieu-hanh/SKILL.md`, có bọc thư mục) | Lab 4 Bài 2 (dự phòng) |
+| `skill-ppt` | Skill PowerPoint - slide-tom-tat.zip (từ `skills/slide-tom-tat/SKILL.md`, có bọc thư mục) | Lab 4 Bài 1 (dự phòng) |
 | `skill-chat` | Skill Copilot Chat - bao-cao-tuan.zip (từ `skills/bao-cao-tuan/SKILL.md`, SKILL.md ở gốc zip) | Lab 7 (tự thực hành) |
 
 ## Tạo lại file
@@ -111,10 +111,10 @@ Trên Windows, đặt `PYTHONIOENCODING=utf-8` nếu terminal báo lỗi in ti�
 - **Lab 3 Bài 2 (skill phản hồi khách hàng):** T9 131 dòng, bỏ 3 trống + 8 trùng → 120, Chậm tiến độ 38 (32%), TP. HCM 45/120;
   T10 143 dòng → 134, Thay đổi nhân sự dự án 24 → 33 (25%).
 - **Lab 3 (tự thực hành):** phân loại dự án 57 / 71 / 22, Rủi ro cao nhất TP. HCM 13/52.
-- **Lab 4 Bài 1:** số liệu giữ nguyên (432 tỷ, 84 tỷ, -16,8%, 1.162 nhân viên, 58 nghỉ việc, 20%, đào tạo 8 / 12 / 25 triệu).
-  Bài 2 (skill slide-tom-tat-dieu-hanh trên deck Town hall): slide sau bìa, tiêu đề kiểu "Doanh thu đạt 99,1% kế hoạch nhưng lợi nhuận giảm 16,8%";
-  Kết quả 432 tỷ (99,1% KH, +3,3%); Vấn đề LNTT 84 tỷ (79% KH), thầu phụ 50 tỷ vượt 39%, nghỉ việc 20% (KH 11,5%, ngành 13,5%);
-  Hướng xử lý: 4 sáng kiến 2027 (lộ trình nghề nghiệp, mentor, ngân sách đào tạo); Cần BGĐ quyết định: phê duyệt Kế hoạch 2027 tháng 11/2026.
+- **Lab 4 Bài 1** (skill slide-tom-tat trên deck Town hall): slide sau bìa, tiêu đề kiểu "Doanh thu đạt 99,1% kế hoạch nhưng lợi nhuận giảm 16,8%";
+  3-5 ý: doanh thu 432 tỷ (99,1% KH), LNTT 84 tỷ (79% KH) do thầu phụ vượt 39%, nghỉ việc 20% (KH 11,5%), 4 sáng kiến 2027;
+  số nổi bật 432 tỷ, 84 tỷ, 20%; bảng nguồn trong khung chat.
+- **Lab 4 Bài 2** (Select brand > Công ty giả định): cả deck, kể cả slide tóm tắt, đổi màu, font, chân trang theo brand; số liệu giữ nguyên (432 tỷ, 84 tỷ, 1.162 nhân viên, 58 nghỉ việc, 20%).
 - **Lab 5 (email từ báo cáo Word):** doanh thu 432 tỷ (99,1% KH), LNTT 84 tỷ (-16,8%) do thầu phụ vượt 39%, nghỉ việc 20%; dưới 120 chữ.
 - **Lab 6 Bài 1 (transcript):** bỏ lỡ (trước 9:05): số liệu quý 3, đề xuất cắt 20% thầu phụ quý 4 và kiểm soát hợp đồng mới > 500 triệu từ 01/12,
   TP. HCM phản đối cắt ngay. Việc của Phòng Kế hoạch: báo cáo chốt cho Truyền thông trước 08/12, bổ sung Kế hoạch 2027 trước 10/12.

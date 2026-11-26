@@ -29,7 +29,7 @@ FILES = {  # đường dẫn trên site: tên file gốc
 }
 SKILL_ZIPS = {  # đường dẫn trên site: (tên khi tải về, thư mục skill, có bọc thư mục không)
     "skill-excel-bao-cao-phan-hoi-khach-hang.zip": ("Skill Excel - bao-cao-phan-hoi-khach-hang.zip", "bao-cao-phan-hoi-khach-hang", True),
-    "skill-ppt-slide-tom-tat-dieu-hanh.zip": ("Skill PowerPoint - slide-tom-tat-dieu-hanh.zip", "slide-tom-tat-dieu-hanh", True),
+    "skill-ppt-slide-tom-tat.zip": ("Skill PowerPoint - slide-tom-tat.zip", "slide-tom-tat", True),
     "skill-chat-bao-cao-tuan.zip": ("Skill Copilot Chat - bao-cao-tuan.zip", "bao-cao-tuan", False),
 }
 ZIP_NAME = "copilot-workshop-demo-files.zip"

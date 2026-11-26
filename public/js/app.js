@@ -20,7 +20,7 @@ const demoFiles = [
     { id: 'townhall', name: 'Town hall Q3 2026 (bản nháp).pptx', desc: 'Lab 4 - PowerPoint (bộ slide có sẵn)', icon: 'powerpoint', url: 'files/town-hall-q3-2026-ban-nhap.pptx' },
     { id: 'brand', name: 'Mẫu thương hiệu (giả định).pptx', desc: 'Lab 4 - PowerPoint (template để tạo Brand Kit)', icon: 'powerpoint', url: 'files/mau-thuong-hieu-gia-dinh.pptx' },
     { id: 'skill-excel', name: 'Skill Excel - bao-cao-phan-hoi-khach-hang.zip', desc: 'Lab 3 - Excel (skill mẫu)', icon: 'zip', url: 'files/skill-excel-bao-cao-phan-hoi-khach-hang.zip' },
-    { id: 'skill-ppt', name: 'Skill PowerPoint - slide-tom-tat-dieu-hanh.zip', desc: 'Lab 4 - PowerPoint (skill mẫu, dự phòng)', icon: 'zip', url: 'files/skill-ppt-slide-tom-tat-dieu-hanh.zip' },
+    { id: 'skill-ppt', name: 'Skill PowerPoint - slide-tom-tat.zip', desc: 'Lab 4 - PowerPoint (skill mẫu, dự phòng)', icon: 'zip', url: 'files/skill-ppt-slide-tom-tat.zip' },
     { id: 'skill-chat', name: 'Skill Copilot Chat - bao-cao-tuan.zip', desc: 'Lab 7 - Skills in Copilot Chat (skill mẫu cho phần tự thực hành)', icon: 'zip', url: 'files/skill-chat-bao-cao-tuan.zip' },
 ];
 
@@ -98,13 +98,23 @@ function processCustomBlocks(content) {
         }
     });
 
-    // ```skill ... ``` -> khung nội dung skill (SKILL.md) có nút sao chép, giữ nguyên xuống dòng
-    content.querySelectorAll('pre > code.language-skill').forEach(code => {
+    // ```skill ... ``` -> khung nội dung skill (SKILL.md) có nút sao chép, giữ nguyên xuống dòng.
+    // ```skill-name / skill-description / skill-instructions -> từng ô của form Create manually.
+    const skillLabels = {
+        'language-skill': 'Nội dung skill (SKILL.md)',
+        'language-skill-name': 'Name',
+        'language-skill-description': 'Description',
+        'language-skill-instructions': 'Instructions',
+    };
+    content.querySelectorAll('pre > code[class*="language-skill"]').forEach(code => {
+        const cls = [...code.classList].find(c => skillLabels[c]);
+        if (!cls) return;
+        const label = skillLabels[cls];
         const text = code.textContent.replace(/\n$/, '');
         code.parentElement.outerHTML = `<div class="prompt-card skill-card">
             <div class="prompt-card-header">
-                <span class="prompt-label">Nội dung skill (SKILL.md)</span>
-                <button class="copy-btn" data-copy="${escapeAttr(text)}" aria-label="Sao chép nội dung skill">
+                <span class="prompt-label">${escapeHtml(label)}</span>
+                <button class="copy-btn" data-copy="${escapeAttr(text)}" aria-label="Sao chép ${escapeAttr(label)}">
                     <span class="copy-label">Sao chép</span>
                 </button>
             </div>
