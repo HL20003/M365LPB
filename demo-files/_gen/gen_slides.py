@@ -1,7 +1,7 @@
 """Tạo 2 file PowerPoint cho Lab 4.
 
-1) Town hall Q3 2026 (bản nháp).pptx - bộ slide "có sẵn": theme Office mặc định, nhiều chữ, tiêu đề chỉ là tên chủ đề.
-   Học viên áp mẫu thương hiệu, nhờ Copilot rút gọn, dùng Visualize this slide, interactive slide và speaker notes.
+1) Town hall Q3 2026 (bản nháp).pptx - bản gốc dạng chữ (theme mặc định). Bản đang dùng trong demo là bộ slide đã
+   thiết kế bằng tay (thẻ số liệu, biểu tượng, bảng), nên mặc định KHÔNG tạo lại file này; chạy với --draft để tạo bản chữ.
 2) Mẫu thương hiệu (giả định).pptx - mẫu thương hiệu của công ty giả định: bảng màu, font, slide master có dải màu
    và nhãn "Nội bộ", layout tiêu đề nền tối. Không dùng tên công ty thật.
 
@@ -206,6 +206,8 @@ def build_brand_template():
 
 
 if __name__ == "__main__":
-    build_draft_deck()
+    import sys
+    if "--draft" in sys.argv:  # ghi đè bộ town hall đã thiết kế bằng bản chữ
+        build_draft_deck()
     build_brand_template()
-    print("2 file PowerPoint ->", OUT)
+    print("PowerPoint ->", OUT)

@@ -16,7 +16,7 @@ Sau khi tạo lại file, chạy `python _gen/sync_site_files.py` để chép sa
 | `memo-template` | Mẫu tờ trình (giả định).docx (mẫu trống có chỗ điền trong ngoặc vuông) | Lab 2 Word Bài 1 |
 | `plan` | Kế hoạch Hoạt động 2027 (dự thảo).docx | Lab 1, Lab 2, Lab 4 |
 | `transcript` | Transcript họp giao ban quý 3 (mẫu).docx | Lab 6 Teams |
-| `townhall` | Town hall Q3 2026 (bản nháp).pptx (nhiều chữ, theme mặc định) | Lab 4 PowerPoint |
+| `townhall` | Town hall Q3 2026 (bản nháp).pptx (8 slide đã thiết kế: thẻ số liệu, biểu tượng, bảng; thiết kế bằng tay, không do script tạo) | Lab 4 PowerPoint |
 | `brand` | Mẫu thương hiệu (giả định).pptx | Lab 4 PowerPoint: template để tạo Brand Kit **Công ty giả định** (trainer tạo sẵn, hoặc học viên tự tạo theo TIP ở Bài tập 2) |
 | `skill-excel` | Skill Excel - bao-cao-phan-hoi-khach-hang.zip (từ `skills/bao-cao-phan-hoi-khach-hang/SKILL.md`, có bọc thư mục) | Lab 3 Bài 2 (dự phòng) |
 | `skill-ppt` | Skill PowerPoint - slide-tom-tat.zip (từ `skills/slide-tom-tat/SKILL.md`, có bọc thư mục) | Lab 4 Bài 1 (dự phòng) |
@@ -34,7 +34,7 @@ python gen_docs.py           # hợp đồng, chính sách lỗi định dạng,
 python gen_scenario.py       # báo cáo quản lý Q3 (bản nháp) và transcript họp giao ban
 python gen_template.py       # mẫu tờ trình (Lab 2 Bài 1)
 powershell -File make_base_pptx.ps1   # chỉ cần khi chưa có base-16x9.pptx (nền 16:9 tạo bằng PowerPoint)
-python gen_slides.py         # 2 file PowerPoint
+python gen_slides.py         # Mẫu thương hiệu; thêm --draft mới tạo lại town hall dạng chữ (ghi đè bản đã thiết kế)
 python sync_site_files.py    # chép sang public/files, đóng gói 2 skill mẫu + zip tổng
 ```
 
